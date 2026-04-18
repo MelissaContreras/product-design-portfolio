@@ -408,6 +408,11 @@ const DonnaContent = () => (
 const CaseStudyPage = () => {
   const { slug } = useParams();
   const study = caseStudies.find((c) => c.slug === slug);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [slug]);
+
   if (!study) return <Navigate to="/" replace />;
 
   const next = caseStudies[(caseStudies.indexOf(study) + 1) % caseStudies.length];
