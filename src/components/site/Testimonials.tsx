@@ -1,51 +1,63 @@
 type Testimonial = {
-  quote: string;
+  initials: string;
   name: string;
-  role: string;
+  title: string;
   relationship: string;
   date: string;
+  badge: string;
+  quote: string;
 };
 
 const testimonials: Testimonial[] = [
   {
+    initials: "AD",
+    name: "Alejandra Díaz",
+    title: "Software Engineer",
+    relationship: "Direct supervisor",
+    date: "January 2026",
+    badge: "Supervisor",
     quote:
-      "Melissa combines a sharp design sensibility with a rigorous, data-informed approach. She elevated the conversation in every project she touched.",
-    name: "Lead Product Manager",
-    role: "Product Manager",
-    relationship: "Worked directly with Melissa",
-    date: "2024",
+      "I had the opportunity to oversee Melissa's work, and it was a very positive experience. She is extremely proactive and committed, always willing to go the extra mile and take ownership of her responsibilities with a great attitude and enthusiasm. She stands out for being detail-oriented and careful in her work — both in design and in Power BI report development — always making sure to deliver quality results. She also has a strong drive to keep learning and improving.",
   },
   {
+    initials: "PD",
+    name: "Paola De Vega",
+    title: "E-commerce, Payments & Product Expert · PMP · Scrum Master",
+    relationship: "Direct supervisor",
+    date: "January 2026",
+    badge: "Supervisor",
     quote:
-      "She turns operational chaos into clear, scalable systems. Our PIM workflows are dramatically more reliable thanks to her work.",
-    name: "Operations Lead",
-    role: "Operations Lead",
-    relationship: "Cross-functional partner",
-    date: "2024",
+      "Melissa is a proactive professional with great energy and a solution-oriented mindset. She does thorough research and brings a lot of value to BI projects as a usability lead. She is versatile in web design and a strong addition to any team.",
   },
   {
+    initials: "AO",
+    name: "Alejandro Orduz",
+    title: "UX/UI Designer · Visual Designer · Figma",
+    relationship: "Colleague",
+    date: "January 2026",
+    badge: "Colleague",
     quote:
-      "Rare to find a designer who can sit with engineering on data logic and then deliver a beautifully crafted dashboard. Melissa does both.",
-    name: "Senior BI Engineer",
-    role: "BI / Data Engineer",
-    relationship: "Worked with Melissa on dashboards",
-    date: "2024",
+      "I had the chance to work with Meli — a outstanding UX professional with solid, in-depth knowledge. I particularly want to highlight her excellent teamwork, her expert command of interface design and design systems, and her ability to approach and solve problems clearly and effectively. Without a doubt, a tremendous asset to any team.",
   },
   {
+    initials: "PS",
+    name: "Patricio Sánchez Alvial",
+    title: "Software Engineer · Data & AI",
+    relationship: "Same team",
+    date: "December 2025",
+    badge: "Colleague",
     quote:
-      "Her mentorship raised the bar for the whole design team. She advocates for data-informed thinking without losing the user.",
-    name: "Junior Product Designer",
-    role: "Product Designer",
-    relationship: "Mentored by Melissa",
-    date: "2023",
+      "An excellent designer — autonomous, highly driven, and detail-focused. She consistently improved our dashboards to enhance usability. A wonderful person who would make a meaningful contribution to any company or organization.",
   },
   {
+    initials: "JT",
+    name: "Jorge Mario Trujillo Díaz",
+    title: "Regional Payments Method Coordinator",
+    relationship: "Colleague",
+    date: "January 2026",
+    badge: "Colleague",
     quote:
-      "Strategic, calm under pressure, and genuinely senior. Melissa connects business goals to product decisions in a way few designers do.",
-    name: "Head of Digital",
-    role: "Head of Digital",
-    relationship: "Reporting line",
-    date: "2023",
+      "Melissa did an outstanding job bringing clarity to our payment method and sales reports, delivering a clean visual presentation of the key KPIs required by the company's main stakeholders.",
   },
 ];
 
@@ -59,24 +71,39 @@ export const Testimonials = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[hsl(var(--hairline))] border" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[hsl(var(--hairline))] border"
+        style={{ borderColor: "hsl(var(--hairline))" }}
+      >
         {testimonials.map((t, i) => (
           <article
             key={i}
-            className={`bg-background p-8 md:p-10 flex flex-col ${i === testimonials.length - 1 && testimonials.length % 2 === 1 ? "md:col-span-2" : ""}`}
+            className={`bg-background p-8 md:p-10 flex flex-col ${
+              i === testimonials.length - 1 && testimonials.length % 2 === 1 ? "md:col-span-2" : ""
+            }`}
           >
-            <svg width="28" height="20" viewBox="0 0 28 20" className="mb-6 text-foreground/30" fill="currentColor">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="h-12 w-12 shrink-0 rounded-full bg-foreground/10 flex items-center justify-center text-sm font-medium tracking-wide">
+                {t.initials}
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="text-sm font-medium">{t.name}</div>
+                <div className="text-xs text-muted-foreground mt-0.5">{t.title}</div>
+                <div className="text-xs text-muted-foreground mt-1">
+                  {t.relationship} · {t.date}
+                </div>
+              </div>
+              <span className="text-[10px] uppercase tracking-[0.14em] border px-2 py-1 text-foreground/70" style={{ borderColor: "hsl(var(--hairline))" }}>
+                {t.badge}
+              </span>
+            </div>
+
+            <svg width="28" height="20" viewBox="0 0 28 20" className="mb-4 text-foreground/30" fill="currentColor">
               <path d="M0 20V12C0 5.4 4.4 0 11 0v4c-3.3 0-5.5 2.7-5.5 6H11v10H0zm17 0V12c0-6.6 4.4-12 11-12v4c-3.3 0-5.5 2.7-5.5 6H28v10H17z" />
             </svg>
-            <p className="font-serif text-xl md:text-2xl leading-snug text-foreground/90 flex-1">
+            <p className="font-serif text-lg md:text-xl leading-snug text-foreground/90 flex-1">
               "{t.quote}"
             </p>
-            <div className="mt-8 pt-6 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-              <div className="text-sm font-medium">{t.name}</div>
-              <div className="text-xs text-muted-foreground mt-1">
-                {t.role} · {t.relationship} · {t.date}
-              </div>
-            </div>
           </article>
         ))}
       </div>
