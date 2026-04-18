@@ -35,12 +35,12 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "donna-moda",
     number: "03",
-    title: "Donna Moda App",
+    title: "Donna Moda — Native App for a New Generation",
     summary:
-      "Mobile e-commerce experience redesign based on benchmarking, improving product discovery, navigation, and visual hierarchy.",
-    tags: ["E-commerce", "Mobile UX", "UX Strategy"],
-    role: "Product Designer",
-    scope: "UX Design, Benchmarking, Interaction Design",
+      "Comprehensive native app design for Donna Moda & L'UOMO MODA, expanding the brand's reach toward a younger, mobile-first audience through market research, product strategy, and a tailored mobile UI system.",
+    tags: ["E-commerce", "Mobile UX", "Product Strategy", "Market Research"],
+    role: "Lead Product Designer (UX/UI & Strategy)",
+    scope: "Market Research · Product Strategy · Mobile UI System",
     year: "2023",
   },
 ];
