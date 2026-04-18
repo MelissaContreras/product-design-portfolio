@@ -349,59 +349,183 @@ const DashboardsContent = () => (
 const DonnaContent = () => (
   <>
     <div className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="16/9" label="Hero visual placeholder" />
+      <Placeholder ratio="16/9" label="Donna Moda app — hero mockups" />
     </div>
 
     <CaseSection eyebrow="01" title="Context">
-      <p>A mobile-first e-commerce experience for a fashion brand with a growing digital audience.</p>
+      <p>
+        Donna Moda is an online store offering imported accessories from various countries, targeting a
+        high-income audience. Its women's line is branded as <strong>DONNA MODA</strong>, and its men's line
+        as <strong>L'UOMO MODA</strong>.
+      </p>
+      <p>
+        With 9 years of experience in the retail market and a physical presence in Pharmax, Donna Moda has
+        built a loyal customer base of women aged 55+.
+      </p>
+      <p>
+        After 6 years operating through the web channel, the brand identified the need to expand into a
+        younger, more digitally native segment that uses mobile as its primary shopping channel.
+      </p>
     </CaseSection>
 
-    <CaseSection eyebrow="02" title="Challenge">
-      <p>Improve product discovery and reduce friction across the browse-to-purchase flow.</p>
+    <CaseSection eyebrow="02" title="The Strategic Challenge">
+      <p>
+        Behavioral analysis revealed that younger users — while interested in both the women's and men's
+        lines for gifting — encountered friction when using the traditional web experience on mobile devices.
+      </p>
+      <p>
+        To capture this segment, a responsive website was not enough; a native solution was required to
+        optimize navigation speed and streamline the checkout experience.
+      </p>
     </CaseSection>
 
-    <CaseSection eyebrow="03" title="Benchmarking">
-      <p>Reviewed best-in-class fashion apps for navigation, filtering, PDP layout, and checkout patterns.</p>
+    <CaseSection eyebrow="03" title="The Strategic Hypothesis">
+      <p className="italic text-foreground">
+        How might we reduce the entry barrier for this new segment without alienating our current customer base?
+      </p>
+      <div className="grid sm:grid-cols-3 gap-6 mt-4">
+        <div>
+          <h4 className="font-medium mb-2">Native-first approach</h4>
+          <p className="text-sm">I proposed developing a native app focused on mobile accessibility.</p>
+        </div>
+        <div>
+          <h4 className="font-medium mb-2">Low-friction shopping</h4>
+          <p className="text-sm">Transform the shopping experience into a fast, low-friction, few-click process — eliminating visual distractions and enabling seamless touch navigation.</p>
+        </div>
+        <div>
+          <h4 className="font-medium mb-2">A dedicated channel</h4>
+          <p className="text-sm">Allow Donna Moda to establish its own dedicated channel, with information architecture designed around the "on-the-go" purchasing behavior of younger users.</p>
+        </div>
+      </div>
     </CaseSection>
 
-    <CaseSection eyebrow="04" title="Key Insights">
-      <ul className="space-y-3 list-disc pl-5">
-        <li>Users browse by mood and category, not just by attribute.</li>
-        <li>Visual hierarchy on the PDP drives confidence and conversion.</li>
-        <li>Filters and sort must remain reachable without losing scroll position.</li>
-      </ul>
+    <CaseSection eyebrow="04" title="Market Research Supporting the Strategy">
+      <p><strong>75%</strong> of purchases are made using credit cards, while <strong>25%</strong> are made in cash.</p>
+      <div className="grid sm:grid-cols-2 gap-6 mt-4">
+        <div className="rounded-xl p-5" style={{ background: "hsl(var(--surface-2))" }}>
+          <p className="text-sm italic">
+            "Countries like Chile and Uruguay are leading e-commerce in the region, but Peru is very close to
+            catching up and is on the right track," highlighted Gonzalo Peralta, Country Manager of
+            TiendaMia.com in Peru.
+          </p>
+          <p className="text-xs text-muted-foreground mt-3">Source: Perú-Retail · July 10, 2017</p>
+        </div>
+        <div className="rounded-xl p-5" style={{ background: "hsl(var(--surface-2))" }}>
+          <p className="text-sm">
+            The predominant lifestyle in the country is that of Modern women, who seek self-fulfillment by
+            balancing their professional lives with their roles as mothers. They stay up to date with fashion
+            and emerging trends, advocate for female empowerment, and seek recognition from society.
+          </p>
+          <p className="text-xs text-muted-foreground mt-3">(Kotler & Armstrong, 2013)</p>
+        </div>
+      </div>
+
+      <div className="mt-6 grid sm:grid-cols-2 gap-6">
+        <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
+          <p className="text-sm">A higher proportion of millennials own a smartphone and make online purchases at least once a month.</p>
+        </div>
+        <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
+          <p className="text-sm">Closely followed by Generation X and Generation Z. The trend for the latter is expected to continue growing, as this group's purchasing power is still relatively limited due to their age.</p>
+        </div>
+      </div>
     </CaseSection>
 
-    <CaseSection eyebrow="05" title="Information Architecture">
-      <p>Restructured navigation around shopping intent, with editorial entry points alongside category browsing.</p>
-    </CaseSection>
-
-    <CaseSection eyebrow="06" title="Wireframes">
-      <p>Low-fidelity flows validated key interactions before committing to visual design.</p>
-    </CaseSection>
-
-    <div className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="16/9" label="Wireframes placeholder" />
+    <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <Placeholder ratio="16/9" label="Smartphone ownership & mobile purchases by generation — chart" />
     </div>
 
-    <CaseSection eyebrow="07" title="Final Design">
-      <p>A clean, photo-led interface with strong hierarchy, consistent components, and refined motion.</p>
+    <CaseSection eyebrow="05" title="Benchmarking">
+      <p>
+        Since Donna Moda offers imported products from various countries to a high-income target audience,
+        I ultimately worked with three benchmark brands: <strong>Louis Vuitton</strong>,{" "}
+        <strong>Massimo Dutti</strong>, and <strong>Stradivarius</strong>.
+      </p>
     </CaseSection>
 
-    <div className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="16/9" label="Final UI placeholder" />
+    <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <Placeholder ratio="21/9" label="Benchmarking — Louis Vuitton · Massimo Dutti · Stradivarius" />
     </div>
 
-    <CaseSection eyebrow="08" title="Impact">
-      <MetricRow
-        items={[
-          { k: "+22%", v: "PDP engagement" },
-          { k: "+18%", v: "Add-to-cart" },
-          { k: "−25%", v: "Drop-off rate" },
-          { k: "4.7", v: "App store rating" },
-        ]}
-      />
+    <CaseSection eyebrow="06" title="SWOT Analysis">
+      <div className="grid sm:grid-cols-2 gap-4">
+        <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
+          <h4 className="font-medium mb-2">Threats</h4>
+          <p className="text-sm">Economic shifts caused by the pandemic. Prioritization of essential goods.</p>
+        </div>
+        <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
+          <h4 className="font-medium mb-2">Strengths</h4>
+          <p className="text-sm">A well-established customer base that trusts the quality of its products.</p>
+        </div>
+        <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
+          <h4 className="font-medium mb-2">Weaknesses</h4>
+          <p className="text-sm">A WordPress template-based website that limits customization and flexibility.</p>
+        </div>
+        <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
+          <h4 className="font-medium mb-2">Opportunities</h4>
+          <p className="text-sm">A new, younger audience with purchasing power and high consumption demand, such as the Millennial generation.</p>
+        </div>
+      </div>
     </CaseSection>
+
+    <CaseSection eyebrow="07" title="User Flow">
+      <p>
+        Two parallel flows were defined for women's and men's brands, covering entry, category browsing,
+        product details, cart, sign-up/log-in, payment, and final purchase confirmation.
+      </p>
+    </CaseSection>
+
+    <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <Placeholder ratio="4/5" label="User flow diagram — Donna Moda & L'UOMO MODA" />
+    </div>
+
+    <CaseSection eyebrow="08" title="Wireframes">
+      <p>Two flows were prototyped: the first when the user signs up, and the second when the user logs in.</p>
+    </CaseSection>
+
+    <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <Placeholder ratio="3/4" label="Wireframes — sign-up & log-in flows" />
+    </div>
+
+    <CaseSection eyebrow="09" title="DONNA MODA Experience — Design Decisions">
+      <p>Each screen was designed around a specific behavioral insight to reduce friction on mobile.</p>
+
+      <div className="grid sm:grid-cols-2 gap-5 mt-4">
+        {[
+          { t: "Entry & Brand Selection", b: "Present both brands (Donna Moda / L'uomo Moda) at entry. Users approach with a clear intent (self-purchase or gifting). Early segmentation reduces unnecessary navigation. Faster path to relevant products." },
+          { t: "Category Structure", b: "Organize products in a clear, scannable categories. Unstructured categories increase cognitive load, especially on mobile. Improved product discoverability." },
+          { t: "Visual Navigation", b: "Prioritize image-based navigation over text-heavy lists. Mobile users rely on visual cues for faster decision making. Reduced browsing time." },
+          { t: "Filter Integration", b: "Include filters within the browsing flow. Large product sets require quick narrowing without disrupting navigation. More efficient product exploration." },
+          { t: "Product Grid Simplification", b: "Display products with minimal information and strong imagery. Excessive detail creates friction on small screens. Easier comparison and faster selection." },
+          { t: "Product Detail Focus", b: "Highlight essential product information and a clear CTA. Users need quick validation before purchasing, not overwhelming detail. Increased purchase confidence." },
+          { t: "Add-to-Cart Clarity", b: "Provide clear cart actions and confirmation. Ambiguous add-to-cart flows increase abandonment. Reduced friction in conversion." },
+          { t: "Cart Visibility", b: "Provide immediate access to cart after adding a product. Reinforces intent and prevents navigation loss. Reduced drop-off." },
+          { t: "Purchase Summary", b: "Show a clear summary before checkout. Users need to validate their selection before committing. Increased trust and fewer errors." },
+          { t: "Authentication Timing", b: "Delay login/registration until checkout. Early authentication creates friction. Lower abandonment rates." },
+          { t: "Registration Flow", b: "Keep registration simple and optional. Forced commitment discourages new users. Increased conversion." },
+          { t: "Personal Data Form", b: "Minimize required input fields. Mobile form friction is a major drop-off factor. Faster completion rates." },
+          { t: "Checkout Flow", b: "Reduce checkout to essential steps only. Long flows increase abandonment. Higher checkout completion." },
+          { t: "Payment Prioritization", b: "Focus on credit card payments. Majority of users prefer this method. Smoother transaction process." },
+          { t: "Confirmation Experience", b: "Provide a clear and reassuring confirmation screen. Users need closure and trust reinforcement. Better post-purchase experience." },
+        ].map((it) => (
+          <div key={it.t} className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
+            <h4 className="font-medium mb-2">{it.t}</h4>
+            <p className="text-sm text-foreground/75">{it.b}</p>
+          </div>
+        ))}
+      </div>
+    </CaseSection>
+
+    <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <Placeholder ratio="16/9" label="High-fidelity mockups — DONNA MODA experience" />
+    </div>
+
+    <CaseSection eyebrow="10" title="Returning User Flow">
+      <p>The flow if the user is already registered — optimized for speed, with minimal steps from entry to confirmation.</p>
+    </CaseSection>
+
+    <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <Placeholder ratio="21/9" label="Returning user flow — log-in to confirmation" />
+    </div>
   </>
 );
 
