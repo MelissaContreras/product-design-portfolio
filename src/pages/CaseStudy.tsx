@@ -235,6 +235,10 @@ const PimContent = () => (
       </p>
     </CaseSection>
 
+    <div className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <Placeholder ratio="16/9" label="Pre-load preview interface" />
+    </div>
+
     <CaseSection eyebrow="12" title="Functional improvement: Interactive onboarding">
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
