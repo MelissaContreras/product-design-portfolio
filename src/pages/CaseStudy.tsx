@@ -486,34 +486,54 @@ const DonnaContent = () => (
       <Placeholder ratio="3/4" label="Wireframes — sign-up & log-in flows" />
     </div>
 
-    <CaseSection eyebrow="09" title="DONNA MODA Experience — Design Decisions">
-      <p>Each screen was designed around a specific behavioral insight to reduce friction on mobile.</p>
+    <section className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <div className="max-w-3xl">
+        <p className="eyebrow mb-3">09</p>
+        <h2 className="font-serif text-3xl md:text-4xl leading-tight">DONNA MODA Experience — Design Decisions</h2>
+        <p className="mt-5 text-base md:text-lg text-foreground/75 leading-relaxed">
+          Each screen was designed around a specific behavioral insight to reduce friction on mobile. For
+          every decision: <em>what we did</em>, <em>why it matters</em>, and <em>the expected impact</em>.
+        </p>
+      </div>
 
-      <div className="grid sm:grid-cols-2 gap-5 mt-4">
+      <div className="mt-12 space-y-12">
         {[
-          { t: "Entry & Brand Selection", b: "Present both brands (Donna Moda / L'uomo Moda) at entry. Users approach with a clear intent (self-purchase or gifting). Early segmentation reduces unnecessary navigation. Faster path to relevant products." },
-          { t: "Category Structure", b: "Organize products in a clear, scannable categories. Unstructured categories increase cognitive load, especially on mobile. Improved product discoverability." },
-          { t: "Visual Navigation", b: "Prioritize image-based navigation over text-heavy lists. Mobile users rely on visual cues for faster decision making. Reduced browsing time." },
-          { t: "Filter Integration", b: "Include filters within the browsing flow. Large product sets require quick narrowing without disrupting navigation. More efficient product exploration." },
-          { t: "Product Grid Simplification", b: "Display products with minimal information and strong imagery. Excessive detail creates friction on small screens. Easier comparison and faster selection." },
-          { t: "Product Detail Focus", b: "Highlight essential product information and a clear CTA. Users need quick validation before purchasing, not overwhelming detail. Increased purchase confidence." },
-          { t: "Add-to-Cart Clarity", b: "Provide clear cart actions and confirmation. Ambiguous add-to-cart flows increase abandonment. Reduced friction in conversion." },
-          { t: "Cart Visibility", b: "Provide immediate access to cart after adding a product. Reinforces intent and prevents navigation loss. Reduced drop-off." },
-          { t: "Purchase Summary", b: "Show a clear summary before checkout. Users need to validate their selection before committing. Increased trust and fewer errors." },
-          { t: "Authentication Timing", b: "Delay login/registration until checkout. Early authentication creates friction. Lower abandonment rates." },
-          { t: "Registration Flow", b: "Keep registration simple and optional. Forced commitment discourages new users. Increased conversion." },
-          { t: "Personal Data Form", b: "Minimize required input fields. Mobile form friction is a major drop-off factor. Faster completion rates." },
-          { t: "Checkout Flow", b: "Reduce checkout to essential steps only. Long flows increase abandonment. Higher checkout completion." },
-          { t: "Payment Prioritization", b: "Focus on credit card payments. Majority of users prefer this method. Smoother transaction process." },
-          { t: "Confirmation Experience", b: "Provide a clear and reassuring confirmation screen. Users need closure and trust reinforcement. Better post-purchase experience." },
-        ].map((it) => (
-          <div key={it.t} className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-            <h4 className="font-medium mb-2">{it.t}</h4>
-            <p className="text-sm text-foreground/75">{it.b}</p>
+          { t: "Entry & Brand Selection", d: "Present both brands (Donna Moda / L'uomo Moda) at entry. Users approach with a clear intent (self-purchase or gifting).", r: "Early segmentation reduces unnecessary navigation.", i: "Faster path to relevant products." },
+          { t: "Category Structure", d: "Organize products in clear, scannable categories.", r: "Unstructured categories increase cognitive load, especially on mobile.", i: "Improved product discoverability." },
+          { t: "Visual Navigation", d: "Prioritize image-based navigation over text-heavy lists.", r: "Mobile users rely on visual cues for faster decision making.", i: "Reduced browsing time." },
+          { t: "Filter Integration", d: "Include filters within the browsing flow.", r: "Large product sets require quick narrowing without disrupting navigation.", i: "More efficient product exploration." },
+          { t: "Product Grid Simplification", d: "Display products with minimal information and strong imagery.", r: "Excessive detail creates friction on small screens.", i: "Easier comparison and faster selection." },
+          { t: "Product Detail Focus", d: "Highlight essential product information and a clear CTA.", r: "Users need quick validation before purchasing, not overwhelming detail.", i: "Increased purchase confidence." },
+          { t: "Add-to-Cart Clarity", d: "Provide clear cart actions and confirmation.", r: "Ambiguous add-to-cart flows increase abandonment.", i: "Reduced friction in conversion." },
+          { t: "Cart Visibility", d: "Provide immediate access to the cart after adding a product.", r: "Reinforces intent and prevents navigation loss.", i: "Reduced drop-off." },
+          { t: "Purchase Summary", d: "Show a clear summary before checkout.", r: "Users need to validate their selection before committing.", i: "Increased trust and fewer errors." },
+          { t: "Authentication Timing", d: "Delay login/registration until checkout.", r: "Early authentication creates friction.", i: "Lower abandonment rates." },
+          { t: "Registration Flow", d: "Keep registration simple and optional.", r: "Forced commitment discourages new users.", i: "Increased conversion." },
+          { t: "Personal Data Form", d: "Minimize required input fields.", r: "Mobile form friction is a major drop-off factor.", i: "Faster completion rates." },
+          { t: "Checkout Flow", d: "Reduce checkout to essential steps only.", r: "Long flows increase abandonment.", i: "Higher checkout completion." },
+          { t: "Payment Prioritization", d: "Focus on credit card payments.", r: "Majority of users prefer this method.", i: "Smoother transaction process." },
+          { t: "Confirmation Experience", d: "Provide a clear and reassuring confirmation screen.", r: "Users need closure and trust reinforcement.", i: "Better post-purchase experience." },
+        ].map((it, idx) => (
+          <div
+            key={it.t}
+            className="grid md:grid-cols-12 gap-8 items-start"
+          >
+            <div className={`md:col-span-7 space-y-4 ${idx % 2 === 1 ? "md:order-2" : ""}`}>
+              <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                {String(idx + 1).padStart(2, "0")}
+              </p>
+              <h3 className="font-serif text-2xl md:text-3xl leading-tight">{it.t}</h3>
+              <p className="text-base leading-relaxed text-foreground/85">{it.d}</p>
+              <p className="text-base leading-relaxed text-foreground/70">{it.r}</p>
+              <p className="text-base leading-relaxed font-medium">{it.i}</p>
+            </div>
+            <div className={`md:col-span-5 ${idx % 2 === 1 ? "md:order-1" : ""}`}>
+              <Placeholder ratio="3/4" label={`${it.t} — mockup`} />
+            </div>
           </div>
         ))}
       </div>
-    </CaseSection>
+    </section>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <Placeholder ratio="16/9" label="High-fidelity mockups — DONNA MODA experience" />
