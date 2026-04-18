@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
@@ -407,6 +408,11 @@ const DonnaContent = () => (
 const CaseStudyPage = () => {
   const { slug } = useParams();
   const study = caseStudies.find((c) => c.slug === slug);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [slug]);
+
   if (!study) return <Navigate to="/" replace />;
 
   const next = caseStudies[(caseStudies.indexOf(study) + 1) % caseStudies.length];
