@@ -69,8 +69,8 @@ export const CaseStudies = () => {
     <section id="work" className="container-editorial py-20 md:py-28">
       <div className="flex items-end justify-between mb-12 md:mb-16">
         <div>
-          <p className="eyebrow">Selected Work</p>
-          <h2 className="font-serif text-4xl md:text-5xl mt-3">Case studies</h2>
+          <p className="eyebrow">Case Studies</p>
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mt-3">Case Studies</h2>
         </div>
         <p className="hidden md:block text-sm text-muted-foreground max-w-xs text-right">
           Three projects across systems, analytics and commerce.
