@@ -8,44 +8,48 @@
 
 @layer base {
   :root {
-    /* Core palette — warm off-white + deep ink */
-    --background: 40 30% 98%;         /* #FAF9F6 warm paper */
-    --foreground: 220 18% 11%;        /* deep ink */
+    /* Core palette — neutral white + deep ink, sophisticated purple accent */
+    --background: 0 0% 100%;          /* #FFFFFF */
+    --foreground: 0 0% 7%;            /* #111111 */
 
     --card: 0 0% 100%;
-    --card-foreground: 220 18% 11%;
+    --card-foreground: 0 0% 7%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 18% 11%;
+    --popover-foreground: 0 0% 7%;
 
-    --primary: 220 20% 13%;           /* near-black */
-    --primary-foreground: 40 30% 98%;
+    --primary: 262 83% 50%;           /* #6D28D9 sophisticated purple */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 20% 94%;
-    --secondary-foreground: 220 18% 11%;
+    --secondary: 240 5% 97%;          /* #F7F7F8 */
+    --secondary-foreground: 0 0% 7%;
 
-    --muted: 35 18% 95%;
-    --muted-foreground: 220 8% 42%;
+    --muted: 240 5% 97%;
+    --muted-foreground: 220 9% 46%;   /* #6B7280 */
 
-    --accent: 14 70% 52%;             /* warm terracotta accent */
-    --accent-foreground: 0 0% 100%;
+    --accent: 258 100% 97%;           /* #F3F0FF soft purple accent */
+    --accent-foreground: 262 83% 50%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 12% 88%;
-    --input: 30 12% 88%;
-    --ring: 220 18% 11%;
+    --border: 220 13% 91%;            /* #E5E7EB */
+    --input: 220 13% 91%;
+    --ring: 262 83% 50%;
 
     --radius: 0.75rem;
 
     /* Editorial tokens */
-    --surface-1: 40 30% 98%;
-    --surface-2: 35 22% 96%;
-    --surface-3: 30 18% 93%;
-    --hairline: 30 12% 86%;
-    --ink-soft: 220 12% 30%;
-    --placeholder: 35 14% 92%;
+    --surface-1: 0 0% 100%;
+    --surface-2: 240 5% 97%;
+    --surface-3: 220 13% 95%;
+    --hairline: 220 13% 91%;
+    --ink-soft: 220 9% 30%;
+    --placeholder: 240 5% 96%;
+
+    /* Purple accent tokens */
+    --primary-hover: 262 83% 42%;     /* #5B21B6 */
+    --accent-soft: 258 100% 97%;      /* #F3F0FF */
 
     --shadow-soft: 0 1px 2px hsl(220 18% 11% / 0.04), 0 8px 24px hsl(220 18% 11% / 0.06);
     --shadow-lift: 0 2px 4px hsl(220 18% 11% / 0.05), 0 24px 48px -12px hsl(220 18% 11% / 0.18);
