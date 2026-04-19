@@ -65,9 +65,12 @@ export const Testimonials = () => {
   return (
     <section id="testimonials" className="container-editorial py-20 md:py-28">
       <div className="flex items-end justify-between mb-12 md:mb-16">
-        <div>
+        <div className="max-w-2xl">
           <p className="eyebrow">Testimonials</p>
-          <h2 className="font-serif text-4xl md:text-5xl mt-3">Words from collaborators</h2>
+          <h2 className="font-serif text-4xl md:text-5xl mt-3">Feedback from collaborators</h2>
+          <p className="mt-4 text-foreground/70 text-base md:text-lg">
+            Perspectives from supervisors and cross-functional team members on impact, collaboration, and execution.
+          </p>
         </div>
       </div>
 
