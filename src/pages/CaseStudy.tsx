@@ -587,11 +587,11 @@ const CaseStudyPage = () => {
             </div>
             <div>
               <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Responsibility</div>
-              <div className="text-sm mt-2">End-to-end</div>
+              <div className="text-sm mt-2">Research - Visual System<br />Onboarding Design - Handoff</div>
             </div>
             <div>
               <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Scope</div>
-              <div className="text-sm mt-2">{study.scope}</div>
+              <div className="text-sm mt-2">Redesigned the internal PIM tool to match Akeneo's design system</div>
             </div>
           </div>
         </div>
