@@ -85,8 +85,7 @@ export const CaseStudies = () => {
               <PreviewVisual slug={c.slug} />
             </div>
             <div className="p-6 md:p-8">
-              <div className="flex items-center justify-between text-xs text-muted-foreground mb-4">
-                <span>{c.number} — {c.year}</span>
+              <div className="flex items-center justify-end text-xs text-muted-foreground mb-4">
                 <span className="inline-flex items-center gap-1 group-hover:text-foreground transition-colors">
                   View Case Study <ArrowUpRight className="h-3.5 w-3.5" />
                 </span>
