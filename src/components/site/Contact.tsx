@@ -6,7 +6,7 @@ export const Contact = () => {
       <div className="container-editorial">
         <p className="text-xs uppercase tracking-[0.18em] opacity-60">Let's Work Together</p>
         <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl mt-6 leading-[1.02] max-w-[16ch]">
-          Building scalable systems & impactful products.
+          Ready to build<br />something great?
         </h2>
         <p className="mt-8 max-w-2xl text-base md:text-lg opacity-75 leading-relaxed">
           Open to product design opportunities where I can contribute to building scalable systems and impactful digital products.
