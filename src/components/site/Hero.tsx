@@ -40,7 +40,6 @@ export const Hero = () => {
         {[
           { k: "5+", v: "Years in product" },
           { k: "B2B / B2C", v: "Ecommerce ecosystems" },
-          { k: "UX + Data", v: "SQL · Python · BI" },
           { k: "Omnichannel", v: "Retail + Digital" },
         ].map((s) => (
           <div key={s.v} className="px-2 md:px-6 first:pl-0">
