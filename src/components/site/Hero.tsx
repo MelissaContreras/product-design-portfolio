@@ -4,11 +4,11 @@ export const Hero = () => {
   return (
     <section className="container-editorial pt-20 md:pt-28 pb-20 md:pb-28">
       <div className="reveal">
-        <p className="eyebrow">Product Designer · UX/UI · Diseño Basado en Datos</p>
+        <p className="eyebrow">Product Designer · UX/UI · Data-Driven Design</p>
       </div>
 
       <h1 className="reveal reveal-delay-1 mt-8 font-serif text-[2.6rem] sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-[-0.02em] max-w-[18ch]">
-        Bridging <em className="italic">UX</em> and <em className="italic">data</em> to simplify high-volume systems.
+        Designing clarity<br />in complex<br />systems
       </h1>
 
       <div className="mt-10 grid md:grid-cols-12 gap-8 items-end">
