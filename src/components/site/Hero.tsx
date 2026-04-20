@@ -13,8 +13,7 @@ export const Hero = () => {
 
       <div className="mt-10 grid md:grid-cols-12 gap-8 items-end">
         <p className="reveal reveal-delay-2 md:col-span-7 text-base md:text-lg leading-relaxed text-foreground/75 max-w-2xl">
-          I'm Melissa — a Product Designer building scalable systems and digital products that improve
-          decision-making, reduce operational complexity, and drive clarity in high-volume omnichannel environments.
+          Product Designer bridging UX and Data Analytics to simplify high volume systems and enable better product decisions across omnichannel ecosystems.
         </p>
 
         <div className="reveal reveal-delay-3 md:col-span-5 flex flex-wrap gap-3 md:justify-end">
