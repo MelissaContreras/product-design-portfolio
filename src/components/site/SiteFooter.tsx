@@ -10,7 +10,7 @@ export const SiteFooter = () => (
       <div className="flex items-center gap-6 text-sm">
         <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="link-underline">LinkedIn</a>
         <a href="mailto:hello@melissa.design" className="link-underline">Email</a>
-        <a href="/cv.pdf" className="link-underline">CV</a>
+        <a href="/cv.pdf" className="link-underline">Resume</a>
       </div>
     </div>
     <div className="container-editorial pb-8 text-xs text-muted-foreground">
