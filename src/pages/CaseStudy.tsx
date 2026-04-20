@@ -113,7 +113,7 @@ const PimContent = () => (
 
     <CaseSection title="Benchmarking insights">
       <div>
-        <h4 className="font-medium mb-2">Carga Masiva de Productos</h4>
+        <h4 className="font-medium mb-2">gestionpos.cl</h4>
         <ul className="space-y-2 list-disc pl-5">
           <li>Preview before confirming each bulk upload action.</li>
         </ul>
@@ -144,6 +144,9 @@ const PimContent = () => (
 
       <div className="grid md:grid-cols-2 gap-6 mt-4">
         <div className="rounded-xl p-6" style={{ background: "hsl(var(--surface-2))", borderColor: "hsl(var(--hairline))" }}>
+          <div className="aspect-square w-32 rounded-lg mb-4 flex items-center justify-center text-xs uppercase tracking-[0.18em] text-muted-foreground border border-dashed" style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-1))" }}>
+            Photo
+          </div>
           <p className="font-serif text-xl">Ana Carrillo</p>
           <p className="text-xs text-muted-foreground">Operations Analyst · 30 years old · Bogotá, Colombia</p>
           <p className="text-sm mt-3"><strong>Experience:</strong> 5 years in software testing.</p>

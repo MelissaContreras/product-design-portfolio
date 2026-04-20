@@ -12,7 +12,7 @@ const testimonials: Testimonial[] = [
   {
     initials: "AD",
     name: "Alejandra Díaz",
-    title: "Software Engineer",
+    title: "Software Engineer · Tech Lead",
     relationship: "Direct supervisor",
     date: "January 2026",
     badge: "Supervisor",
