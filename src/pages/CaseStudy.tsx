@@ -488,7 +488,6 @@ const DonnaContent = () => (
 
     <section className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <div className="max-w-3xl">
-        <p className="eyebrow mb-3">09</p>
         <h2 className="font-serif text-3xl md:text-4xl leading-tight">DONNA MODA Experience — Design Decisions</h2>
         <p className="mt-5 text-base md:text-lg text-foreground/75 leading-relaxed">
           Each screen was designed around a specific behavioral insight to reduce friction on mobile. For
@@ -571,15 +570,14 @@ const CaseStudyPage = () => {
         </Link>
 
         <div className="mt-10 reveal">
-          <p className="eyebrow">Case Study {study.number}</p>
-          <h1 className="font-serif text-5xl md:text-7xl mt-4 leading-[1.02] tracking-[-0.02em] max-w-[18ch]">
+          <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] tracking-[-0.02em] max-w-[18ch]">
             {study.title}
           </h1>
           <p className="mt-8 max-w-2xl text-base md:text-lg text-foreground/75 leading-relaxed">
             {study.summary}
           </p>
 
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
             <div>
               <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Role</div>
               <div className="text-sm mt-2">{study.role}</div>
@@ -591,10 +589,6 @@ const CaseStudyPage = () => {
             <div>
               <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Scope</div>
               <div className="text-sm mt-2">{study.scope}</div>
-            </div>
-            <div>
-              <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Year</div>
-              <div className="text-sm mt-2">{study.year}</div>
             </div>
           </div>
         </div>
