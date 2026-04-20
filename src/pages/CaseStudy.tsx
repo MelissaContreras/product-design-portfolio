@@ -8,7 +8,7 @@ import { CaseSection, Placeholder, MetricRow } from "@/components/case/CaseBlock
 
 const PimContent = () => (
   <>
-    <CaseSection eyebrow="01" title="Context">
+    <CaseSection title="Context">
       <p>
         IXComercio is a SaaS platform used by international brands to manage product catalogs, attributes,
         prices, and logistics configurations within the Total Commerce digital commerce ecosystem.
@@ -20,7 +20,7 @@ const PimContent = () => (
       </p>
     </CaseSection>
 
-    <CaseSection eyebrow="02" title="The Problem">
+    <CaseSection title="The Problem">
       <div>
         <h4 className="text-sm uppercase tracking-[0.14em] text-muted-foreground mb-2">For Business</h4>
         <ul className="space-y-2 list-disc pl-5">
@@ -36,7 +36,7 @@ const PimContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="03" title="The Challenge: Beyond Visual Consistency">
+    <CaseSection title="The Challenge: Beyond Visual Consistency">
       <p className="italic text-foreground">Turned a visual request into a full system optimization.</p>
       <p>
         I was asked to redesign IXComercio's internal PIM tool to match Akeneo's design system. During the
@@ -45,7 +45,7 @@ const PimContent = () => (
       </p>
     </CaseSection>
 
-    <CaseSection eyebrow="04" title="Strategic Impact">
+    <CaseSection title="Strategic Impact">
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="rounded-xl border p-6" style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-2))" }}>
           <div className="font-serif text-4xl">75%</div>
@@ -77,7 +77,7 @@ const PimContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="05" title="Match the visual style of Akeneo PIM">
+    <CaseSection title="Match the visual style of Akeneo PIM">
       <p>
         IXComercio's product upload intranet needed to align with Akeneo PIM's design system: brand colors,
         typography, UI components, and navigation patterns consistent with the tool.
@@ -94,7 +94,7 @@ const PimContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="06" title="Research Strategy: Data for Decision-Making">
+    <CaseSection title="Research Strategy: Data for Decision-Making">
       <p>
         To understand the problem from both a technical and operational standpoint, I led a discovery phase
         combining technical analysis and interviews with internal users.
@@ -111,7 +111,7 @@ const PimContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="07" title="Benchmarking insights">
+    <CaseSection title="Benchmarking insights">
       <div>
         <h4 className="font-medium mb-2">Carga Masiva de Productos</h4>
         <ul className="space-y-2 list-disc pl-5">
@@ -138,7 +138,7 @@ const PimContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="08" title="Interview findings">
+    <CaseSection title="Interview findings">
       <h4 className="font-medium">Key research insights</h4>
       <p className="text-sm">Users reported moderate satisfaction due to usability issues and complexity in the upload flows.</p>
 
@@ -173,7 +173,7 @@ const PimContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="09" title="Strategic Alignment: Key Implementation Measures">
+    <CaseSection title="Strategic Alignment: Key Implementation Measures">
       <div>
         <h4 className="font-medium mb-2">Platform Core Purpose</h4>
         <p className="text-sm">Product Creation & SKU Generation. This module facilitates the end-to-end process of generating IX Comercio SKUs for all products imported from Intcomex, ensuring data integrity and operational speed.</p>
@@ -208,7 +208,7 @@ const PimContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="10" title="The Solution: A Design System for Zero-Error Execution">
+    <CaseSection title="The Solution: A Design System for Zero-Error Execution">
       <p>Instead of designing isolated screens, I engineered a system focused on error prevention and operational efficiency.</p>
       <div className="mt-4">
         <h4 className="font-medium mb-2">A Scalable & Comprehensive UI Kit</h4>
@@ -228,7 +228,7 @@ const PimContent = () => (
       </div>
     </div>
 
-    <CaseSection eyebrow="11" title="Pre-load Preview">
+    <CaseSection title="Pre-load Preview">
       <p>
         Based on competitive benchmarking, I implemented a visual confirmation stage to audit assets before
         PIM ingestion. This 'safe-check' prevents downstream data corruption and reduces the need for manual
@@ -240,7 +240,7 @@ const PimContent = () => (
       <Placeholder ratio="16/9" label="Pre-load preview interface" />
     </div>
 
-    <CaseSection eyebrow="12" title="Functional improvement: Interactive onboarding">
+    <CaseSection title="Functional improvement: Interactive onboarding">
       <div className="grid sm:grid-cols-2 gap-6">
         <div>
           <h4 className="font-medium mb-2">Accelerated Learning Curve</h4>
@@ -257,7 +257,7 @@ const PimContent = () => (
       <Placeholder ratio="16/9" label="Elements of guided onboarding" />
     </div>
 
-    <CaseSection eyebrow="13" title="Business Value: Operational Efficiency & Scalability">
+    <CaseSection title="Business Value: Operational Efficiency & Scalability">
       <p>The impact of the redesign was primarily reflected in <strong>increased user autonomy</strong>.</p>
       <p><strong>Operational Efficiency:</strong> the bottleneck in the QA team was eliminated, allowing them to focus on technical testing rather than user training.</p>
       <p><strong>Error Reduction:</strong> contextual alerts and standardized terminology reduced errors in bulk upload processes.</p>
@@ -268,7 +268,7 @@ const PimContent = () => (
 
 const DashboardsContent = () => (
   <>
-    <CaseSection eyebrow="01" title="Strategic Challenge">
+    <CaseSection title="Strategic Challenge">
       <div className="grid sm:grid-cols-2 gap-6">
         <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
           <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground">Initial</div>
@@ -281,42 +281,42 @@ const DashboardsContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="02" title="Information Architecture">
+    <CaseSection title="Information Architecture">
       <p>
         Structured around business questions rather than data sources — Performance, Operations, and Customer.
         Each area maps to specific decisions and owners.
       </p>
     </CaseSection>
 
-    <CaseSection eyebrow="03" title="KPI Structure">
+    <CaseSection title="KPI Structure">
       <p>
         Defined a tiered KPI model: North Star, Driver Metrics, and Health Metrics. Each tier has a clear owner,
         cadence, and visualization pattern.
       </p>
     </CaseSection>
 
-    <CaseSection eyebrow="04" title="Multi-dimensional Navigation">
+    <CaseSection title="Multi-dimensional Navigation">
       <p>
         Multi-dimensional navigation across Geography (Country → Store) and Time (Year → Month → Week → Day),
         with persistent context as users drill down.
       </p>
     </CaseSection>
 
-    <CaseSection eyebrow="05" title="Visual Refinement">
+    <CaseSection title="Visual Refinement">
       <p>
         Reduced chart noise, standardized color semantics, and aligned typography with the broader system.
         Every visual element was justified by the question it helped answer.
       </p>
     </CaseSection>
 
-    <CaseSection eyebrow="06" title="DAX Optimization">
+    <CaseSection title="DAX Optimization">
       <p>
         Partnered with BI engineering to refactor measures, reducing query latency and unlocking new cross-filter
         combinations without breaking performance budgets.
       </p>
     </CaseSection>
 
-    <CaseSection eyebrow="07" title="Impact">
+    <CaseSection title="Impact">
       <MetricRow
         items={[
           { k: "5→1", v: "Dashboards consolidated" },
@@ -327,7 +327,7 @@ const DashboardsContent = () => (
       />
     </CaseSection>
 
-    <CaseSection eyebrow="08" title="Operational Dashboard">
+    <CaseSection title="Operational Dashboard">
       <p>
         A second surface focused on store-level operations: stock health, fulfillment SLAs, and exception flows.
         Designed for daily use by regional managers.
@@ -338,7 +338,7 @@ const DashboardsContent = () => (
       <Placeholder ratio="16/9" label="Operational dashboard placeholder" />
     </div>
 
-    <CaseSection eyebrow="09" title="Business Impact">
+    <CaseSection title="Business Impact">
       <p>
         +46K incremental orders attributed to faster, better-informed operational decisions across the network.
       </p>
@@ -352,7 +352,7 @@ const DonnaContent = () => (
       <Placeholder ratio="16/9" label="Donna Moda app — hero mockups" />
     </div>
 
-    <CaseSection eyebrow="01" title="Context">
+    <CaseSection title="Context">
       <p>
         Donna Moda is an online store offering imported accessories from various countries, targeting a
         high-income audience. Its women's line is branded as <strong>DONNA MODA</strong>, and its men's line
@@ -368,7 +368,7 @@ const DonnaContent = () => (
       </p>
     </CaseSection>
 
-    <CaseSection eyebrow="02" title="The Strategic Challenge">
+    <CaseSection title="The Strategic Challenge">
       <p>
         Behavioral analysis revealed that younger users — while interested in both the women's and men's
         lines for gifting — encountered friction when using the traditional web experience on mobile devices.
@@ -379,7 +379,7 @@ const DonnaContent = () => (
       </p>
     </CaseSection>
 
-    <CaseSection eyebrow="03" title="The Strategic Hypothesis">
+    <CaseSection title="The Strategic Hypothesis">
       <p className="italic text-foreground">
         How might we reduce the entry barrier for this new segment without alienating our current customer base?
       </p>
@@ -399,7 +399,7 @@ const DonnaContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="04" title="Market Research Supporting the Strategy">
+    <CaseSection title="Market Research Supporting the Strategy">
       <p><strong>75%</strong> of purchases are made using credit cards, while <strong>25%</strong> are made in cash.</p>
       <div className="grid sm:grid-cols-2 gap-6 mt-4">
         <div className="rounded-xl p-5" style={{ background: "hsl(var(--surface-2))" }}>
@@ -434,7 +434,7 @@ const DonnaContent = () => (
       <Placeholder ratio="16/9" label="Smartphone ownership & mobile purchases by generation — chart" />
     </div>
 
-    <CaseSection eyebrow="05" title="Benchmarking">
+    <CaseSection title="Benchmarking">
       <p>
         Since Donna Moda offers imported products from various countries to a high-income target audience,
         I ultimately worked with three benchmark brands: <strong>Louis Vuitton</strong>,{" "}
@@ -446,7 +446,7 @@ const DonnaContent = () => (
       <Placeholder ratio="21/9" label="Benchmarking — Louis Vuitton · Massimo Dutti · Stradivarius" />
     </div>
 
-    <CaseSection eyebrow="06" title="SWOT Analysis">
+    <CaseSection title="SWOT Analysis">
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
           <h4 className="font-medium mb-2">Threats</h4>
@@ -467,7 +467,7 @@ const DonnaContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="07" title="User Flow">
+    <CaseSection title="User Flow">
       <p>
         Two parallel flows were defined for women's and men's brands, covering entry, category browsing,
         product details, cart, sign-up/log-in, payment, and final purchase confirmation.
@@ -478,7 +478,7 @@ const DonnaContent = () => (
       <Placeholder ratio="4/5" label="User flow diagram — Donna Moda & L'UOMO MODA" />
     </div>
 
-    <CaseSection eyebrow="08" title="Wireframes">
+    <CaseSection title="Wireframes">
       <p>Two flows were prototyped: the first when the user signs up, and the second when the user logs in.</p>
     </CaseSection>
 
@@ -538,7 +538,7 @@ const DonnaContent = () => (
       <Placeholder ratio="16/9" label="High-fidelity mockups — DONNA MODA experience" />
     </div>
 
-    <CaseSection eyebrow="10" title="Returning User Flow">
+    <CaseSection title="Returning User Flow">
       <p>The flow if the user is already registered — optimized for speed, with minimal steps from entry to confirmation.</p>
     </CaseSection>
 
