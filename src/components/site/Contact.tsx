@@ -31,7 +31,7 @@ export const Contact = () => {
             href="/cv.pdf"
             className="inline-flex items-center gap-2 rounded-full border border-background/30 px-6 py-3 text-sm font-medium hover:bg-background/10 transition-colors"
           >
-            <Download className="h-4 w-4" /> Download CV
+            <Download className="h-4 w-4" /> Download Resume
           </a>
         </div>
       </div>

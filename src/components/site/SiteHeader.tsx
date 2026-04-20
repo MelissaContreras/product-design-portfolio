@@ -34,7 +34,7 @@ export const SiteHeader = () => {
             href="/cv.pdf"
             className="link-underline text-sm font-medium"
           >
-            CV ↗
+            Resume ↗
           </a>
         </nav>
       </div>
