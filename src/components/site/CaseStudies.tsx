@@ -72,9 +72,6 @@ export const CaseStudies = () => {
           <p className="eyebrow">Case Studies</p>
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mt-3">Case Studies</h2>
         </div>
-        <p className="hidden md:block text-sm text-muted-foreground max-w-xs text-right">
-          Three projects across systems, analytics and commerce.
-        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">

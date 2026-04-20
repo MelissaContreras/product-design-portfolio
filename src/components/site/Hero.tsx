@@ -36,7 +36,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="reveal reveal-delay-4 mt-20 grid grid-cols-2 md:grid-cols-4 gap-px hairline pt-10">
+      <div className="reveal reveal-delay-4 mt-20 grid grid-cols-2 md:grid-cols-3 gap-px hairline pt-10">
         {[
           { k: "5+", v: "Years in product" },
           { k: "B2B / B2C", v: "Ecommerce ecosystems" },
