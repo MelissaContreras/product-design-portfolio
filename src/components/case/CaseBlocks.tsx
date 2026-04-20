@@ -29,7 +29,7 @@ export const CaseSection = ({
     <div className="grid md:grid-cols-12 gap-8">
       <div className="md:col-span-4">
         {eyebrow && <p className="eyebrow mb-3">{eyebrow}</p>}
-        <h2 className="font-serif text-3xl md:text-4xl leading-tight">{title}</h2>
+        <h2 className="font-semibold text-2xl md:text-3xl tracking-tight leading-tight">{title}</h2>
       </div>
       <div className="md:col-span-8 space-y-5 text-base md:text-lg leading-relaxed text-foreground/80">
         {children}
