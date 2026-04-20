@@ -74,14 +74,14 @@ export const CaseStudies = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-        {caseStudies.map((c, i) => (
+      <div className="grid grid-cols-1 gap-6 md:gap-8">
+        {caseStudies.map((c) => (
           <Link
             to={`/case/${c.slug}`}
             key={c.slug}
-            className={`case-card group ${i === 0 ? "md:col-span-2" : ""}`}
+            className="case-card group"
           >
-            <div className={`overflow-hidden ${i === 0 ? "aspect-[16/8]" : "aspect-[16/10]"}`}>
+            <div className="overflow-hidden aspect-[16/8]">
               <PreviewVisual slug={c.slug} />
             </div>
             <div className="p-6 md:p-8">
