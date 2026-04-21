@@ -24,7 +24,7 @@ const PimContent = () => (
       <div>
         <h4 className="text-sm uppercase tracking-[0.14em] text-muted-foreground mb-2">For Business</h4>
         <ul className="space-y-2 list-disc pl-5">
-          <li>Visual inconsistencies between the intranet and the PIM.</li>
+          <li>Visual inconsistencies between the intranet and the Akeneo's design system.</li>
           <li>Frequent errors in bulk upload processes.</li>
         </ul>
       </div>
@@ -213,35 +213,36 @@ const PimContent = () => (
 
     <CaseSection title="The Solution: A Design System for Zero-Error Execution">
       <p>Instead of designing isolated screens, I engineered a system focused on error prevention and operational efficiency.</p>
-      <div className="mt-4">
-        <h4 className="font-medium mb-2">A Scalable & Comprehensive UI Kit</h4>
-        <p className="text-sm">Developed a component library that inherits Akeneo's visual identity while optimizing IX Comercio's interactions, prioritizing typography and contrast for high-volume data management tasks.</p>
+      <div className="mt-6 grid sm:grid-cols-2 gap-6">
+        <div>
+          <h4 className="font-medium mb-2">A Scalable & Comprehensive UI Kit</h4>
+          <p className="text-sm">Developed a component library that inherits Akeneo's visual identity while optimizing IX Comercio's interactions, prioritizing typography and contrast for high-volume data management tasks.</p>
+        </div>
+        <div>
+          <h4 className="font-medium mb-2">Functional improvement: Interactive onboarding</h4>
+          <p className="text-sm">A smart onboarding trigger and just-in-time, in-context guidance that accelerate the learning curve and provide real-time support during complex workflows.</p>
+        </div>
       </div>
-      <div className="mt-6">
-        <h4 className="font-medium mb-2">Key System Components</h4>
-        <p className="text-sm font-medium mt-3">Error Prevention in Critical Workflows</p>
+    </CaseSection>
+
+    <CaseSection title="Key System Components">
+      <div>
+        <h4 className="font-medium mb-2">Error Prevention in Critical Workflows</h4>
         <p className="text-sm">Contextual Alerts & Data Guardrails: I implemented detailed, real-time prompts specifying technical requirements—such as image dimensions, file size limits, and SKU naming conventions—directly at the point of action. This ensures data integrity and significantly reduces operational friction by preventing errors before they reach the database.</p>
+        <div className="grid sm:grid-cols-2 gap-6 mt-6">
+          <Placeholder ratio="4/3" label="Larger alerts" />
+          <Placeholder ratio="4/3" label="Image requirement guidelines" />
+        </div>
+      </div>
+
+      <div className="mt-10">
+        <h4 className="font-medium mb-2">Pre-load Preview</h4>
+        <p className="text-sm">Based on competitive benchmarking, I implemented a visual confirmation stage to audit assets before PIM ingestion. This 'safe-check' prevents downstream data corruption and reduces the need for manual correction cycles.</p>
+        <div className="mt-6">
+          <Placeholder ratio="16/9" label="Pre-load preview interface" />
+        </div>
       </div>
     </CaseSection>
-
-    <div className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <div className="grid sm:grid-cols-2 gap-6">
-        <Placeholder ratio="4/3" label="Larger alerts" />
-        <Placeholder ratio="4/3" label="Image requirement guidelines" />
-      </div>
-    </div>
-
-    <CaseSection title="Pre-load Preview">
-      <p>
-        Based on competitive benchmarking, I implemented a visual confirmation stage to audit assets before
-        PIM ingestion. This 'safe-check' prevents downstream data corruption and reduces the need for manual
-        correction cycles.
-      </p>
-    </CaseSection>
-
-    <div className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="16/9" label="Pre-load preview interface" />
-    </div>
 
     <CaseSection title="Functional improvement: Interactive onboarding">
       <div className="grid sm:grid-cols-2 gap-6">
@@ -254,11 +255,10 @@ const PimContent = () => (
           <p className="text-sm">I designed real-time guides that accompany users during the bulk-upload process, providing contextual assistance at the exact moment errors typically occur. Additionally, I integrated on-screen documentation within each section to resolve doubts instantly without leaving the workflow.</p>
         </div>
       </div>
+      <div className="mt-6">
+        <Placeholder ratio="16/9" label="Elements of guided onboarding" />
+      </div>
     </CaseSection>
-
-    <div className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="16/9" label="Elements of guided onboarding" />
-    </div>
 
     <CaseSection title="Business Value: Operational Efficiency & Scalability">
       <p>The impact of the redesign was primarily reflected in <strong>increased user autonomy</strong>.</p>
