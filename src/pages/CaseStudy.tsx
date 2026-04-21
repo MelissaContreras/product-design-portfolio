@@ -499,7 +499,7 @@ const DonnaContent = () => (
       <div className="mt-12 space-y-12">
         {[
           { t: "Entry & Brand Selection", d: "Present both brands (Donna Moda / L'uomo Moda) at entry. Users approach with a clear intent (self-purchase or gifting).", r: "Early segmentation reduces unnecessary navigation.", i: "Faster path to relevant products." },
-          { t: "Category Structure", d: "Organize products in clear, scannable categories.", r: "Unstructured categories increase cognitive load, especially on mobile.", i: "Improved product discoverability." },
+          { t: "Category Structure", d: "Organize products into clear, easy-to-scan categories.", r: "Unstructured catalogs increase cognitive load, especially on mobile", i: "Improved product discoverability." },
           { t: "Visual Navigation", d: "Prioritize image-based navigation over text-heavy lists.", r: "Mobile users rely on visual cues for faster decision making.", i: "Reduced browsing time." },
           { t: "Filter Integration", d: "Include filters within the browsing flow.", r: "Large product sets require quick narrowing without disrupting navigation.", i: "More efficient product exploration." },
           { t: "Product Grid Simplification", d: "Display products with minimal information and strong imagery.", r: "Excessive detail creates friction on small screens.", i: "Easier comparison and faster selection." },
