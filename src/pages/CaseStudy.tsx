@@ -24,7 +24,7 @@ const PimContent = () => (
       <div>
         <h4 className="text-sm uppercase tracking-[0.14em] text-muted-foreground mb-2">For Business</h4>
         <ul className="space-y-2 list-disc pl-5">
-          <li>Visual inconsistencies between the intranet and the PIM.</li>
+          <li>Visual inconsistencies between the intranet and the Akeneo's design system.</li>
           <li>Frequent errors in bulk upload processes.</li>
         </ul>
       </div>
