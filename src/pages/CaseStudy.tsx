@@ -211,41 +211,35 @@ const PimContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection title="The Solution: A Design System for Zero-Error Execution">
+    <CaseSection eyebrow="Solution 01" title="A Scalable & Comprehensive UI Kit">
       <p>Instead of designing isolated screens, I engineered a system focused on error prevention and operational efficiency.</p>
-      <div className="mt-6 grid sm:grid-cols-2 gap-6">
+      <p className="text-sm">Developed a component library that inherits Akeneo's visual identity while optimizing IX Comercio's interactions, prioritizing typography and contrast for high-volume data management tasks.</p>
+
+      <div className="mt-8">
+        <h3 className="font-medium text-lg mb-4">Key System Components</h3>
+
         <div>
-          <h4 className="font-medium mb-2">A Scalable & Comprehensive UI Kit</h4>
-          <p className="text-sm">Developed a component library that inherits Akeneo's visual identity while optimizing IX Comercio's interactions, prioritizing typography and contrast for high-volume data management tasks.</p>
+          <h4 className="font-medium mb-2">Error Prevention in Critical Workflows</h4>
+          <p className="text-sm">Contextual Alerts & Data Guardrails: I implemented detailed, real-time prompts specifying technical requirements—such as image dimensions, file size limits, and SKU naming conventions—directly at the point of action. This ensures data integrity and significantly reduces operational friction by preventing errors before they reach the database.</p>
+          <div className="grid sm:grid-cols-2 gap-6 mt-6">
+            <Placeholder ratio="4/3" label="Larger alerts" />
+            <Placeholder ratio="4/3" label="Image requirement guidelines" />
+          </div>
         </div>
-        <div>
-          <h4 className="font-medium mb-2">Functional improvement: Interactive onboarding</h4>
-          <p className="text-sm">A smart onboarding trigger and just-in-time, in-context guidance that accelerate the learning curve and provide real-time support during complex workflows.</p>
+
+        <div className="mt-10">
+          <h4 className="font-medium mb-2">Pre-load Preview</h4>
+          <p className="text-sm">Based on competitive benchmarking, I implemented a visual confirmation stage to audit assets before PIM ingestion. This 'safe-check' prevents downstream data corruption and reduces the need for manual correction cycles.</p>
+          <div className="mt-6">
+            <Placeholder ratio="16/9" label="Pre-load preview interface" />
+          </div>
         </div>
       </div>
     </CaseSection>
 
-    <CaseSection title="Key System Components">
-      <div>
-        <h4 className="font-medium mb-2">Error Prevention in Critical Workflows</h4>
-        <p className="text-sm">Contextual Alerts & Data Guardrails: I implemented detailed, real-time prompts specifying technical requirements—such as image dimensions, file size limits, and SKU naming conventions—directly at the point of action. This ensures data integrity and significantly reduces operational friction by preventing errors before they reach the database.</p>
-        <div className="grid sm:grid-cols-2 gap-6 mt-6">
-          <Placeholder ratio="4/3" label="Larger alerts" />
-          <Placeholder ratio="4/3" label="Image requirement guidelines" />
-        </div>
-      </div>
-
-      <div className="mt-10">
-        <h4 className="font-medium mb-2">Pre-load Preview</h4>
-        <p className="text-sm">Based on competitive benchmarking, I implemented a visual confirmation stage to audit assets before PIM ingestion. This 'safe-check' prevents downstream data corruption and reduces the need for manual correction cycles.</p>
-        <div className="mt-6">
-          <Placeholder ratio="16/9" label="Pre-load preview interface" />
-        </div>
-      </div>
-    </CaseSection>
-
-    <CaseSection title="Functional improvement: Interactive onboarding">
-      <div className="grid sm:grid-cols-2 gap-6">
+    <CaseSection eyebrow="Solution 02" title="Functional improvement: Interactive onboarding">
+      <p className="text-sm">A smart onboarding trigger and just-in-time, in-context guidance that accelerate the learning curve and provide real-time support during complex workflows.</p>
+      <div className="grid sm:grid-cols-2 gap-6 mt-4">
         <div>
           <h4 className="font-medium mb-2">Accelerated Learning Curve</h4>
           <p className="text-sm">I implemented a smart onboarding trigger that activates exclusively during the first login. This ensures new users achieve rapid proficiency in complex workflows without obstructing the speed or daily operations of regular users.</p>
@@ -255,8 +249,9 @@ const PimContent = () => (
           <p className="text-sm">I designed real-time guides that accompany users during the bulk-upload process, providing contextual assistance at the exact moment errors typically occur. Additionally, I integrated on-screen documentation within each section to resolve doubts instantly without leaving the workflow.</p>
         </div>
       </div>
-      <div className="mt-6">
-        <Placeholder ratio="16/9" label="Elements of guided onboarding" />
+      <div className="grid sm:grid-cols-2 gap-6 mt-6">
+        <Placeholder ratio="4/3" label="Elements of guided onboarding" />
+        <Placeholder ratio="4/3" label="Full onboarding screen" />
       </div>
     </CaseSection>
 
