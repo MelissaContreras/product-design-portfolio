@@ -346,10 +346,6 @@ const DashboardsContent = () => (
 
 const DonnaContent = () => (
   <>
-    <div className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="16/9" label="Donna Moda app — hero mockups" />
-    </div>
-
     <CaseSection title="Context">
       <p>
         Donna Moda is an online store offering imported accessories from various countries, targeting a
@@ -535,16 +531,18 @@ const DonnaContent = () => (
       </div>
     </section>
 
-    <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="16/9" label="High-fidelity mockups — DONNA MODA experience" />
-    </div>
-
     <CaseSection title="Returning User Flow">
       <p>The flow if the user is already registered — optimized for speed, with minimal steps from entry to confirmation.</p>
     </CaseSection>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="21/9" label="Returning user flow — log-in to confirmation" />
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <Placeholder ratio="9/19" label="Step 1 — Log-in" />
+        <Placeholder ratio="9/19" label="Step 2" />
+        <Placeholder ratio="9/19" label="Step 3" />
+        <Placeholder ratio="9/19" label="Step 4" />
+        <Placeholder ratio="9/19" label="Step 5 — Confirmation" />
+      </div>
     </div>
   </>
 );
@@ -599,7 +597,15 @@ const CaseStudyPage = () => {
         </div>
 
         <div className="mt-12">
-          <Placeholder ratio="16/8" label="Hero image placeholder" />
+          {study.slug === "donna-moda" ? (
+            <div className="grid grid-cols-3 gap-4">
+              <Placeholder ratio="9/19" label="Phone screen 1" />
+              <Placeholder ratio="9/19" label="Phone screen 2" />
+              <Placeholder ratio="9/19" label="Phone screen 3" />
+            </div>
+          ) : (
+            <Placeholder ratio="16/8" label="Hero image placeholder" />
+          )}
         </div>
 
         {study.slug === "pim-system" && <PimContent />}
