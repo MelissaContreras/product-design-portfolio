@@ -223,7 +223,7 @@ const PimContent = () => (
           <p className="text-sm">Contextual Alerts & Data Guardrails: I implemented detailed, real-time prompts specifying technical requirements—such as image dimensions, file size limits, and SKU naming conventions—directly at the point of action. This ensures data integrity and significantly reduces operational friction by preventing errors before they reach the database.</p>
           <div className="grid sm:grid-cols-2 gap-6 mt-6">
             <Placeholder ratio="4/3" label="Larger alerts" />
-            <Placeholder ratio="4/3" label="Image requirement guidelines" />
+            <Placeholder ratio="4/3" label="Guidelines regarding image requirements" />
           </div>
         </div>
 
@@ -249,9 +249,9 @@ const PimContent = () => (
           <p className="text-sm">I designed real-time guides that accompany users during the bulk-upload process, providing contextual assistance at the exact moment errors typically occur. Additionally, I integrated on-screen documentation within each section to resolve doubts instantly without leaving the workflow.</p>
         </div>
       </div>
-      <div className="grid sm:grid-cols-2 gap-6 mt-6">
-        <Placeholder ratio="4/3" label="Elements of guided onboarding" />
-        <Placeholder ratio="4/3" label="Full onboarding screen" />
+      <div className="grid grid-cols-1 gap-6 mt-6">
+        <Placeholder ratio="16/9" label="Elements of guided onboarding" />
+        <Placeholder ratio="16/9" label="Full onboarding screen" />
       </div>
     </CaseSection>
 
