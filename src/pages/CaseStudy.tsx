@@ -429,6 +429,9 @@ const DonnaContent = () => (
     </CaseSection>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <p className="text-base md:text-lg leading-relaxed text-foreground/80 mb-6">
+        Likewise, the proportion of people (segmented by generation) who own a smartphone and those who use it to make online purchases is shown in the image.
+      </p>
       <Placeholder ratio="16/9" label="Smartphone ownership & mobile purchases by generation — chart" />
     </div>
 
