@@ -40,7 +40,7 @@ export const caseStudies: CaseStudy[] = [
       "Comprehensive native app design for Donna Moda & L'UOMO MODA, expanding the brand's reach toward a younger, mobile-first audience through market research, product strategy, and a tailored mobile UI system.",
     tags: ["E-commerce", "Mobile UX", "Product Strategy", "Market Research"],
     role: "Lead Product Designer (UX/UI & Strategy)",
-    scope: "Market Research · Product Strategy · Mobile UI System",
+    scope: "Comprehensive design of native applications to expand the brand's reach toward a younger audience.",
     year: "2023",
   },
 ];
