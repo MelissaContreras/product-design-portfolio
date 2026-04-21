@@ -504,7 +504,7 @@ const DonnaContent = () => (
           { t: "Filter Integration", d: "Include filters within the browsing flow.", r: "Large product sets require quick narrowing without disrupting navigation.", i: "More efficient product exploration." },
           { t: "Product Grid Simplification", d: "Display products with minimal information and strong imagery.", r: "Excessive detail creates friction on small screens.", i: "Easier comparison and faster selection." },
           { t: "Product Detail Focus", d: "Highlight essential product information and a clear CTA.", r: "Users need quick validation before purchasing, not overwhelming detail.", i: "Increased purchase confidence." },
-          { t: "Add-to-Cart Clarity", d: "Provide clear cart actions and confirmation.", r: "Ambiguous add-to-cart flows increase abandonment.", i: "Reduced friction in conversion." },
+          { t: "Add-to-Cart Clarity", d: "Prioritize a single primary action (Add to Cart).", r: "Multiple CTAs dilute user intent.", i: "Increased engagement with purchase actions" },
           { t: "Cart Visibility", d: "Provide immediate access to the cart after adding a product.", r: "Reinforces intent and prevents navigation loss.", i: "Reduced drop-off." },
           { t: "Purchase Summary", d: "Show a clear summary before checkout.", r: "Users need to validate their selection before committing.", i: "Increased trust and fewer errors." },
           { t: "Authentication Timing", d: "Delay login/registration until checkout.", r: "Early authentication creates friction.", i: "Lower abandonment rates." },
