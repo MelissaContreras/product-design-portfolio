@@ -152,15 +152,26 @@ const PimContent = () => (
           <p className="text-sm mt-3"><strong>Experience:</strong> 5 years in software testing.</p>
           <p className="text-sm mt-2"><strong>Industry:</strong> Works at an e-commerce company selling electronics and home appliances.</p>
         </div>
-        <ul className="space-y-3 text-sm">
-          <li>The processable data volume was limited, forcing users to split upload processes into smaller batches.</li>
-          <li>The platform required a steep learning curve due to its functional complexity.</li>
-          <li>The platform wasn't intuitive enough to understand on its own.</li>
-          <li>Priority for async documentation: written format allows for simultaneous reference during operational meetings.</li>
-          <li>Users were looking for clarity on the platform's landing page: What exactly is the purpose of this tool? What tasks are moving here from Akeneo, and what functionality is staying there?</li>
-          <li>Terminology Alignment: standardizing naming conventions between the platform and Akeneo to reduce cognitive load and accelerate task efficiency.</li>
-          <li>Need for a section summarizing all administrator errors.</li>
-        </ul>
+        <div className="space-y-3">
+          {[
+            "The processable data volume was limited, forcing users to split upload processes into smaller batches.",
+            "The platform required a steep learning curve due to its functional complexity.",
+            "The platform wasn't intuitive enough to understand on its own.",
+            "Priority for async documentation: written format allows for simultaneous reference during operational meetings.",
+            "Users were looking for clarity on the platform's landing page: What exactly is the purpose of this tool? What tasks are moving here from Akeneo, and what functionality is staying there?",
+            "Terminology Alignment: standardizing naming conventions between the platform and Akeneo to reduce cognitive load and accelerate task efficiency.",
+            "Need for a section summarizing all administrator errors.",
+          ].map((insight, i) => (
+            <div
+              key={i}
+              className="rounded-lg border p-4 text-sm leading-relaxed"
+              style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-1))" }}
+            >
+              <span className="eyebrow mr-2">Insight {String(i + 1).padStart(2, "0")}</span>
+              {insight}
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="mt-8">
@@ -221,9 +232,15 @@ const PimContent = () => (
         <div>
           <h4 className="font-medium mb-2">Error Prevention in Critical Workflows</h4>
           <p className="text-sm">Contextual Alerts & Data Guardrails: I implemented detailed, real-time prompts specifying technical requirements—such as image dimensions, file size limits, and SKU naming conventions—directly at the point of action. This ensures data integrity and significantly reduces operational friction by preventing errors before they reach the database.</p>
-          <div className="grid sm:grid-cols-2 gap-6 mt-6">
-            <Placeholder ratio="4/3" label="Larger alerts" />
-            <Placeholder ratio="4/3" label="Guidelines regarding image requirements" />
+          <div className="grid sm:grid-cols-2 gap-4 mt-6">
+            <div>
+              <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Larger alerts</p>
+              <Placeholder ratio="4/3" label="Larger alerts" />
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Guidelines regarding image requirements</p>
+              <Placeholder ratio="4/3" label="Guidelines regarding image requirements" />
+            </div>
           </div>
         </div>
 
@@ -250,8 +267,14 @@ const PimContent = () => (
         </div>
       </div>
       <div className="grid grid-cols-1 gap-6 mt-6">
-        <Placeholder ratio="16/9" label="Elements of guided onboarding" />
-        <Placeholder ratio="16/9" label="Full onboarding screen" />
+        <div>
+          <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Elements of guided onboarding</p>
+          <Placeholder ratio="16/9" label="Elements of guided onboarding" />
+        </div>
+        <div>
+          <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Full onboarding screen</p>
+          <Placeholder ratio="16/9" label="Full onboarding screen" />
+        </div>
       </div>
     </CaseSection>
 
