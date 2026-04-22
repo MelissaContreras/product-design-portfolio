@@ -233,11 +233,12 @@ const PimContent = () => (
       <p>Instead of designing isolated screens, I engineered a system focused on error prevention and operational efficiency.</p>
       <p className="text-sm">Developed a component library that inherits Akeneo's visual identity while optimizing IX Comercio's interactions, prioritizing typography and contrast for high-volume data management tasks.</p>
 
-      <div className="mt-8">
-        <h3 className="font-medium text-lg mb-4">Key System Components</h3>
+      <div className="mt-10">
+        <p className="eyebrow mb-3">System</p>
+        <h3 className="font-serif text-3xl md:text-4xl tracking-tight leading-tight mb-8">Key System Components</h3>
 
         <div>
-          <h4 className="font-medium mb-2">Error Prevention in Critical Workflows</h4>
+          <h4 className="font-medium text-lg md:text-xl mb-2">Error Prevention in Critical Workflows</h4>
           <p className="text-sm">Contextual Alerts & Data Guardrails: I implemented detailed, real-time prompts specifying technical requirements—such as image dimensions, file size limits, and SKU naming conventions—directly at the point of action. This ensures data integrity and significantly reduces operational friction by preventing errors before they reach the database.</p>
           <div className="grid sm:grid-cols-2 gap-4 mt-6">
             <div>
@@ -252,7 +253,7 @@ const PimContent = () => (
         </div>
 
         <div className="mt-10">
-          <h4 className="font-medium mb-2">Pre-load Preview</h4>
+          <h4 className="font-medium text-lg md:text-xl mb-2">Pre-load Preview</h4>
           <p className="text-sm">Based on competitive benchmarking, I implemented a visual confirmation stage to audit assets before PIM ingestion. This 'safe-check' prevents downstream data corruption and reduces the need for manual correction cycles.</p>
           <div className="mt-6">
             <Placeholder ratio="16/9" label="Pre-load preview interface" />
