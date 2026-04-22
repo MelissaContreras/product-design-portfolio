@@ -160,7 +160,7 @@ const PimContent = () => (
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-x-8 gap-y-5 mt-8">
+      <div className="grid md:grid-cols-2 gap-4 mt-8">
         {[
           "The processable data volume was limited, forcing users to split upload processes into smaller batches.",
           "The platform required a steep learning curve due to its functional complexity.",
@@ -170,9 +170,14 @@ const PimContent = () => (
           "Terminology Alignment: standardizing naming conventions between the platform and Akeneo to reduce cognitive load and accelerate task efficiency.",
           "Need for a section summarizing all administrator errors.",
         ].map((insight, i) => (
-          <p key={i} className="text-sm leading-relaxed">
-            <strong>Insight {String(i + 1).padStart(2, "0")}</strong> {insight}
-          </p>
+          <div
+            key={i}
+            className="rounded-xl border bg-card p-5 shadow-sm"
+            style={{ borderColor: "hsl(var(--hairline))" }}
+          >
+            <span className="eyebrow block mb-2">Insight {String(i + 1).padStart(2, "0")}</span>
+            <p className="text-sm leading-relaxed text-foreground/80">{insight}</p>
+          </div>
         ))}
       </div>
 
