@@ -142,36 +142,38 @@ const PimContent = () => (
       <h4 className="font-medium">Key research insights</h4>
       <p className="text-sm">Users reported moderate satisfaction due to usability issues and complexity in the upload flows.</p>
 
-      <div className="grid md:grid-cols-2 gap-6 mt-4">
-        <div className="rounded-xl p-6" style={{ background: "hsl(var(--surface-2))", borderColor: "hsl(var(--hairline))" }}>
-          <div className="aspect-square w-32 rounded-lg mb-4 flex items-center justify-center text-xs uppercase tracking-[0.18em] text-muted-foreground border border-dashed" style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-1))" }}>
-            Photo
-          </div>
-          <p className="font-serif text-xl">Ana Carrillo</p>
-          <p className="text-xs text-muted-foreground">Operations Analyst · 30 years old · Bogotá, Colombia</p>
-          <p className="text-sm mt-3"><strong>Experience:</strong> 5 years in software testing.</p>
-          <p className="text-sm mt-2"><strong>Industry:</strong> Works at an e-commerce company selling electronics and home appliances.</p>
-        </div>
-        <div className="space-y-3">
-          {[
-            "The processable data volume was limited, forcing users to split upload processes into smaller batches.",
-            "The platform required a steep learning curve due to its functional complexity.",
-            "The platform wasn't intuitive enough to understand on its own.",
-            "Priority for async documentation: written format allows for simultaneous reference during operational meetings.",
-            "Users were looking for clarity on the platform's landing page: What exactly is the purpose of this tool? What tasks are moving here from Akeneo, and what functionality is staying there?",
-            "Terminology Alignment: standardizing naming conventions between the platform and Akeneo to reduce cognitive load and accelerate task efficiency.",
-            "Need for a section summarizing all administrator errors.",
-          ].map((insight, i) => (
-            <div
-              key={i}
-              className="rounded-lg border p-4 text-sm leading-relaxed"
-              style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-1))" }}
-            >
-              <span className="eyebrow mr-2">Insight {String(i + 1).padStart(2, "0")}</span>
-              {insight}
+      <div className="mt-4 rounded-xl p-6 md:p-8 text-white" style={{ background: "hsl(var(--foreground))" }}>
+        <div className="grid md:grid-cols-[auto_1fr] gap-6 items-start">
+          <div className="flex flex-col items-center md:items-start">
+            <p className="font-semibold text-xl mb-4">Ana Carrillo</p>
+            <div className="aspect-square w-40 rounded-lg flex items-center justify-center text-xs uppercase tracking-[0.18em] border border-dashed border-white/30 bg-white/5">
+              Photo
             </div>
-          ))}
+          </div>
+          <div className="text-sm space-y-2 md:pt-10">
+            <p>Operations Analyst</p>
+            <p>30 years old.</p>
+            <p>Bogotá, Colombia</p>
+            <p><strong>Experience:</strong><br />5 years of experience in software testing.</p>
+            <p><strong>Industry:</strong><br />Works at an e-commerce company selling electronics and home appliances.</p>
+          </div>
         </div>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-x-8 gap-y-5 mt-8">
+        {[
+          "The processable data volume was limited, forcing users to split upload processes into smaller batches.",
+          "The platform required a steep learning curve due to its functional complexity.",
+          "The platform wasn't intuitive enough to understand on its own.",
+          "Priority for async documentation: written format allows for simultaneous reference during operational meetings.",
+          "Users were looking for clarity on the platform's landing page: What exactly is the purpose of this tool? What tasks are moving here from Akeneo, and what functionality is staying there?",
+          "Terminology Alignment: standardizing naming conventions between the platform and Akeneo to reduce cognitive load and accelerate task efficiency.",
+          "Need for a section summarizing all administrator errors.",
+        ].map((insight, i) => (
+          <p key={i} className="text-sm leading-relaxed">
+            <strong>Insight {String(i + 1).padStart(2, "0")}</strong> {insight}
+          </p>
+        ))}
       </div>
 
       <div className="mt-8">
