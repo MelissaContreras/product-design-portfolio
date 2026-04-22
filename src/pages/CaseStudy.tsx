@@ -253,7 +253,7 @@ const PimContent = () => (
         </div>
 
         <div className="mt-10">
-          <h4 className="font-medium mb-2">Pre-load Preview</h4>
+          <h4 className="font-medium text-lg md:text-xl mb-2">Pre-load Preview</h4>
           <p className="text-sm">Based on competitive benchmarking, I implemented a visual confirmation stage to audit assets before PIM ingestion. This 'safe-check' prevents downstream data corruption and reduces the need for manual correction cycles.</p>
           <div className="mt-6">
             <Placeholder ratio="16/9" label="Pre-load preview interface" />
