@@ -207,39 +207,35 @@ const PimContent = () => (
           <li>Titles</li>
         </ol>
       </div>
-      <div className="grid sm:grid-cols-2 gap-x-10 gap-y-8 mt-8">
-        {/* Left column: Improvements */}
-        <div className="space-y-8">
-          <div>
-            <h4 className="font-medium text-lg md:text-xl mb-3">Visual Improvements</h4>
-            <ul className="text-sm list-disc pl-5 space-y-1">
-              <li>Typography</li>
-              <li>Colors</li>
-              <li>An interface design very similar to Akeneo's in terms of style.</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-medium text-lg md:text-xl mb-3">Functional Improvements</h4>
-            <ul className="text-sm list-disc pl-5 space-y-1">
-              <li>Improve platform interaction.</li>
-              <li>Display alerts for failed processes or other alerts.</li>
-              <li>Implement interactive onboarding and documentation.</li>
-            </ul>
-          </div>
+      <div className="grid sm:grid-cols-2 gap-x-10 gap-y-10 mt-8">
+        {/* Row 1 */}
+        <div>
+          <h4 className="font-medium text-lg md:text-xl mb-3">Visual Improvements</h4>
+          <ul className="text-sm list-disc pl-5 space-y-1">
+            <li>Typography</li>
+            <li>Colors</li>
+            <li>An interface design very similar to Akeneo's in terms of style.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-medium text-lg md:text-xl mb-3">Objective:</h4>
+          <p className="text-sm font-medium mb-1">Minimizing Cognitive Load</p>
+          <p className="text-sm">By aligning the visual and interaction patterns with Akeneo, we ensured a familiar environment for the user, making the transition between platforms invisible and intuitive.</p>
         </div>
 
-        {/* Right column: Objectives */}
-        <div className="space-y-8">
-          <div>
-            <h4 className="font-medium text-lg md:text-xl mb-3">Objective:</h4>
-            <p className="text-sm font-medium mb-1">Minimizing Cognitive Load</p>
-            <p className="text-sm">By aligning the visual and interaction patterns with Akeneo, we ensured a familiar environment for the user, making the transition between platforms invisible and intuitive.</p>
-          </div>
-          <div>
-            <h4 className="font-medium text-lg md:text-xl mb-3">Objective:</h4>
-            <p className="text-sm font-medium mb-1">Intuitive Design for Scalable Adoption</p>
-            <p className="text-sm">To minimize the need for continuous retraining, I redesigned the platform to be as intuitive as possible, ensuring users can navigate and execute complex tasks with zero friction.</p>
-          </div>
+        {/* Row 2 */}
+        <div>
+          <h4 className="font-medium text-lg md:text-xl mb-3">Functional Improvements</h4>
+          <ul className="text-sm list-disc pl-5 space-y-1">
+            <li>Improve platform interaction.</li>
+            <li>Display alerts for failed processes or other alerts.</li>
+            <li>Implement interactive onboarding and documentation.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-medium text-lg md:text-xl mb-3">Objective:</h4>
+          <p className="text-sm font-medium mb-1">Intuitive Design for Scalable Adoption</p>
+          <p className="text-sm">To minimize the need for continuous retraining, I redesigned the platform to be as intuitive as possible, ensuring users can navigate and execute complex tasks with zero friction.</p>
         </div>
       </div>
     </CaseSection>
