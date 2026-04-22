@@ -234,7 +234,7 @@ const PimContent = () => (
       <p className="text-sm">Developed a component library that inherits Akeneo's visual identity while optimizing IX Comercio's interactions, prioritizing typography and contrast for high-volume data management tasks.</p>
 
       <div className="mt-10">
-        <p className="eyebrow mb-3">Key System Components</p>
+        <p className="eyebrow mb-3">System</p>
         <h3 className="font-serif text-3xl md:text-4xl tracking-tight leading-tight mb-8">Key System Components</h3>
 
         <div>
