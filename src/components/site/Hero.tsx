@@ -19,7 +19,7 @@ export const Hero = () => {
         <div className="reveal reveal-delay-3 md:col-span-5 flex flex-wrap gap-3 md:justify-end">
           <a
             href="#work"
-            className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-6 py-3 text-sm font-medium hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm font-medium hover:opacity-90 transition-opacity"
           >
             View Case Studies
             <ArrowDown className="h-4 w-4" />
