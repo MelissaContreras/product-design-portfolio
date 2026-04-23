@@ -449,12 +449,12 @@ const DashboardsContent = () => (
           Replaced static reports with interactive filtering, enabling dynamic analysis while preserving context.
         </InsightCard>
         <InsightCard title="Compliance Monitoring (Strategic Cards)">
-          Designed a set of comparison cards to track Sales vs Budget vs Compliance, organized across key periods
-          (Current Month, Quarter, YTD), using a consistent layout to ensure mobile performance tracking.
+          Designed a set of comparison cards to track Sales vs Budget vs Compliance, segmented across key periods
+          (Current Month, Quarter, YTD), using a consistent cutoff (previous day) to ensure reliable performance tracking.
         </InsightCard>
         <InsightCard title="Granular Analysis (Audit Table)">
           Implemented a detailed performance table enabling drill-down from Country to Store level, exposing the
-          full KPI set to support fast-walking and anomaly detection.
+          full KPI set to support fast auditing and anomaly detection.
         </InsightCard>
         <InsightCard title="Cognitive Load Reduction">
           Limited visible KPIs and structured them to avoid overwhelming users.
@@ -474,7 +474,7 @@ const DashboardsContent = () => (
     <CaseSection title="Analytical Readability">
       <div className="grid sm:grid-cols-3 gap-4 mt-2">
         <InsightCard title="Typographic Hierarchy">
-          Structured text scales to guide visual flow and entrance readability.
+          Structured text scales to guide visual flow and enhance readability.
         </InsightCard>
         <InsightCard title="Chromatic Contrast">
           Applied consistent color patterns to streamline data interpretation.
@@ -550,7 +550,7 @@ const DashboardsContent = () => (
 
     <CaseSection title="Business Context">
       <p>
-        Customer Service and Logistics teams operated using a static table-based dashboard to monitor orders with
+        Customer Service and Logistics teams operated using a basic table-based dashboard to monitor orders with
         incidents. The process required manual review and lacked structures, making it difficult to quickly
         identify and act on operational issues.
       </p>
@@ -570,7 +570,7 @@ const DashboardsContent = () => (
       <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
         <li>Enable fast identification of orders with incidents.</li>
         <li>Structure information around operational workflows.</li>
-        <li>Reduce time spent reviewing data manually.</li>
+        <li>Reduce time spent scanning and filtering data.</li>
         <li>Support action-oriented decision-making.</li>
       </ul>
     </CaseSection>
@@ -595,7 +595,7 @@ const DashboardsContent = () => (
     <CaseSection title="Product Strategy and Collaboration">
       <div className="grid sm:grid-cols-2 gap-4 mt-2">
         <InsightCard title="Stakeholder Management">
-          Partnered with the Product Owner to redefine the information architecture, removing filters into
+          Partnered with the Product Owner to redefine the information architecture, restructuring filters into
           functional domains (Brand, Order, Alerts, End Customer) aligned with operational workflows.
         </InsightCard>
         <InsightCard title="Operational Focus">
