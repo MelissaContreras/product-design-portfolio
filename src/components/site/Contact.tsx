@@ -17,19 +17,19 @@ export const Contact = () => {
             href="https://www.linkedin.com"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-background text-foreground px-6 py-3 text-sm font-medium hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 rounded-lg bg-primary text-primary-foreground px-5 py-3 text-sm font-semibold hover:bg-[hsl(var(--primary-hover))] active:bg-[hsl(var(--primary-active))] transition-colors"
           >
             <Linkedin className="h-4 w-4" /> LinkedIn <ArrowUpRight className="h-4 w-4" />
           </a>
           <a
             href="mailto:hello@melissa.design"
-            className="inline-flex items-center gap-2 rounded-full border border-background/30 px-6 py-3 text-sm font-medium hover:bg-background/10 transition-colors"
+            className="inline-flex items-center gap-2 rounded-lg border border-background/30 px-5 py-3 text-sm font-medium hover:bg-background/10 transition-colors"
           >
             <Mail className="h-4 w-4" /> Email
           </a>
           <a
             href="/cv.pdf"
-            className="inline-flex items-center gap-2 rounded-full border border-background/30 px-6 py-3 text-sm font-medium hover:bg-background/10 transition-colors"
+            className="inline-flex items-center gap-2 rounded-lg border border-background/30 px-5 py-3 text-sm font-medium hover:bg-background/10 transition-colors"
           >
             <Download className="h-4 w-4" /> Download Resume
           </a>
