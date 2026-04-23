@@ -306,81 +306,373 @@ const PimContent = () => (
   </>
 );
 
+const InsightCard = ({ title, children }: { title: string; children: React.ReactNode }) => (
+  <div
+    className="rounded-xl border bg-card p-5 shadow-sm"
+    style={{ borderColor: "hsl(var(--hairline))" }}
+  >
+    <h4 className="font-medium text-sm md:text-base mb-2">{title}</h4>
+    <p className="text-sm text-foreground/75 leading-relaxed">{children}</p>
+  </div>
+);
+
+const SubCaseHeader = ({
+  title,
+  tags,
+  role,
+  responsibility,
+  scope,
+}: {
+  title: string;
+  tags: string[];
+  role: string;
+  responsibility: string;
+  scope: string;
+}) => (
+  <div className="space-y-6">
+    <h2 className="font-serif text-3xl md:text-4xl tracking-tight leading-tight text-center">{title}</h2>
+    <div className="flex flex-wrap gap-2 justify-center">
+      {tags.map((t) => (
+        <span key={t} className="pill">{t}</span>
+      ))}
+    </div>
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <div>
+        <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Role</div>
+        <div className="text-sm mt-2">{role}</div>
+      </div>
+      <div>
+        <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Responsibility</div>
+        <div className="text-sm mt-2">{responsibility}</div>
+      </div>
+      <div>
+        <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Scope</div>
+        <div className="text-sm mt-2">{scope}</div>
+      </div>
+    </div>
+  </div>
+);
+
 const DashboardsContent = () => (
   <>
-    <CaseSection title="Strategic Challenge">
-      <div className="grid sm:grid-cols-2 gap-6">
-        <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-          <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground">Initial</div>
-          <p className="mt-2">Fragmented reports, conflicting KPIs, slow operational decisions.</p>
-        </div>
-        <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-2))" }}>
-          <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground">Target</div>
-          <p className="mt-2">A unified decision system across the Total Commerce ecosystem.</p>
-        </div>
+    {/* ===================== CASE 01: OMNICHANNEL DASHBOARD ECOSYSTEM ===================== */}
+    <section className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <SubCaseHeader
+        title="Case Study: Omnichannel Dashboard Ecosystem Redesign"
+        tags={["Power BI", "Advanced DAX", "Analytical Modeling", "Retail B2B · B2C", "Omnichannel"]}
+        role="Product Designer (Data & Analytics)"
+        responsibility="Owned KPI standardization and analytical modeling in Power BI"
+        scope="Business dashboard redesign for B2B and B2C ecosystems"
+      />
+      <div className="mt-10">
+        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">Optimized version in Spanish</p>
+        <Placeholder ratio="16/8" label="Optimized dashboard — Spanish version" />
+      </div>
+    </section>
+
+    <CaseSection title="Business Context">
+      <p>
+        To design a unified analytical experience in Total Commerce that allows international brands to monitor
+        their omnichannel commercial health in a centralized way.
+      </p>
+      <p>
+        The existing system presented critical issues generating fragmentation in analysis, lack of semantic
+        consistency across teams, and delays in operational decision-making.
+      </p>
+    </CaseSection>
+
+    <CaseSection title="The Strategic Challenge">
+      <p>The analytical ecosystem presented three systemic issues:</p>
+      <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
+        <li>Fragmented dashboards with no unified structure.</li>
+        <li>Inconsistent terminology across dashboards.</li>
+        <li>High cognitive load when interpreting performance.</li>
+      </ul>
+      <p>
+        As a result, consuming metrics required manual effort, and insights were on-demand.
+      </p>
+      <div className="mt-4">
+        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">Initial Version</p>
+        <Placeholder ratio="16/8" label="Initial dashboard — fragmented version" />
       </div>
     </CaseSection>
 
-    <CaseSection title="Information Architecture">
+    <CaseSection title="Strategic Direction">
       <p>
-        Structured around business questions rather than data sources — Performance, Operations, and Customer.
-        Each area maps to specific decisions and owners.
+        I focused on transforming the experience from fragmented reporting into a structured analytical system:
+      </p>
+      <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
+        <li>Centralize metrics into a single dashboard.</li>
+        <li>Standardize naming conventions.</li>
+        <li>Reduce cognitive load through structured visualization.</li>
+        <li>Enable consistent time-based analysis.</li>
+      </ul>
+    </CaseSection>
+
+    <CaseSection title="Key Product Decisions">
+      <div className="grid grid-cols-1 gap-4 mt-2">
+        <InsightCard title="Centralization over fragmentation">
+          Consolidated multiple dashboards into one unified analytical view.
+        </InsightCard>
+        <InsightCard title="Standardization over variability">
+          Defined consistent naming conventions across metrics.
+        </InsightCard>
+        <InsightCard title="Clarity over density">
+          Reduced visual overload by structuring information hierarchically.
+        </InsightCard>
+        <InsightCard title="Operational + strategic visibility in one layer">
+          Designed the dashboard to support both high-level monitoring and detailed analysis.
+        </InsightCard>
+      </div>
+    </CaseSection>
+
+    <CaseSection title="Solution Overview">
+      <p className="font-medium">Unified Analytical Dashboard</p>
+      <p>The redesigned solution integrates a complete KPI system, including:</p>
+      <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
+        <li>Net Sales</li>
+        <li>Traffic</li>
+        <li>Transactions</li>
+        <li>Average Ticket Value (ATV)</li>
+        <li>Units per Ticket (UPT)</li>
+        <li>Average Unit Retail (AUR)</li>
+        <li>Budget</li>
+      </ul>
+      <p>
+        This allows users to analyze performance holistically without switching between tools.
       </p>
     </CaseSection>
 
-    <CaseSection title="KPI Structure">
-      <p>
-        Defined a tiered KPI model: North Star, Driver Metrics, and Health Metrics. Each tier has a clear owner,
-        cadence, and visualization pattern.
-      </p>
+    <CaseSection title="Information Architecture & UX Strategy">
+      <div className="grid sm:grid-cols-2 gap-4 mt-2">
+        <InsightCard title="Decision-Oriented Exploration">
+          Replaced static reports with interactive filtering, enabling dynamic analysis while preserving context.
+        </InsightCard>
+        <InsightCard title="Compliance Monitoring (Strategic Cards)">
+          Designed a set of comparison cards to track Sales vs Budget vs Compliance, organized across key periods
+          (Current Month, Quarter, YTD), using a consistent layout to ensure mobile performance tracking.
+        </InsightCard>
+        <InsightCard title="Granular Analysis (Audit Table)">
+          Implemented a detailed performance table enabling drill-down from Country to Store level, exposing the
+          full KPI set to support fast-walking and anomaly detection.
+        </InsightCard>
+        <InsightCard title="Cognitive Load Reduction">
+          Limited visible KPIs and structured them to avoid overwhelming users.
+        </InsightCard>
+        <InsightCard title="Multi-Level Navigation">
+          Enabled seamless transitions between:
+          <span className="block mt-2">• Country</span>
+          <span className="block">• Store</span>
+          <span className="block">• Time dimensions (Year / Month / Week / Day)</span>
+        </InsightCard>
+        <InsightCard title="Time Context Standardization">
+          Introduced rolling 7-day views and consistent time frameworks for reliable comparisons.
+        </InsightCard>
+      </div>
     </CaseSection>
 
-    <CaseSection title="Multi-dimensional Navigation">
-      <p>
-        Multi-dimensional navigation across Geography (Country → Store) and Time (Year → Month → Week → Day),
-        with persistent context as users drill down.
-      </p>
+    <CaseSection title="Analytical Readability">
+      <div className="grid sm:grid-cols-3 gap-4 mt-2">
+        <InsightCard title="Typographic Hierarchy">
+          Structured text scales to guide visual flow and entrance readability.
+        </InsightCard>
+        <InsightCard title="Chromatic Contrast">
+          Applied consistent color patterns to streamline data interpretation.
+        </InsightCard>
+        <InsightCard title="Information Architecture">
+          Balanced high-level summaries with detailed tables for medium-level analysis.
+        </InsightCard>
+      </div>
     </CaseSection>
 
-    <CaseSection title="Visual Refinement">
-      <p>
-        Reduced chart noise, standardized color semantics, and aligned typography with the broader system.
-        Every visual element was justified by the question it helped answer.
-      </p>
-    </CaseSection>
-
-    <CaseSection title="DAX Optimization">
-      <p>
-        Partnered with BI engineering to refactor measures, reducing query latency and unlocking new cross-filter
-        combinations without breaking performance budgets.
-      </p>
+    <CaseSection title="Technical Optimization & Data Modeling">
+      <p>To ensure optimal performance and fluid navigation, I re-engineered the model.</p>
+      <div className="grid grid-cols-1 gap-3 mt-2">
+        <InsightCard title="Implemented Layered measure architecture (Measure Branching) using a logical inheritance principle in DAX">
+          {""}
+        </InsightCard>
+        <InsightCard title="Introduced a 4-5-4 calendar with Same Store Sales (SSS) logic for consistent retail comparison">
+          {""}
+        </InsightCard>
+        <InsightCard title="Optimized model relationships for better performance">
+          {""}
+        </InsightCard>
+        <InsightCard title="Removed redundant calculated columns">
+          {""}
+        </InsightCard>
+      </div>
     </CaseSection>
 
     <CaseSection title="Impact">
-      <MetricRow
-        items={[
-          { k: "5→1", v: "Dashboards consolidated" },
-          { k: "−30s", v: "Avg. query time" },
-          { k: "+46K", v: "Incremental orders" },
-          { k: "3×", v: "Decision cadence" },
-        ]}
-      />
+      <div className="grid grid-cols-1 gap-3 mt-2">
+        <InsightCard title="Efficiency">
+          • Reduced dashboards from 5 → 1<br />
+          • Decreased time to identify insights by ~30 seconds
+        </InsightCard>
+        <InsightCard title="Analytical Scalability">
+          Enabled analyses from regional strategic view down to store-level operations, including day-by-day tracking.
+        </InsightCard>
+        <InsightCard title="Analytical Precision">
+          Implemented a 4-5-4 calendar with SSS logic, ensuring fair and consistent comparisons aligned with retail
+          industry standards.
+        </InsightCard>
+        <InsightCard title="Consistency">
+          Standardized naming conventions across dashboards.
+        </InsightCard>
+        <InsightCard title="Accessibility">
+          Delivered bilingual dashboards (Spanish / English).
+        </InsightCard>
+      </div>
+
+      <div className="mt-8">
+        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">Optimized version in English</p>
+        <Placeholder ratio="16/8" label="Optimized dashboard — English version" />
+      </div>
     </CaseSection>
 
-    <CaseSection title="Operational Dashboard">
+    <CaseSection title="Outcome">
       <p>
-        A second surface focused on store-level operations: stock health, fulfillment SLAs, and exception flows.
-        Designed for daily use by regional managers.
+        The solution transformed a fragmented reporting environment into a centralized, structured analytical
+        product, improving clarity, operational visibility, and decision efficiency.
       </p>
     </CaseSection>
 
-    <div className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="16/9" label="Operational dashboard placeholder" />
-    </div>
+    {/* ===================== CASE 02: OPERATIONAL CONTROL TOWER ===================== */}
+    <section className="py-16 md:py-24 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      <SubCaseHeader
+        title="Case Study: Operational Control Tower (Omnichannel)"
+        tags={["Power BI", "Advanced DAX", "Analytical Modeling", "Data-Driven UX", "Omnichannel Logistics"]}
+        role="Product Designer (Data & Analytics)"
+        responsibility="Redesigned operational metrics and monitoring system for order incidents"
+        scope="Operational dashboard design for logistics and customer service teams"
+      />
+    </section>
 
-    <CaseSection title="Business Impact">
+    <CaseSection title="Business Context">
       <p>
-        +46K incremental orders attributed to faster, better-informed operational decisions across the network.
+        Customer Service and Logistics teams operated using a static table-based dashboard to monitor orders with
+        incidents. The process required manual review and lacked structures, making it difficult to quickly
+        identify and act on operational issues.
+      </p>
+    </CaseSection>
+
+    <CaseSection title="The Strategic Challenge">
+      <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
+        <li>Large volume of orders across multiple countries.</li>
+        <li>Manual identification of incidents ("Novedades").</li>
+        <li>Limited visibility into operational status.</li>
+        <li>Slow reaction times for issue resolution.</li>
+      </ul>
+    </CaseSection>
+
+    <CaseSection title="Strategic Direction">
+      <p>The goal was to transform a static tool into a real-time operational decision system:</p>
+      <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
+        <li>Enable fast identification of orders with incidents.</li>
+        <li>Structure information around operational workflows.</li>
+        <li>Reduce time spent reviewing data manually.</li>
+        <li>Support action-oriented decision-making.</li>
+      </ul>
+    </CaseSection>
+
+    <CaseSection title="Key Product Decisions">
+      <div className="grid grid-cols-1 gap-4 mt-2">
+        <InsightCard title="Actionability over passive reporting">
+          Designed the dashboard to prioritize decision-making, not just monitoring.
+        </InsightCard>
+        <InsightCard title="Process-based structuring">
+          Organized information according to operational flow (Por iniciar procesamiento → En Procesamiento → En Tránsito → Finalizadas).
+        </InsightCard>
+        <InsightCard title="Speed over completeness">
+          Prioritized fast detection of issues over displaying all available data.
+        </InsightCard>
+        <InsightCard title="Visibility of exceptions">
+          Highlighted anomalies instead of requiring manual discovery.
+        </InsightCard>
+      </div>
+    </CaseSection>
+
+    <CaseSection title="Product Strategy and Collaboration">
+      <div className="grid sm:grid-cols-2 gap-4 mt-2">
+        <InsightCard title="Stakeholder Management">
+          Partnered with the Product Owner to redefine the information architecture, removing filters into
+          functional domains (Brand, Order, Alerts, End Customer) aligned with operational workflows.
+        </InsightCard>
+        <InsightCard title="Operational Focus">
+          Reframed the dashboard structure around operational workflows, reducing friction in navigation and
+          enabling faster interpretation of order status during daily execution.
+        </InsightCard>
+      </div>
+    </CaseSection>
+
+    <CaseSection title="Solution Overview — Control Tower Dashboard">
+      <p>The redesigned solution includes:</p>
+      <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
+        <li>Segmented process stages (Por iniciar procesamiento, En Procesamiento, En Tránsito, Finalizadas).</li>
+        <li>Real-time metrics on order status.</li>
+        <li>Filters to quickly isolate problematic orders.</li>
+        <li>Structured table for detailed operational tracking.</li>
+        <li>Optimized search functionality for direct order lookup.</li>
+        <li>Visual hierarchy system to highlight critical states and exceptions.</li>
+      </ul>
+      <div className="mt-6">
+        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">Optimized Version</p>
+        <Placeholder ratio="16/8" label="Control Tower dashboard — Optimized version" />
+      </div>
+    </CaseSection>
+
+    <CaseSection title="UX Strategy">
+      <div className="grid sm:grid-cols-3 gap-4 mt-2">
+        <InsightCard title="Operational Funnel">
+          Segmented the process into clear stages to reflect how teams manage orders.
+        </InsightCard>
+        <InsightCard title="Optimized Search">
+          Introduced direct search capabilities to locate specific orders instantly.
+        </InsightCard>
+        <InsightCard title="Visual Hierarchy">
+          Used color and layout to highlight critical states and exceptions.
+        </InsightCard>
+      </div>
+    </CaseSection>
+
+    <CaseSection title="Dynamic Metrics & DAX Logic">
+      <div className="grid sm:grid-cols-2 gap-4 mt-2">
+        <InsightCard title="Developed dynamic DAX measures to calculate proportions of orders with incidents">
+          {""}
+        </InsightCard>
+        <InsightCard title="Enabled real-time metric updates based on applied filters">
+          {""}
+        </InsightCard>
+      </div>
+    </CaseSection>
+
+    <CaseSection title="Impact">
+      <div className="grid grid-cols-1 gap-3 mt-2">
+        <InsightCard title="Operational Efficiency">
+          Reduced time to identify orders with incidents.
+        </InsightCard>
+        <InsightCard title="Adoption">
+          Increased usability for logistics and customer service teams.
+        </InsightCard>
+        <InsightCard title="Visibility">
+          Enabled real-time monitoring of operational status.
+        </InsightCard>
+        <InsightCard title="Analytical Reliability">
+          Ensured consistent metric interpretation through structured logic.
+        </InsightCard>
+        <InsightCard title="Process Clarity">
+          Structured operational flow into clearly defined stages.
+        </InsightCard>
+        <InsightCard title="Decision Support">
+          Enabled faster identification of issues and action prioritization.
+        </InsightCard>
+      </div>
+    </CaseSection>
+
+    <CaseSection title="Outcome">
+      <p>
+        The Control Tower evolved from a static reporting tool into an action-oriented operational product,
+        enabling faster issue detection and improving response efficiency across teams.
       </p>
     </CaseSection>
   </>
