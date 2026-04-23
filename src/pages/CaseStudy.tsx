@@ -910,37 +910,40 @@ const CaseStudyPage = () => {
             {study.summary}
           </p>
 
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-            <div>
-              <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Role</div>
-              <div className="text-sm mt-2">{study.role}</div>
-            </div>
-            <div>
-              <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Responsibility</div>
-              <div className="text-sm mt-2">
-                {study.slug === "pim-system" && (<>Research - Visual System<br />Onboarding Design - Handoff</>)}
-                {study.slug === "donna-moda" && (<>Market Research - Product Strategy - Mobile UI System</>)}
-                {study.slug === "dashboards" && (<>UX Architecture - KPI Design - Data Logic</>)}
+          {study.slug !== "dashboards" && (
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+              <div>
+                <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Role</div>
+                <div className="text-sm mt-2">{study.role}</div>
+              </div>
+              <div>
+                <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Responsibility</div>
+                <div className="text-sm mt-2">
+                  {study.slug === "pim-system" && (<>Research - Visual System<br />Onboarding Design - Handoff</>)}
+                  {study.slug === "donna-moda" && (<>Market Research - Product Strategy - Mobile UI System</>)}
+                </div>
+              </div>
+              <div>
+                <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Scope</div>
+                <div className="text-sm mt-2">{study.scope}</div>
               </div>
             </div>
-            <div>
-              <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Scope</div>
-              <div className="text-sm mt-2">{study.scope}</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-12">
-          {study.slug === "donna-moda" ? (
-            <div className="grid grid-cols-3 gap-4">
-              <Placeholder ratio="9/19" label="Phone screen 1" />
-              <Placeholder ratio="9/19" label="Phone screen 2" />
-              <Placeholder ratio="9/19" label="Phone screen 3" />
-            </div>
-          ) : (
-            <Placeholder ratio="16/8" label="Hero image placeholder" />
           )}
         </div>
+
+        {study.slug !== "dashboards" && (
+          <div className="mt-12">
+            {study.slug === "donna-moda" ? (
+              <div className="grid grid-cols-3 gap-4">
+                <Placeholder ratio="9/19" label="Phone screen 1" />
+                <Placeholder ratio="9/19" label="Phone screen 2" />
+                <Placeholder ratio="9/19" label="Phone screen 3" />
+              </div>
+            ) : (
+              <Placeholder ratio="16/8" label="Hero image placeholder" />
+            )}
+          </div>
+        )}
 
         {study.slug === "pim-system" && <PimContent />}
         {study.slug === "dashboards" && <DashboardsContent />}
