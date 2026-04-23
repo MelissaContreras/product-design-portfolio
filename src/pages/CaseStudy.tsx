@@ -389,7 +389,7 @@ const DashboardsContent = () => (
         <li>High cognitive load when interpreting performance.</li>
       </ul>
       <p>
-        As a result, consuming metrics required manual effort, and insights were on-demand.
+        As a result, comparing metrics required manual effort, and insights were delayed.
       </p>
       <div className="mt-4">
         <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">Initial Version</p>
