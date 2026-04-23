@@ -402,7 +402,7 @@ const DashboardsContent = () => (
         I focused on transforming the experience from fragmented reporting into a structured analytical system:
       </p>
       <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
-        <li>Centralize metrics into a single dashboard.</li>
+        <li>Centralize analysis into a single dashboard.</li>
         <li>Standardize naming conventions.</li>
         <li>Reduce cognitive load through structured visualization.</li>
         <li>Enable consistent time-based analysis.</li>
@@ -480,7 +480,7 @@ const DashboardsContent = () => (
           Applied consistent color patterns to streamline data interpretation.
         </InsightCard>
         <InsightCard title="Information Architecture">
-          Balanced high-level summaries with detailed tables for medium-level analysis.
+          Balanced high-level summaries with detailed tables for multi-level analysis.
         </InsightCard>
       </div>
     </CaseSection>
@@ -551,7 +551,7 @@ const DashboardsContent = () => (
     <CaseSection title="Business Context">
       <p>
         Customer Service and Logistics teams operated using a basic table-based dashboard to monitor orders with
-        incidents. The process required manual review and lacked structures, making it difficult to quickly
+        incidents. The process required manual review and lacked structure, making it difficult to quickly
         identify and act on operational issues.
       </p>
     </CaseSection>
