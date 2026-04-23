@@ -331,11 +331,6 @@ const SubCaseHeader = ({
 }) => (
   <div className="space-y-6">
     <h2 className="font-serif text-3xl md:text-4xl tracking-tight leading-tight text-center">{title}</h2>
-    <div className="flex flex-wrap gap-2 justify-center">
-      {tags.map((t) => (
-        <span key={t} className="pill">{t}</span>
-      ))}
-    </div>
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <div>
         <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Role</div>
