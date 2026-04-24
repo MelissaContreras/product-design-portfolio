@@ -1,7 +1,15 @@
 import { ReactNode, useState, useEffect } from "react";
 import { findImageByLabel } from "@/lib/imageMap";
 
-export const Placeholder = ({ ratio = "16/9", label = "Image Placeholder" }: { ratio?: string; label?: string }) => {
+export const Placeholder = ({
+  ratio = "16/9",
+  label = "Image Placeholder",
+  height,
+}: {
+  ratio?: string;
+  label?: string;
+  height?: number | string;
+}) => {
   const [imageSrc, setImageSrc] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -25,11 +33,16 @@ export const Placeholder = ({ ratio = "16/9", label = "Image Placeholder" }: { r
     }
   }, [label]);
 
+  // When an explicit height is provided, use it instead of aspect-ratio.
+  const containerStyle: React.CSSProperties = height
+    ? { height: typeof height === "number" ? `${height}px` : height, background: "#F5F5F5" }
+    : { aspectRatio: ratio, background: "#F5F5F5" };
+
   if (imageSrc && !isLoading) {
     return (
       <div
         className="w-full overflow-hidden rounded-lg flex items-center justify-center"
-        style={{ aspectRatio: ratio, background: "#F5F5F5" }}
+        style={containerStyle}
       >
         <img
           src={imageSrc}
@@ -43,7 +56,7 @@ export const Placeholder = ({ ratio = "16/9", label = "Image Placeholder" }: { r
   return (
     <div
       className="image-placeholder w-full"
-      style={{ aspectRatio: ratio }}
+      style={height ? { height: typeof height === "number" ? `${height}px` : height } : { aspectRatio: ratio }}
     >
       <div className="flex flex-col items-center gap-2 text-xs uppercase tracking-[0.18em]">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
