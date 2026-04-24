@@ -28,7 +28,9 @@ export const SiteHeader = () => {
             </a>
           ))}
           <a
-            href="/cv.pdf"
+            href="https://drive.google.com/file/d/1wrDI-cGFoVktjiFGFo9qgrI8_lUetKJ8/view?usp=drive_link"
+            target="_blank"
+            rel="noreferrer"
             className="link-underline text-sm font-medium"
           >
             Resume ↗
