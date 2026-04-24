@@ -65,11 +65,11 @@ const PreviewVisual = ({ slug, coverImage }: { slug: string; coverImage: string 
   
   if (imageSrc) {
     return (
-      <div className="h-full w-full">
-        <img 
-          src={imageSrc} 
+      <div className="h-full w-full flex items-center justify-center" style={{ background: "#F5F5F5" }}>
+        <img
+          src={imageSrc}
           alt={coverImage}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </div>
     );

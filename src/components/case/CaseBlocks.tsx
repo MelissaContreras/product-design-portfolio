@@ -86,11 +86,14 @@ export const Placeholder = ({ ratio = "16/9", label = "Image Placeholder" }: { r
 
   if (imageSrc && !isLoading) {
     return (
-      <div className="w-full overflow-hidden rounded-lg" style={{ aspectRatio: ratio }}>
-        <img 
-          src={imageSrc} 
+      <div
+        className="w-full overflow-hidden rounded-lg flex items-center justify-center"
+        style={{ aspectRatio: ratio, background: "#F5F5F5" }}
+      >
+        <img
+          src={imageSrc}
           alt={label}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </div>
     );
