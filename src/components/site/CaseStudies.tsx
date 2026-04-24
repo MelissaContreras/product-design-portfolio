@@ -2,7 +2,80 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
 
-const PreviewVisual = ({ slug }: { slug: string }) => {
+const findImageByLabel = (label: string): string | null => {
+  const normalizedLabel = label.toLowerCase().replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim();
+  
+  const availableImages = [
+    "add-to-cart clarity — mockup",
+    "akeneo interface",
+    "authentication timing — mockup",
+    "benchmarking — louis vuitton · massimo dutti · stradivarius",
+    "caratula card pim",
+    "caratula card donna view",
+    "caratula card dashboards",
+    "cart visibility — mockup",
+    "category structure — mockup",
+    "checkout flow — mockup",
+    "confirmation experience — mockup",
+    "control tower dashboard — optimized version",
+    "elements of guided onboarding",
+    "entry & brand selection — mockup",
+    "filter integration — mockup",
+    "full onboarding screen",
+    "guidelines regarding image requirements",
+    "hero image placeholder",
+    "initial dashboard — fragmented version",
+    "larger alerts",
+    "optimized dashboard — english version",
+    "optimized dashboard — spanish version",
+    "original intranet",
+    "payment prioritization — mockup",
+    "personal data form — mockup",
+    "phone screen 1",
+    "phone screen 2",
+    "phone screen 3",
+    "photo",
+    "pre-load preview interface",
+    "product detail focus — mockup",
+    "product grid simplification — mockup",
+    "purchase summary — mockup",
+    "registration flow — mockup",
+    "smartphone ownership & mobile purchases by generation — chart",
+    "step 1 — log-in",
+    "step 2",
+    "step 3",
+    "step 4",
+    "step 5 — confirmation",
+    "user flow diagram — donna moda & l'uomo moda",
+    "visual navigation — mockup",
+    "wireframes — sign-up & log-in flows",
+  ];
+
+  for (const imageName of availableImages) {
+    const normalizedImage = imageName.toLowerCase();
+    if (normalizedLabel.includes(normalizedImage) || normalizedImage.includes(normalizedLabel)) {
+      return `/images/${imageName}.jpg`;
+    }
+  }
+  return null;
+};
+
+const PreviewVisual = ({ slug, coverImage }: { slug: string; coverImage: string }) => {
+  const imageSrc = findImageByLabel(coverImage);
+  
+  if (imageSrc) {
+    return (
+      <div className="h-full w-full">
+        <img 
+          src={imageSrc} 
+          alt={coverImage}
+          className="w-full h-full object-cover"
+        />
+      </div>
+    );
+  }
+
+  // Fallback to generated visuals if no image found
   if (slug === "pim-system") {
     return (
       <div className="case-media h-full w-full p-6 md:p-10 flex flex-col gap-3" style={{ background: "hsl(35 22% 96%)" }}>
@@ -82,7 +155,7 @@ export const CaseStudies = () => {
             className="case-card group"
           >
             <div className="overflow-hidden aspect-[16/8]">
-              <PreviewVisual slug={c.slug} />
+              <PreviewVisual slug={c.slug} coverImage={c.coverImage} />
             </div>
             <div className="p-6 md:p-8">
               <div className="flex items-center justify-end text-xs text-muted-foreground mb-4">

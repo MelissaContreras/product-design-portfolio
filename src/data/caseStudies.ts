@@ -7,6 +7,7 @@ export type CaseStudy = {
   role: string;
   scope: string;
   year: string;
+  coverImage: string;
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -20,6 +21,7 @@ export const caseStudies: CaseStudy[] = [
     role: "Product Designer — UX End-to-End",
     scope: "Redesigned the internal PIM tool to match Akeneo's design system",
     year: "2024",
+    coverImage: "Caratula CARD PIM",
   },
   {
     slug: "dashboards",
@@ -31,6 +33,7 @@ export const caseStudies: CaseStudy[] = [
     role: "Product Designer",
     scope: "UX Architecture, KPI Design, Data Logic",
     year: "2024",
+    coverImage: "CARATULA CARD DASHBOARDs",
   },
   {
     slug: "donna-moda",
@@ -42,5 +45,6 @@ export const caseStudies: CaseStudy[] = [
     role: "Lead Product Designer (UX/UI & Strategy)",
     scope: "Comprehensive design of native applications to expand the brand's reach toward a younger audience.",
     year: "2023",
+    coverImage: "caratula Card Donna View",
   },
 ];
