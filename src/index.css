@@ -123,6 +123,12 @@
   a:active {
     color: hsl(var(--primary-active));
   }
+  /* Buttons styled as links should preserve their own text color */
+  a.bg-primary,
+  a.bg-primary:hover,
+  a.bg-primary:active {
+    color: hsl(var(--primary-foreground));
+  }
 }
 
 @layer components {
