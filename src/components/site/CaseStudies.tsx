@@ -1,64 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
-
-const findImageByLabel = (label: string): string | null => {
-  const normalizedLabel = label.toLowerCase().replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim();
-  
-  const availableImages: [string, string][] = [
-    ["add-to-cart clarity — mockup", "Add-to-Cart Clarity — mockup.jpg"],
-    ["akeneo interface", "Akeneo Interface.jpg"],
-    ["authentication timing — mockup", "Authentication Timing — mockup.jpg"],
-    ["benchmarking — louis vuitton · massimo dutti · stradivarius", "Benchmarking — Louis Vuitton · Massimo Dutti · Stradivarius.jpg"],
-    ["caratula card pim", "Caratula CARD PIM.jpg"],
-    ["caratula card donna view", "caratula Card Donna View.jpg"],
-    ["caratula card dashboards", "CARATULA CARD DASHBOARDs.jpg"],
-    ["cart visibility — mockup", "Cart Visibility — mockup.jpg"],
-    ["category structure — mockup", "Category Structure — mockup.jpg"],
-    ["checkout flow — mockup", "Checkout Flow — mockup.jpg"],
-    ["confirmation experience — mockup", "Confirmation Experience — mockup.jpg"],
-    ["control tower dashboard — optimized version", "Control Tower dashboard — Optimized version.jpg"],
-    ["elements of guided onboarding", "Elements of guided onboarding.jpg"],
-    ["entry & brand selection — mockup", "Entry & Brand Selection — mockup.jpg"],
-    ["filter integration — mockup", "Filter Integration — mockup.jpg"],
-    ["full onboarding screen", "Full onboarding screen.jpg"],
-    ["guidelines regarding image requirements", "Guidelines regarding image requirements.jpg"],
-    ["hero image placeholder", "Hero image placeholder.jpg"],
-    ["initial dashboard — fragmented version", "Initial dashboard — fragmented version.jpg"],
-    ["larger alerts", "Larger alerts.jpg"],
-    ["optimized dashboard — english version", "Optimized dashboard — English version.jpg"],
-    ["optimized dashboard — spanish version", "Optimized dashboard — Spanish version.jpg"],
-    ["original intranet", "Original Intranet.jpg"],
-    ["payment prioritization — mockup", "Payment Prioritization — mockup.jpg"],
-    ["personal data form — mockup", "Personal Data Form — mockup.jpg"],
-    ["phone screen 1", "Phone screen 1.png"],
-    ["phone screen 2", "Phone screen 2.png"],
-    ["phone screen 3", "Phone screen 3.png"],
-    ["photo", "Photo.jpg"],
-    ["pre-load preview interface", "Pre-load preview interface.jpg"],
-    ["product detail focus — mockup", "Product Detail Focus — mockup.jpg"],
-    ["product grid simplification — mockup", "Product Grid Simplification — mockup.jpg"],
-    ["purchase summary — mockup", "Purchase Summary — mockup.jpg"],
-    ["registration flow — mockup", "Registration Flow — mockup.jpg"],
-    ["smartphone ownership & mobile purchases by generation — chart", "Smartphone ownership & mobile purchases by generation — chart.jpg"],
-    ["step 1 — log-in", "Step 1 — Log-in.jpg"],
-    ["step 2", "Step 2.jpg"],
-    ["step 3", "Step 3.jpg"],
-    ["step 4", "Step 4.jpg"],
-    ["step 5 — confirmation", "Step 5 — Confirmation.jpg"],
-    ["user flow diagram — donna moda & l'uomo moda", "User flow diagram — Donna Moda & L'UOMO MODA.jpg"],
-    ["visual navigation — mockup", "Visual Navigation — mockup.jpg"],
-    ["wireframes — sign-up & log-in flows", "Wireframes — sign-up & log-in flows.jpg"],
-  ];
-
-  for (const [key, filename] of availableImages) {
-    const normalizedKey = key.toLowerCase();
-    if (normalizedLabel.includes(normalizedKey) || normalizedKey.includes(normalizedLabel)) {
-      return `/images/${filename}`;
-    }
-  }
-  return null;
-};
+import { findImageByLabel } from "@/lib/imageMap";
 
 const PreviewVisual = ({ slug, coverImage }: { slug: string; coverImage: string }) => {
   const imageSrc = findImageByLabel(coverImage);
