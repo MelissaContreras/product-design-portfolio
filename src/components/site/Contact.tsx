@@ -14,7 +14,7 @@ export const Contact = () => {
 
         <div className="mt-12 flex flex-wrap gap-3">
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/melissa-contreras-villafuerte-63b9b1136/"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-primary text-primary-foreground px-5 py-3 text-sm font-semibold hover:bg-[hsl(var(--primary-hover))] active:bg-[hsl(var(--primary-active))] transition-colors"
@@ -22,14 +22,16 @@ export const Contact = () => {
             <Linkedin className="h-4 w-4" /> LinkedIn <ArrowUpRight className="h-4 w-4" />
           </a>
           <a
-            href="mailto:hello@melissa.design"
-            className="inline-flex items-center gap-2 rounded-lg border border-background/30 px-5 py-3 text-sm font-medium hover:bg-background/10 transition-colors"
+            href="mailto:melissacontrerasvillafuerte@gmail.com"
+            className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-transparent px-5 py-3 text-sm font-medium text-white hover:bg-white hover:text-[hsl(220_39%_11%)] hover:border-white transition-colors"
           >
             <Mail className="h-4 w-4" /> Email
           </a>
           <a
-            href="/cv.pdf"
-            className="inline-flex items-center gap-2 rounded-lg border border-background/30 px-5 py-3 text-sm font-medium hover:bg-background/10 transition-colors"
+            href="https://drive.google.com/file/d/1wrDI-cGFoVktjiFGFo9qgrI8_lUetKJ8/view?usp=drive_link"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-transparent px-5 py-3 text-sm font-medium text-white hover:bg-white hover:text-[hsl(220_39%_11%)] hover:border-white transition-colors"
           >
             <Download className="h-4 w-4" /> Download Resume
           </a>

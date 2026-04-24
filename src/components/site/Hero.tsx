@@ -25,7 +25,9 @@ export const Hero = () => {
             <ArrowDown className="h-4 w-4" />
           </a>
           <a
-            href="/cv.pdf"
+            href="https://drive.google.com/file/d/1wrDI-cGFoVktjiFGFo9qgrI8_lUetKJ8/view?usp=drive_link"
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-lg border bg-background px-5 py-3 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
             style={{ borderColor: "hsl(var(--hairline))" }}
           >

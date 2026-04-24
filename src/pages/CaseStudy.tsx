@@ -82,14 +82,14 @@ const PimContent = () => (
         IXComercio's product upload intranet needed to align with Akeneo PIM's design system: brand colors,
         typography, UI components, and navigation patterns consistent with the tool.
       </p>
-      <div className="grid sm:grid-cols-2 gap-4 mt-4">
+      <div className="grid grid-cols-1 gap-6 mt-4">
         <div>
           <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Original Intranet</p>
-          <Placeholder ratio="4/3" label="Original Intranet" />
+          <Placeholder ratio="16/9" label="Original Intranet" />
         </div>
         <div>
           <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Akeneo Interface</p>
-          <Placeholder ratio="4/3" label="Akeneo Interface" />
+          <Placeholder ratio="16/9" label="Akeneo Interface" />
         </div>
       </div>
     </CaseSection>
