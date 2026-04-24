@@ -10,7 +10,7 @@ export const SiteFooter = () => (
       <div className="flex items-center gap-6 text-sm">
         <a href="https://www.linkedin.com/in/melissa-contreras-villafuerte-63b9b1136/" target="_blank" rel="noreferrer" className="link-underline">LinkedIn</a>
         <a href="mailto:melissacontrerasvillafuerte@gmail.com" className="link-underline">Email</a>
-        <a href="https://drive.google.com/file/d/1wrDI-cGFoVktjiFGFo9qgrI8_lUetKJ8/view?usp=drive_link" target="_blank" rel="noreferrer" className="link-underline">Resume</a>
+        <a href="https://drive.google.com/file/d/1uyXP_Bn9u7hisFCItcEzBWKIisHK3McS/view?usp=drive_link" target="_blank" rel="noreferrer" className="link-underline">Resume</a>
       </div>
     </div>
     <div className="container-editorial pb-8 text-xs text-muted-foreground">
