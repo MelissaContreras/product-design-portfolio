@@ -146,8 +146,12 @@ const PimContent = () => (
         <div className="grid md:grid-cols-[auto_1fr] gap-6 items-start">
           <div className="flex flex-col items-center md:items-start">
             <p className="font-semibold text-xl mb-4">Ana Carrillo</p>
-            <div className="aspect-square w-40 rounded-lg flex items-center justify-center text-xs uppercase tracking-[0.18em] border border-dashed border-white/30 bg-white/5">
-              Photo
+            <div className="aspect-square w-40 rounded-lg overflow-hidden bg-white/5">
+              <img
+                src="/images/Photo.jpg"
+                alt="Ana Carrillo"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <div className="text-sm space-y-2 md:pt-10">
@@ -801,7 +805,7 @@ const DonnaContent = () => (
     </CaseSection>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="4/5" label="User flow diagram — Donna Moda & L'UOMO MODA" />
+      <Placeholder height={1500} label="User flow diagram — Donna Moda & L'UOMO MODA" />
     </div>
 
     <CaseSection title="Wireframes">
@@ -809,7 +813,7 @@ const DonnaContent = () => (
     </CaseSection>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="3/4" label="Wireframes — sign-up & log-in flows" />
+      <Placeholder height={4700} label="Wireframes — sign-up & log-in flows" />
     </div>
 
     <section className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
