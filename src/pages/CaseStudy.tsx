@@ -805,7 +805,7 @@ const DonnaContent = () => (
     </CaseSection>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="4/5" label="User flow diagram — Donna Moda & L'UOMO MODA" />
+      <Placeholder height={1500} label="User flow diagram — Donna Moda & L'UOMO MODA" />
     </div>
 
     <CaseSection title="Wireframes">
@@ -813,7 +813,7 @@ const DonnaContent = () => (
     </CaseSection>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <Placeholder ratio="3/4" label="Wireframes — sign-up & log-in flows" />
+      <Placeholder height={4700} label="Wireframes — sign-up & log-in flows" />
     </div>
 
     <section className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
