@@ -28,7 +28,7 @@ export const Contact = () => {
             <Mail className="h-4 w-4" /> Email
           </a>
           <a
-            href="https://drive.google.com/file/d/1wrDI-cGFoVktjiFGFo9qgrI8_lUetKJ8/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1uyXP_Bn9u7hisFCItcEzBWKIisHK3McS/view?usp=drive_link"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-transparent px-5 py-3 text-sm font-medium text-white hover:bg-white hover:text-[hsl(220_39%_11%)] hover:border-white transition-colors"
