@@ -148,7 +148,7 @@ const PimContent = () => (
             <p className="font-semibold text-xl mb-4">Ana Carrillo</p>
             <div className="aspect-square w-40 rounded-lg overflow-hidden bg-white/5">
               <img
-                src="/images/Photo.jpg"
+                src="/images/Photo.webp"
                 alt="Ana Carrillo"
                 className="w-full h-full object-cover"
               />
