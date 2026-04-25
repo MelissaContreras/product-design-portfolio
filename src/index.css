@@ -108,6 +108,9 @@
     letter-spacing: 0.02em;
   }
 
+  h2 {
+  letter-spacing: 0.05em !important;
+}
 
   ::selection {
     background: hsl(var(--primary) / 0.15);
