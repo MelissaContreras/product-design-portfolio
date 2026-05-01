@@ -354,6 +354,20 @@ const SubCaseHeader = ({
 
 const DashboardsContent = () => (
   <>
+    {/* Scale stat chips */}
+    <div className="mt-10 grid grid-cols-3 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+      {[
+        { k: "54", v: "Brands" },
+        { k: "11", v: "Countries" },
+        { k: "B2B + B2C", v: "Ecosystems" },
+      ].map((s) => (
+        <div key={s.v}>
+          <div className="font-serif text-3xl md:text-4xl">{s.k}</div>
+          <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground mt-2">{s.v}</div>
+        </div>
+      ))}
+    </div>
+
     {/* ===================== CASE 01: OMNICHANNEL DASHBOARD ECOSYSTEM ===================== */}
     <section className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <SubCaseHeader
