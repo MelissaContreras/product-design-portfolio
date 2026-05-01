@@ -358,6 +358,7 @@ const DashboardsContent = () => (
     <div className="mt-10 grid grid-cols-3 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       {[
         { k: "54", v: "Brands" },
+        { k: "128", v: "Stores" },
         { k: "11", v: "Countries" },
         { k: "B2B + B2C", v: "Ecosystems" },
       ].map((s) => (
