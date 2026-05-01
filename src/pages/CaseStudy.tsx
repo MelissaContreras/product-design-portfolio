@@ -355,7 +355,7 @@ const SubCaseHeader = ({
 const DashboardsContent = () => (
   <>
     {/* Scale stat chips */}
-    <div className="mt-10 grid grid-cols-3 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
+    <div className="mt-10 grid grid-cols-4 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       {[
         { k: "54", v: "Brands" },
         { k: "128", v: "Stores" },
