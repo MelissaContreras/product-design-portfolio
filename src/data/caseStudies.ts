@@ -28,7 +28,7 @@ export const caseStudies: CaseStudy[] = [
     number: "02",
     title: "Analytics Dashboards",
     summary:
-      "Design of analytics dashboards to support strategic and operational decision-making across a Total Commerce ecosystem.",
+      "Design of analytics dashboards to support strategic and operational decision-making across a Total Commerce ecosystem — deployed across 54 brands in 11 countries.",
     tags: ["Data Visualization", "BI", "Analytics", "Decision Systems"],
     role: "Product Designer",
     scope: "UX Architecture, KPI Design, Data Logic",
