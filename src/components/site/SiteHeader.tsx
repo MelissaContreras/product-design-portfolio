@@ -13,13 +13,12 @@ export const SiteHeader = () => {
   const onHome = pathname === "/";
 
   const handleNameClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
     if (onHome) {
-      e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
-      e.preventDefault();
       navigate("/");
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
     }
   };
 
