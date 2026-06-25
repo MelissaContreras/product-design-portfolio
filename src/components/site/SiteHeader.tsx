@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const nav = [
   { label: "Work", href: "/#work" },
@@ -9,12 +9,24 @@ const nav = [
 
 export const SiteHeader = () => {
   const { pathname } = useLocation();
+  const navigate = useNavigate();
   const onHome = pathname === "/";
+
+  const handleNameClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (onHome) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
+    }
+  };
+
 
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b" style={{ borderColor: "hsl(var(--hairline))" }}>
       <div className="container-editorial flex items-center justify-between h-16">
-        <Link to="/" className="flex items-baseline gap-2 group">
+        <Link to="/" onClick={handleNameClick} className="flex items-baseline gap-2 group">
           <span className="font-serif text-xl leading-none">Melissa Contreras V.</span>
         </Link>
         <nav className="flex items-center gap-7">
