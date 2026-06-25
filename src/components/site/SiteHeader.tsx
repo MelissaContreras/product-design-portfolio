@@ -9,7 +9,20 @@ const nav = [
 
 export const SiteHeader = () => {
   const { pathname } = useLocation();
+  const navigate = useNavigate();
   const onHome = pathname === "/";
+
+  const handleNameClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (onHome) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      e.preventDefault();
+      navigate("/");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
 
   return (
     <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b" style={{ borderColor: "hsl(var(--hairline))" }}>
