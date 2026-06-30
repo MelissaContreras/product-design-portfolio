@@ -30,15 +30,32 @@ export const SiteHeader = () => {
           <span className="font-serif text-xl leading-none">Melissa Contreras V.</span>
         </Link>
         <nav className="flex items-center gap-7">
-          {nav.map((n) => (
-            <a
-              key={n.href}
-              href={onHome ? n.href.replace("/", "") : n.href}
-              className="link-underline text-sm text-foreground/80 hover:text-foreground hidden md:inline-flex"
-            >
-              {n.label}
-            </a>
-          ))}
+          {nav.map((n) => {
+            const id = n.href.split("#")[1];
+            const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+              e.preventDefault();
+              const scrollToId = () => {
+                const el = document.getElementById(id);
+                if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+              };
+              if (onHome) {
+                scrollToId();
+              } else {
+                navigate("/");
+                setTimeout(scrollToId, 100);
+              }
+            };
+            return (
+              <a
+                key={n.href}
+                href={n.href}
+                onClick={handleClick}
+                className="link-underline text-sm text-foreground/80 hover:text-foreground hidden md:inline-flex"
+              >
+                {n.label}
+              </a>
+            );
+          })}
           <a
             href="https://drive.google.com/file/d/1uyXP_Bn9u7hisFCItcEzBWKIisHK3McS/view?usp=drive_link"
             target="_blank"
