@@ -38,11 +38,11 @@ const PimContent = () => (
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="rounded-xl border p-6" style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-2))" }}>
           <div className="font-serif text-4xl">75%</div>
-          <p className="mt-2 text-sm">{t("of users had critical navigation blockers")}<strong>{t("before the redesign")}</strong>.</p>
+          <p className="mt-2 text-sm">{t("of users had critical navigation blockers")} <strong>{t("before the redesign")}</strong>.</p>
         </div>
         <div className="rounded-xl border p-6" style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-2))" }}>
           <div className="font-serif text-4xl">100%</div>
-          <p className="mt-2 text-sm">{t("completed tasks autonomously")}<strong>{t("after the onboarding flow")}</strong>.</p>
+          <p className="mt-2 text-sm">{t("completed tasks autonomously")} <strong>{t("after the onboarding flow")}</strong>.</p>
         </div>
       </div>
 
@@ -172,7 +172,7 @@ const PimContent = () => (
         <h4 className="font-medium mb-3">{t("Key Takeaways")}</h4>
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-            <p className="text-sm"><strong>{t("Documentation over Video:")}</strong>{t("interviews revealed a strong preference for written documentation. Users need scannable, text-based guides that allow for quick reference during active workflows or meetings without the disruption of audio or video.")}</p>
+            <p className="text-sm"><strong>{t("Documentation over Video:")}</strong> {t("interviews revealed a strong preference for written documentation. Users need scannable, text-based guides that allow for quick reference during active workflows or meetings without the disruption of audio or video.")}</p>
           </div>
           <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
             <p className="text-sm">{t("Beyond a visual refresh, I transformed a UI task into operational optimization. By integrating interactive guides and contextual documentation, we empowered users to be self-sufficient and significantly reduced reliance on the QA team.")}</p>
@@ -285,10 +285,10 @@ const PimContent = () => (
     </CaseSection>
 
     <CaseSection title={t("Business Value: Operational Efficiency & Scalability")}>
-      <p>{t("The impact of the redesign was primarily reflected in")}<strong>{t("increased user autonomy")}</strong>.</p>
-      <p><strong>{t("Operational Efficiency:")}</strong>{t("the bottleneck in the QA team was eliminated, allowing them to focus on technical testing rather than user training.")}</p>
-      <p><strong>{t("Error Reduction:")}</strong>{t("contextual alerts and standardized terminology reduced errors in bulk upload processes.")}</p>
-      <p><strong>{t("Scalability:")}</strong>{t("the new UI Kit allows future features to be integrated without losing the consistency that has been achieved.")}</p>
+      <p>{t("The impact of the redesign was primarily reflected in")} <strong>{t("increased user autonomy")}</strong>.</p>
+      <p><strong>{t("Operational Efficiency:")}</strong> {t("the bottleneck in the QA team was eliminated, allowing them to focus on technical testing rather than user training.")}</p>
+      <p><strong>{t("Error Reduction:")}</strong> {t("contextual alerts and standardized terminology reduced errors in bulk upload processes.")}</p>
+      <p><strong>{t("Scalability:")}</strong> {t("the new UI Kit allows future features to be integrated without losing the consistency that has been achieved.")}</p>
     </CaseSection>
   </>
 );
@@ -584,7 +584,7 @@ const DashboardsContent = () => (
 const DonnaContent = () => (
   <>
     <CaseSection title={t("Context")}>
-      <p>{t("Donna Moda is an online store offering imported accessories from various countries, targeting a high-income audience. Its women's line is branded as")}<strong>{t("DONNA MODA")}</strong>{t(", and its men's line as")}<strong>{t("L'UOMO MODA")}</strong>.
+      <p>{t("Donna Moda is an online store offering imported accessories from various countries, targeting a high-income audience. Its women's line is branded as")} <strong>{t("DONNA MODA")}</strong>{t(", and its men's line as")} <strong>{t("L'UOMO MODA")}</strong>.
       </p>
       <p>{t("With 9 years of experience in the retail market and a physical presence in Pharmax, Donna Moda has built a loyal customer base of women aged 55+.")}</p>
       <p>{t("After 6 years operating through the web channel, the brand identified the need to expand into a younger, more digitally native segment that uses mobile as its primary shopping channel.")}</p>
@@ -617,7 +617,7 @@ const DonnaContent = () => (
     </CaseSection>
 
     <CaseSection title={t("Market Research Supporting the Strategy")}>
-      <p><strong>75%</strong>{t("of purchases are made using credit cards, while")}<strong>25%</strong>{t("are made in cash.")}</p>
+      <p><strong>75%</strong> {t("of purchases are made using credit cards, while")} <strong>25%</strong> {t("are made in cash.")}</p>
       <div className="grid sm:grid-cols-2 gap-6 mt-4">
         <div className="rounded-xl p-5" style={{ background: "hsl(var(--surface-2))" }}>
           <p className="text-sm italic">
@@ -649,8 +649,8 @@ const DonnaContent = () => (
     </div>
 
     <CaseSection title={t("Benchmarking")}>
-      <p>{t("Since Donna Moda offers imported products from various countries to a high-income target audience, I ultimately worked with three benchmark brands:")}<strong>{t("Louis Vuitton")}</strong>,{" "}
-        <strong>{t("Massimo Dutti")}</strong>{t(", and")}<strong>{t("Stradivarius")}</strong>.
+      <p>{t("Since Donna Moda offers imported products from various countries to a high-income target audience, I ultimately worked with three benchmark brands:")} <strong>{t("Louis Vuitton")}</strong>,{" "}
+        <strong>{t("Massimo Dutti")}</strong>{t(", and")} <strong>{t("Stradivarius")}</strong>.
       </p>
     </CaseSection>
 
@@ -698,7 +698,7 @@ const DonnaContent = () => (
     <section className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <div className="max-w-3xl">
         <h2 className="font-serif text-3xl md:text-4xl leading-tight">{t("DONNA MODA Experience — Design Decisions")}</h2>
-        <p className="mt-5 text-base md:text-lg text-foreground/75 leading-relaxed">{t("Each screen was designed around a specific behavioral insight to reduce friction on mobile. For every decision:")}<em>{t("what we did")}</em>, <em>{t("why it matters")}</em>{t(", and")}<em>{t("the expected impact")}</em>.
+        <p className="mt-5 text-base md:text-lg text-foreground/75 leading-relaxed">{t("Each screen was designed around a specific behavioral insight to reduce friction on mobile. For every decision:")} <em>{t("what we did")}</em>, <em>{t("why it matters")}</em>{t(", and")} <em>{t("the expected impact")}</em>.
         </p>
       </div>
 
@@ -775,7 +775,7 @@ const CaseStudyPage = () => {
 
       <article className="container-editorial pt-16 md:pt-24 pb-10">
         <Link to="/#work" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-          <ArrowLeft className="h-4 w-4" />{t("Back to work")}</Link>
+          <ArrowLeft className="h-4 w-4" /> {t("Back to work")}</Link>
 
         <div className="mt-10 reveal">
           <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] tracking-[-0.02em] max-w-[18ch]">
