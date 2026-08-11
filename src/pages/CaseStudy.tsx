@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useT } from "@/i18n/LanguageProvider";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
@@ -6,7 +7,9 @@ import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { CaseSection, Placeholder, MetricRow } from "@/components/case/CaseBlocks";
 
-const PimContent = () => (
+const PimContent = () => {
+  const t = useT();
+  return (
   <>
     <CaseSection title={t("Context")}>
       <p>{t("IXComercio is a SaaS platform used by international brands to manage product catalogs, attributes, prices, and logistics configurations within the Total Commerce digital commerce ecosystem.")}</p>
@@ -291,7 +294,8 @@ const PimContent = () => (
       <p><strong>{t("Scalability:")}</strong> {t("the new UI Kit allows future features to be integrated without losing the consistency that has been achieved.")}</p>
     </CaseSection>
   </>
-);
+  );
+};
 
 const InsightCard = ({ title, children }: { title: string; children: React.ReactNode }) => (
   <div
@@ -315,7 +319,9 @@ const SubCaseHeader = ({
   role: string;
   responsibility: string;
   scope: string;
-}) => (
+}) => {
+  const t = useT();
+  return (
   <div className="space-y-6">
     <h2 className="font-serif text-3xl md:text-4xl tracking-tight leading-tight text-center">{title}</h2>
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
@@ -333,9 +339,12 @@ const SubCaseHeader = ({
       </div>
     </div>
   </div>
-);
+  );
+};
 
-const DashboardsContent = () => (
+const DashboardsContent = () => {
+  const t = useT();
+  return (
   <>
     {/* Scale stat chips */}
     <div className="mt-10 grid grid-cols-4 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
@@ -579,9 +588,12 @@ const DashboardsContent = () => (
       <p>{t("The Control Tower evolved from a static reporting tool into an action-oriented operational product, enabling faster issue detection and improving response efficiency across teams.")}</p>
     </CaseSection>
   </>
-);
+  );
+};
 
-const DonnaContent = () => (
+const DonnaContent = () => {
+  const t = useT();
+  return (
   <>
     <CaseSection title={t("Context")}>
       <p>{t("Donna Moda is an online store offering imported accessories from various countries, targeting a high-income audience. Its women's line is branded as")} <strong>{t("DONNA MODA")}</strong>{t(", and its men's line as")} <strong>{t("L'UOMO MODA")}</strong>.
@@ -755,7 +767,8 @@ const DonnaContent = () => (
       </div>
     </div>
   </>
-);
+  );
+};
 
 const CaseStudyPage = () => {
   const { slug } = useParams();
