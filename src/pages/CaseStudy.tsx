@@ -8,144 +8,127 @@ import { CaseSection, Placeholder, MetricRow } from "@/components/case/CaseBlock
 
 const PimContent = () => (
   <>
-    <CaseSection title="Context">
-      <p>
-        IXComercio is a SaaS platform used by international brands to manage product catalogs, attributes,
-        prices, and logistics configurations within the Total Commerce digital commerce ecosystem.
-      </p>
-      <p>
-        I was asked to redesign IXComercio's internal PIM tool to match Akeneo's design system. During the
-        process, I identified an unscoped adoption problem and proposed an interactive onboarding flow that
-        eliminated manual QA training entirely.
-      </p>
+    <CaseSection title={t("Context")}>
+      <p>{t("IXComercio is a SaaS platform used by international brands to manage product catalogs, attributes, prices, and logistics configurations within the Total Commerce digital commerce ecosystem.")}</p>
+      <p>{t("I was asked to redesign IXComercio's internal PIM tool to match Akeneo's design system. During the process, I identified an unscoped adoption problem and proposed an interactive onboarding flow that eliminated manual QA training entirely.")}</p>
     </CaseSection>
 
-    <CaseSection title="The Problem">
+    <CaseSection title={t("The Problem")}>
       <div>
-        <h4 className="text-sm uppercase tracking-[0.14em] text-muted-foreground mb-2">For Business</h4>
+        <h4 className="text-sm uppercase tracking-[0.14em] text-muted-foreground mb-2">{t("For Business")}</h4>
         <ul className="space-y-2 list-disc pl-5">
-          <li>Visual inconsistencies between the intranet and the Akeneo's design system.</li>
-          <li>Frequent errors in bulk upload processes.</li>
+          <li>{t("Visual inconsistencies between the intranet and the Akeneo's design system.")}</li>
+          <li>{t("Frequent errors in bulk upload processes.")}</li>
         </ul>
       </div>
       <div className="mt-6">
-        <h4 className="text-sm uppercase tracking-[0.14em] text-muted-foreground mb-2">For Users</h4>
+        <h4 className="text-sm uppercase tracking-[0.14em] text-muted-foreground mb-2">{t("For Users")}</h4>
         <ul className="space-y-2 list-disc pl-5">
-          <li>Constant reliance on the quality assurance team to train users.</li>
+          <li>{t("Constant reliance on the quality assurance team to train users.")}</li>
         </ul>
       </div>
     </CaseSection>
 
-    <CaseSection title="The Challenge: Beyond Visual Consistency">
-      <p className="italic text-foreground">Turned a visual request into a full system optimization.</p>
-      <p>
-        I was asked to redesign IXComercio's internal PIM tool to match Akeneo's design system. During the
-        process, I identified an unscoped adoption problem and proposed an interactive onboarding flow that
-        eliminated manual QA training entirely.
-      </p>
+    <CaseSection title={t("The Challenge: Beyond Visual Consistency")}>
+      <p className="italic text-foreground">{t("Turned a visual request into a full system optimization.")}</p>
+      <p>{t("I was asked to redesign IXComercio's internal PIM tool to match Akeneo's design system. During the process, I identified an unscoped adoption problem and proposed an interactive onboarding flow that eliminated manual QA training entirely.")}</p>
     </CaseSection>
 
-    <CaseSection title="Strategic Impact">
+    <CaseSection title={t("Strategic Impact")}>
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="rounded-xl border p-6" style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-2))" }}>
           <div className="font-serif text-4xl">75%</div>
-          <p className="mt-2 text-sm">of users had critical navigation blockers <strong>before the redesign</strong>.</p>
+          <p className="mt-2 text-sm">{t("of users had critical navigation blockers")}<strong>{t("before the redesign")}</strong>.</p>
         </div>
         <div className="rounded-xl border p-6" style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-2))" }}>
           <div className="font-serif text-4xl">100%</div>
-          <p className="mt-2 text-sm">completed tasks autonomously <strong>after the onboarding flow</strong>.</p>
+          <p className="mt-2 text-sm">{t("completed tasks autonomously")}<strong>{t("after the onboarding flow")}</strong>.</p>
         </div>
       </div>
 
       <div className="grid sm:grid-cols-2 gap-6 mt-8">
         <div>
-          <h4 className="font-medium mb-2">Operational ROI</h4>
-          <p className="text-sm">The interactive onboarding and async documentation eliminated repetitive one-on-one training sessions, freeing the QA team to focus on higher-value work.</p>
+          <h4 className="font-medium mb-2">{t("Operational ROI")}</h4>
+          <p className="text-sm">{t("The interactive onboarding and async documentation eliminated repetitive one-on-one training sessions, freeing the QA team to focus on higher-value work.")}</p>
         </div>
         <div>
-          <h4 className="font-medium mb-2">Zero-error culture</h4>
-          <p className="text-sm">Preventive validations and alerts before bulk product uploads significantly reduced errors in SKU creation and asset management across the PIM.</p>
+          <h4 className="font-medium mb-2">{t("Zero-error culture")}</h4>
+          <p className="text-sm">{t("Preventive validations and alerts before bulk product uploads significantly reduced errors in SKU creation and asset management across the PIM.")}</p>
         </div>
         <div>
-          <h4 className="font-medium mb-2">Design for implementation</h4>
-          <p className="text-sm">I worked directly on top of the dev team's existing code libraries. Every component was implementation-ready from day one, reducing handoff friction and speeding up delivery timelines.</p>
+          <h4 className="font-medium mb-2">{t("Design for implementation")}</h4>
+          <p className="text-sm">{t("I worked directly on top of the dev team's existing code libraries. Every component was implementation-ready from day one, reducing handoff friction and speeding up delivery timelines.")}</p>
         </div>
         <div>
-          <h4 className="font-medium mb-2">Systems thinking</h4>
-          <p className="text-sm">Aligned design decisions with business goals, efficient product creation toward Akeneo, and with the platform's real technical capabilities, resulting in a scalable, consistent solution.</p>
+          <h4 className="font-medium mb-2">{t("Systems thinking")}</h4>
+          <p className="text-sm">{t("Aligned design decisions with business goals, efficient product creation toward Akeneo, and with the platform's real technical capabilities, resulting in a scalable, consistent solution.")}</p>
         </div>
       </div>
     </CaseSection>
 
-    <CaseSection title="Match the visual style of Akeneo PIM">
-      <p>
-        IXComercio's product upload intranet needed to align with Akeneo PIM's design system: brand colors,
-        typography, UI components, and navigation patterns consistent with the tool.
-      </p>
+    <CaseSection title={t("Match the visual style of Akeneo PIM")}>
+      <p>{t("IXComercio's product upload intranet needed to align with Akeneo PIM's design system: brand colors, typography, UI components, and navigation patterns consistent with the tool.")}</p>
       <div className="grid grid-cols-1 gap-6 mt-4">
         <div>
-          <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Original Intranet</p>
+          <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">{t("Original Intranet")}</p>
           <Placeholder ratio="16/9" label="Original Intranet" />
         </div>
         <div>
-          <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Akeneo Interface</p>
+          <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">{t("Akeneo Interface")}</p>
           <Placeholder ratio="16/9" label="Akeneo Interface" />
         </div>
       </div>
     </CaseSection>
 
-    <CaseSection title="Research Strategy: Data for Decision-Making">
-      <p>
-        To understand the problem from both a technical and operational standpoint, I led a discovery phase
-        combining technical analysis and interviews with internal users.
-      </p>
+    <CaseSection title={t("Research Strategy: Data for Decision-Making")}>
+      <p>{t("To understand the problem from both a technical and operational standpoint, I led a discovery phase combining technical analysis and interviews with internal users.")}</p>
       <div className="grid sm:grid-cols-2 gap-6 mt-4">
         <div>
-          <h4 className="font-medium mb-2">Technical audit</h4>
-          <p className="text-sm">I requested the engineering team's component library to ensure every designed component was fully feasible within the existing architecture and scalable for future features.</p>
+          <h4 className="font-medium mb-2">{t("Technical audit")}</h4>
+          <p className="text-sm">{t("I requested the engineering team's component library to ensure every designed component was fully feasible within the existing architecture and scalable for future features.")}</p>
         </div>
         <div>
-          <h4 className="font-medium mb-2">Competitive benchmarking</h4>
-          <p className="text-sm">I analyzed similar tools to identify effective patterns in data previsualization and preventive alert systems within bulk upload flows.</p>
+          <h4 className="font-medium mb-2">{t("Competitive benchmarking")}</h4>
+          <p className="text-sm">{t("I analyzed similar tools to identify effective patterns in data previsualization and preventive alert systems within bulk upload flows.")}</p>
         </div>
       </div>
     </CaseSection>
 
-    <CaseSection title="Benchmarking insights">
+    <CaseSection title={t("Benchmarking insights")}>
       <div>
-        <h4 className="font-medium mb-2">gestionpos.cl</h4>
+        <h4 className="font-medium mb-2">{t("gestionpos.cl")}</h4>
         <ul className="space-y-2 list-disc pl-5">
-          <li>Preview before confirming each bulk upload action.</li>
+          <li>{t("Preview before confirming each bulk upload action.")}</li>
         </ul>
       </div>
       <div className="mt-6">
-        <h4 className="font-medium mb-2">Zippin</h4>
+        <h4 className="font-medium mb-2">{t("Zippin")}</h4>
         <ul className="space-y-2 list-disc pl-5">
-          <li>Onboarding video at the start of the website, explaining the platform.</li>
-          <li>Provide documentation in each section of the platform.</li>
-          <li>Alerts and notifications for missing or erroneous processes.</li>
+          <li>{t("Onboarding video at the start of the website, explaining the platform.")}</li>
+          <li>{t("Provide documentation in each section of the platform.")}</li>
+          <li>{t("Alerts and notifications for missing or erroneous processes.")}</li>
         </ul>
       </div>
       <div className="grid sm:grid-cols-2 gap-6 mt-6">
         <div>
-          <h4 className="font-medium mb-2">Stakeholder interviews</h4>
-          <p className="text-sm">Through interviews with the QA team, I identified that the core value of the platform was generating proprietary SKUs from external integrations with suppliers such as Intcomex.</p>
+          <h4 className="font-medium mb-2">{t("Stakeholder interviews")}</h4>
+          <p className="text-sm">{t("Through interviews with the QA team, I identified that the core value of the platform was generating proprietary SKUs from external integrations with suppliers such as Intcomex.")}</p>
         </div>
         <div>
-          <h4 className="font-medium mb-2">Pain Point Mapping</h4>
-          <p className="text-sm">I used an Affinity map and User persona to categorize the most common errors when uploading images, titles, and attributes.</p>
+          <h4 className="font-medium mb-2">{t("Pain Point Mapping")}</h4>
+          <p className="text-sm">{t("I used an Affinity map and User persona to categorize the most common errors when uploading images, titles, and attributes.")}</p>
         </div>
       </div>
     </CaseSection>
 
-    <CaseSection title="Interview findings">
-      <h4 className="font-medium">Key research insights</h4>
-      <p className="text-sm">Users reported moderate satisfaction due to usability issues and complexity in the upload flows.</p>
+    <CaseSection title={t("Interview findings")}>
+      <h4 className="font-medium">{t("Key research insights")}</h4>
+      <p className="text-sm">{t("Users reported moderate satisfaction due to usability issues and complexity in the upload flows.")}</p>
 
       <div className="mt-4 rounded-xl p-6 md:p-8 text-white" style={{ background: "hsl(var(--foreground))" }}>
         <div className="grid md:grid-cols-[auto_1fr] gap-6 items-start">
           <div className="flex flex-col items-center md:items-start">
-            <p className="font-semibold text-xl mb-4">Ana Carrillo</p>
+            <p className="font-semibold text-xl mb-4">{t("Ana Carrillo")}</p>
             <div className="aspect-square w-40 rounded-lg overflow-hidden bg-white/5">
               <img
                 src="/images/Photo.webp"
@@ -155,11 +138,11 @@ const PimContent = () => (
             </div>
           </div>
           <div className="text-sm space-y-2 md:pt-10">
-            <p>Operations Analyst</p>
-            <p>30 years old.</p>
-            <p>Bogotá, Colombia</p>
-            <p><strong>Experience:</strong><br />5 years of experience in software testing.</p>
-            <p><strong>Industry:</strong><br />Works at an e-commerce company selling electronics and home appliances.</p>
+            <p>{t("Operations Analyst")}</p>
+            <p>{t("30 years old.")}</p>
+            <p>{t("Bogotá, Colombia")}</p>
+            <p><strong>{t("Experience:")}</strong><br />{t("5 years of experience in software testing.")}</p>
+            <p><strong>{t("Industry:")}</strong><br />{t("Works at an e-commerce company selling electronics and home appliances.")}</p>
           </div>
         </div>
       </div>
@@ -186,90 +169,90 @@ const PimContent = () => (
       </div>
 
       <div className="mt-8">
-        <h4 className="font-medium mb-3">Key Takeaways</h4>
+        <h4 className="font-medium mb-3">{t("Key Takeaways")}</h4>
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-            <p className="text-sm"><strong>Documentation over Video:</strong> interviews revealed a strong preference for written documentation. Users need scannable, text-based guides that allow for quick reference during active workflows or meetings without the disruption of audio or video.</p>
+            <p className="text-sm"><strong>{t("Documentation over Video:")}</strong>{t("interviews revealed a strong preference for written documentation. Users need scannable, text-based guides that allow for quick reference during active workflows or meetings without the disruption of audio or video.")}</p>
           </div>
           <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-            <p className="text-sm">Beyond a visual refresh, I transformed a UI task into operational optimization. By integrating interactive guides and contextual documentation, we empowered users to be self-sufficient and significantly reduced reliance on the QA team.</p>
+            <p className="text-sm">{t("Beyond a visual refresh, I transformed a UI task into operational optimization. By integrating interactive guides and contextual documentation, we empowered users to be self-sufficient and significantly reduced reliance on the QA team.")}</p>
           </div>
         </div>
       </div>
     </CaseSection>
 
-    <CaseSection title="Strategic Alignment: Key Implementation Measures">
+    <CaseSection title={t("Strategic Alignment: Key Implementation Measures")}>
       <div>
-        <h4 className="font-medium mb-2">Platform Core Purpose</h4>
-        <p className="text-sm">Product Creation & SKU Generation. This module facilitates the end-to-end process of generating IX Comercio SKUs for all products imported from Intcomex, ensuring data integrity and operational speed.</p>
+        <h4 className="font-medium mb-2">{t("Platform Core Purpose")}</h4>
+        <p className="text-sm">{t("Product Creation & SKU Generation. This module facilitates the end-to-end process of generating IX Comercio SKUs for all products imported from Intcomex, ensuring data integrity and operational speed.")}</p>
       </div>
       <div className="mt-6">
-        <h4 className="font-medium mb-2">Key Areas</h4>
+        <h4 className="font-medium mb-2">{t("Key Areas")}</h4>
         <ol className="list-decimal pl-5 text-sm space-y-1">
-          <li>Products</li>
-          <li>Image Uploads</li>
-          <li>Titles</li>
+          <li>{t("Products")}</li>
+          <li>{t("Image Uploads")}</li>
+          <li>{t("Titles")}</li>
         </ol>
       </div>
       <div className="grid sm:grid-cols-2 gap-x-10 gap-y-10 mt-8">
         {/* Row 1 */}
         <div>
-          <h4 className="font-medium text-lg md:text-xl mb-3">Visual Improvements</h4>
+          <h4 className="font-medium text-lg md:text-xl mb-3">{t("Visual Improvements")}</h4>
           <ul className="text-sm list-disc pl-5 space-y-1">
-            <li>Typography</li>
-            <li>Colors</li>
-            <li>An interface design very similar to Akeneo's in terms of style.</li>
+            <li>{t("Typography")}</li>
+            <li>{t("Colors")}</li>
+            <li>{t("An interface design very similar to Akeneo's in terms of style.")}</li>
           </ul>
         </div>
         <div>
-          <h4 className="font-medium text-lg md:text-xl mb-3">Objective:</h4>
-          <p className="text-sm font-medium mb-1">Minimizing Cognitive Load</p>
-          <p className="text-sm">By aligning the visual and interaction patterns with Akeneo, we ensured a familiar environment for the user, making the transition between platforms invisible and intuitive.</p>
+          <h4 className="font-medium text-lg md:text-xl mb-3">{t("Objective:")}</h4>
+          <p className="text-sm font-medium mb-1">{t("Minimizing Cognitive Load")}</p>
+          <p className="text-sm">{t("By aligning the visual and interaction patterns with Akeneo, we ensured a familiar environment for the user, making the transition between platforms invisible and intuitive.")}</p>
         </div>
 
         {/* Row 2 */}
         <div>
-          <h4 className="font-medium text-lg md:text-xl mb-3">Functional Improvements</h4>
+          <h4 className="font-medium text-lg md:text-xl mb-3">{t("Functional Improvements")}</h4>
           <ul className="text-sm list-disc pl-5 space-y-1">
-            <li>Improve platform interaction.</li>
-            <li>Display alerts for failed processes or other alerts.</li>
-            <li>Implement interactive onboarding and documentation.</li>
+            <li>{t("Improve platform interaction.")}</li>
+            <li>{t("Display alerts for failed processes or other alerts.")}</li>
+            <li>{t("Implement interactive onboarding and documentation.")}</li>
           </ul>
         </div>
         <div>
-          <h4 className="font-medium text-lg md:text-xl mb-3">Objective:</h4>
-          <p className="text-sm font-medium mb-1">Intuitive Design for Scalable Adoption</p>
-          <p className="text-sm">To minimize the need for continuous retraining, I redesigned the platform to be as intuitive as possible, ensuring users can navigate and execute complex tasks with zero friction.</p>
+          <h4 className="font-medium text-lg md:text-xl mb-3">{t("Objective:")}</h4>
+          <p className="text-sm font-medium mb-1">{t("Intuitive Design for Scalable Adoption")}</p>
+          <p className="text-sm">{t("To minimize the need for continuous retraining, I redesigned the platform to be as intuitive as possible, ensuring users can navigate and execute complex tasks with zero friction.")}</p>
         </div>
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="Solution 01" title="A Scalable & Comprehensive UI Kit">
-      <p>Instead of designing isolated screens, I engineered a system focused on error prevention and operational efficiency.</p>
-      <p className="text-sm">Developed a component library that inherits Akeneo's visual identity while optimizing IX Comercio's interactions, prioritizing typography and contrast for high-volume data management tasks.</p>
+    <CaseSection eyebrow={t("Solution 01")} title={t("A Scalable & Comprehensive UI Kit")}>
+      <p>{t("Instead of designing isolated screens, I engineered a system focused on error prevention and operational efficiency.")}</p>
+      <p className="text-sm">{t("Developed a component library that inherits Akeneo's visual identity while optimizing IX Comercio's interactions, prioritizing typography and contrast for high-volume data management tasks.")}</p>
 
       <div className="mt-10">
-        <p className="eyebrow mb-3">System</p>
-        <h3 className="font-serif text-3xl md:text-4xl tracking-tight leading-tight mb-8">Key System Components</h3>
+        <p className="eyebrow mb-3">{t("System")}</p>
+        <h3 className="font-serif text-3xl md:text-4xl tracking-tight leading-tight mb-8">{t("Key System Components")}</h3>
 
         <div>
-          <h4 className="font-medium text-lg md:text-xl mb-2">Error Prevention in Critical Workflows</h4>
-          <p className="text-sm">Contextual Alerts & Data Guardrails: I implemented detailed, real-time prompts specifying technical requirements—such as image dimensions, file size limits, and SKU naming conventions—directly at the point of action. This ensures data integrity and significantly reduces operational friction by preventing errors before they reach the database.</p>
+          <h4 className="font-medium text-lg md:text-xl mb-2">{t("Error Prevention in Critical Workflows")}</h4>
+          <p className="text-sm">{t("Contextual Alerts & Data Guardrails: I implemented detailed, real-time prompts specifying technical requirements—such as image dimensions, file size limits, and SKU naming conventions—directly at the point of action. This ensures data integrity and significantly reduces operational friction by preventing errors before they reach the database.")}</p>
           <div className="grid sm:grid-cols-2 gap-4 mt-6">
             <div>
-              <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Larger alerts</p>
+              <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">{t("Larger alerts")}</p>
               <Placeholder ratio="4/3" label="Larger alerts" />
             </div>
             <div>
-              <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Guidelines regarding image requirements</p>
+              <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">{t("Guidelines regarding image requirements")}</p>
               <Placeholder ratio="4/3" label="Guidelines regarding image requirements" />
             </div>
           </div>
         </div>
 
         <div className="mt-10">
-          <h4 className="font-medium text-lg md:text-xl mb-2">Pre-load Preview</h4>
-          <p className="text-sm">Based on competitive benchmarking, I implemented a visual confirmation stage to audit assets before PIM ingestion. This 'safe-check' prevents downstream data corruption and reduces the need for manual correction cycles.</p>
+          <h4 className="font-medium text-lg md:text-xl mb-2">{t("Pre-load Preview")}</h4>
+          <p className="text-sm">{t("Based on competitive benchmarking, I implemented a visual confirmation stage to audit assets before PIM ingestion. This 'safe-check' prevents downstream data corruption and reduces the need for manual correction cycles.")}</p>
           <div className="mt-6">
             <Placeholder ratio="16/9" label="Pre-load preview interface" />
           </div>
@@ -277,35 +260,35 @@ const PimContent = () => (
       </div>
     </CaseSection>
 
-    <CaseSection eyebrow="Solution 02" title="Functional improvement: Interactive onboarding">
-      <p className="text-sm">A smart onboarding trigger and just-in-time, in-context guidance that accelerate the learning curve and provide real-time support during complex workflows.</p>
+    <CaseSection eyebrow={t("Solution 02")} title={t("Functional improvement: Interactive onboarding")}>
+      <p className="text-sm">{t("A smart onboarding trigger and just-in-time, in-context guidance that accelerate the learning curve and provide real-time support during complex workflows.")}</p>
       <div className="grid sm:grid-cols-2 gap-6 mt-4">
         <div>
-          <h4 className="font-medium mb-2">Accelerated Learning Curve</h4>
-          <p className="text-sm">I implemented a smart onboarding trigger that activates exclusively during the first login. This ensures new users achieve rapid proficiency in complex workflows without obstructing the speed or daily operations of regular users.</p>
+          <h4 className="font-medium mb-2">{t("Accelerated Learning Curve")}</h4>
+          <p className="text-sm">{t("I implemented a smart onboarding trigger that activates exclusively during the first login. This ensures new users achieve rapid proficiency in complex workflows without obstructing the speed or daily operations of regular users.")}</p>
         </div>
         <div>
-          <h4 className="font-medium mb-2">Just-in-Time Support</h4>
-          <p className="text-sm">I designed real-time guides that accompany users during the bulk-upload process, providing contextual assistance at the exact moment errors typically occur. Additionally, I integrated on-screen documentation within each section to resolve doubts instantly without leaving the workflow.</p>
+          <h4 className="font-medium mb-2">{t("Just-in-Time Support")}</h4>
+          <p className="text-sm">{t("I designed real-time guides that accompany users during the bulk-upload process, providing contextual assistance at the exact moment errors typically occur. Additionally, I integrated on-screen documentation within each section to resolve doubts instantly without leaving the workflow.")}</p>
         </div>
       </div>
       <div className="grid grid-cols-1 gap-6 mt-6">
         <div>
-          <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Elements of guided onboarding</p>
+          <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">{t("Elements of guided onboarding")}</p>
           <Placeholder ratio="16/9" label="Elements of guided onboarding" />
         </div>
         <div>
-          <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">Full onboarding screen</p>
+          <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-2">{t("Full onboarding screen")}</p>
           <Placeholder ratio="16/9" label="Full onboarding screen" />
         </div>
       </div>
     </CaseSection>
 
-    <CaseSection title="Business Value: Operational Efficiency & Scalability">
-      <p>The impact of the redesign was primarily reflected in <strong>increased user autonomy</strong>.</p>
-      <p><strong>Operational Efficiency:</strong> the bottleneck in the QA team was eliminated, allowing them to focus on technical testing rather than user training.</p>
-      <p><strong>Error Reduction:</strong> contextual alerts and standardized terminology reduced errors in bulk upload processes.</p>
-      <p><strong>Scalability:</strong> the new UI Kit allows future features to be integrated without losing the consistency that has been achieved.</p>
+    <CaseSection title={t("Business Value: Operational Efficiency & Scalability")}>
+      <p>{t("The impact of the redesign was primarily reflected in")}<strong>{t("increased user autonomy")}</strong>.</p>
+      <p><strong>{t("Operational Efficiency:")}</strong>{t("the bottleneck in the QA team was eliminated, allowing them to focus on technical testing rather than user training.")}</p>
+      <p><strong>{t("Error Reduction:")}</strong>{t("contextual alerts and standardized terminology reduced errors in bulk upload processes.")}</p>
+      <p><strong>{t("Scalability:")}</strong>{t("the new UI Kit allows future features to be integrated without losing the consistency that has been achieved.")}</p>
     </CaseSection>
   </>
 );
@@ -337,15 +320,15 @@ const SubCaseHeader = ({
     <h2 className="font-serif text-3xl md:text-4xl tracking-tight leading-tight text-center">{title}</h2>
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <div>
-        <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Role</div>
+        <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Role")}</div>
         <div className="text-sm mt-2">{role}</div>
       </div>
       <div>
-        <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Responsibility</div>
+        <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Responsibility")}</div>
         <div className="text-sm mt-2">{responsibility}</div>
       </div>
       <div>
-        <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Scope</div>
+        <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Scope")}</div>
         <div className="text-sm mt-2">{scope}</div>
       </div>
     </div>
@@ -372,189 +355,134 @@ const DashboardsContent = () => (
     {/* ===================== CASE 01: OMNICHANNEL DASHBOARD ECOSYSTEM ===================== */}
     <section className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <SubCaseHeader
-        title="Case Study: Omnichannel Dashboard Ecosystem Redesign"
+        title={t("Case Study: Omnichannel Dashboard Ecosystem Redesign")}
         tags={["Power BI", "Advanced DAX", "Analytical Modeling", "Retail B2B · B2C", "Omnichannel"]}
         role="Product Designer (Data & Analytics)"
         responsibility="Owned KPI standardization and analytical modeling in Power BI"
         scope="Business dashboard redesign for B2B and B2C ecosystems"
       />
       <div className="mt-10">
-        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">Optimized version in Spanish</p>
+        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">{t("Optimized version in Spanish")}</p>
         <Placeholder ratio="16/8" label="Optimized dashboard — Spanish version" />
       </div>
     </section>
 
-    <CaseSection title="Business Context">
-      <p>
-        To design a unified analytical experience in Total Commerce that allows international brands to monitor
-        their omnichannel commercial health in a centralized way.
-      </p>
-      <p>
-        The existing system presented critical issues generating fragmentation in analysis, lack of semantic
-        consistency across teams, and delays in operational decision-making.
-      </p>
+    <CaseSection title={t("Business Context")}>
+      <p>{t("To design a unified analytical experience in Total Commerce that allows international brands to monitor their omnichannel commercial health in a centralized way.")}</p>
+      <p>{t("The existing system presented critical issues generating fragmentation in analysis, lack of semantic consistency across teams, and delays in operational decision-making.")}</p>
     </CaseSection>
 
-    <CaseSection title="The Strategic Challenge">
-      <p>The analytical ecosystem presented three systemic issues:</p>
+    <CaseSection title={t("The Strategic Challenge")}>
+      <p>{t("The analytical ecosystem presented three systemic issues:")}</p>
       <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
-        <li>Fragmented dashboards with no unified structure.</li>
-        <li>Inconsistent terminology across dashboards.</li>
-        <li>High cognitive load when interpreting performance.</li>
+        <li>{t("Fragmented dashboards with no unified structure.")}</li>
+        <li>{t("Inconsistent terminology across dashboards.")}</li>
+        <li>{t("High cognitive load when interpreting performance.")}</li>
       </ul>
-      <p>
-        As a result, comparing metrics required manual effort, and insights were delayed.
-      </p>
+      <p>{t("As a result, comparing metrics required manual effort, and insights were delayed.")}</p>
       <div className="mt-4">
-        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">Initial Version</p>
+        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">{t("Initial Version")}</p>
         <Placeholder ratio="16/8" label="Initial dashboard — fragmented version" />
       </div>
     </CaseSection>
 
-    <CaseSection title="Strategic Direction">
-      <p>
-        I focused on transforming the experience from fragmented reporting into a structured analytical system:
-      </p>
+    <CaseSection title={t("Strategic Direction")}>
+      <p>{t("I focused on transforming the experience from fragmented reporting into a structured analytical system:")}</p>
       <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
-        <li>Centralize analysis into a single dashboard.</li>
-        <li>Standardize naming conventions.</li>
-        <li>Reduce cognitive load through structured visualization.</li>
-        <li>Enable consistent time-based analysis.</li>
+        <li>{t("Centralize analysis into a single dashboard.")}</li>
+        <li>{t("Standardize naming conventions.")}</li>
+        <li>{t("Reduce cognitive load through structured visualization.")}</li>
+        <li>{t("Enable consistent time-based analysis.")}</li>
       </ul>
     </CaseSection>
 
-    <CaseSection title="Key Product Decisions">
+    <CaseSection title={t("Key Product Decisions")}>
       <div className="grid grid-cols-1 gap-4 mt-2">
-        <InsightCard title="Centralization over fragmentation">
-          Consolidated multiple dashboards into one unified analytical view.
-        </InsightCard>
-        <InsightCard title="Standardization over variability">
-          Defined consistent naming conventions across metrics.
-        </InsightCard>
-        <InsightCard title="Clarity over density">
-          Reduced visual overload by structuring information hierarchically.
-        </InsightCard>
-        <InsightCard title="Operational + strategic visibility in one layer">
-          Designed the dashboard to support both high-level monitoring and detailed analysis.
-        </InsightCard>
+        <InsightCard title={t("Centralization over fragmentation")}>{t("Consolidated multiple dashboards into one unified analytical view.")}</InsightCard>
+        <InsightCard title={t("Standardization over variability")}>{t("Defined consistent naming conventions across metrics.")}</InsightCard>
+        <InsightCard title={t("Clarity over density")}>{t("Reduced visual overload by structuring information hierarchically.")}</InsightCard>
+        <InsightCard title={t("Operational + strategic visibility in one layer")}>{t("Designed the dashboard to support both high-level monitoring and detailed analysis.")}</InsightCard>
       </div>
     </CaseSection>
 
-    <CaseSection title="Solution Overview">
-      <p className="font-medium">Unified Analytical Dashboard</p>
-      <p>The redesigned solution integrates a complete KPI system, including:</p>
+    <CaseSection title={t("Solution Overview")}>
+      <p className="font-medium">{t("Unified Analytical Dashboard")}</p>
+      <p>{t("The redesigned solution integrates a complete KPI system, including:")}</p>
       <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
-        <li>Net Sales</li>
-        <li>Traffic</li>
-        <li>Transactions</li>
-        <li>Average Ticket Value (ATV)</li>
-        <li>Units per Ticket (UPT)</li>
-        <li>Average Unit Retail (AUR)</li>
-        <li>Budget</li>
+        <li>{t("Net Sales")}</li>
+        <li>{t("Traffic")}</li>
+        <li>{t("Transactions")}</li>
+        <li>{t("Average Ticket Value (ATV)")}</li>
+        <li>{t("Units per Ticket (UPT)")}</li>
+        <li>{t("Average Unit Retail (AUR)")}</li>
+        <li>{t("Budget")}</li>
       </ul>
-      <p>
-        This allows users to analyze performance holistically without switching between tools.
-      </p>
+      <p>{t("This allows users to analyze performance holistically without switching between tools.")}</p>
     </CaseSection>
 
-    <CaseSection title="Information Architecture & UX Strategy">
+    <CaseSection title={t("Information Architecture & UX Strategy")}>
       <div className="grid sm:grid-cols-2 gap-4 mt-2">
-        <InsightCard title="Decision-Oriented Exploration">
-          Replaced static reports with interactive filtering, enabling dynamic analysis while preserving context.
+        <InsightCard title={t("Decision-Oriented Exploration")}>{t("Replaced static reports with interactive filtering, enabling dynamic analysis while preserving context.")}</InsightCard>
+        <InsightCard title={t("Compliance Monitoring (Strategic Cards)")}>{t("Designed a set of comparison cards to track Sales vs Budget vs Compliance, segmented across key periods (Current Month, Quarter, YTD), using a consistent cutoff (previous day) to ensure reliable performance tracking.")}</InsightCard>
+        <InsightCard title={t("Granular Analysis (Audit Table)")}>{t("Implemented a detailed performance table enabling drill-down from Country to Store level, exposing the full KPI set to support fast auditing and anomaly detection.")}</InsightCard>
+        <InsightCard title={t("Cognitive Load Reduction")}>{t("Limited visible KPIs and structured them to avoid overwhelming users.")}</InsightCard>
+        <InsightCard title={t("Multi-Level Navigation")}>{t("Enabled seamless transitions between:")}<span className="block mt-2">{t("• Country")}</span>
+          <span className="block">{t("• Store")}</span>
+          <span className="block">{t("• Time dimensions (Year / Month / Week / Day)")}</span>
         </InsightCard>
-        <InsightCard title="Compliance Monitoring (Strategic Cards)">
-          Designed a set of comparison cards to track Sales vs Budget vs Compliance, segmented across key periods
-          (Current Month, Quarter, YTD), using a consistent cutoff (previous day) to ensure reliable performance tracking.
-        </InsightCard>
-        <InsightCard title="Granular Analysis (Audit Table)">
-          Implemented a detailed performance table enabling drill-down from Country to Store level, exposing the
-          full KPI set to support fast auditing and anomaly detection.
-        </InsightCard>
-        <InsightCard title="Cognitive Load Reduction">
-          Limited visible KPIs and structured them to avoid overwhelming users.
-        </InsightCard>
-        <InsightCard title="Multi-Level Navigation">
-          Enabled seamless transitions between:
-          <span className="block mt-2">• Country</span>
-          <span className="block">• Store</span>
-          <span className="block">• Time dimensions (Year / Month / Week / Day)</span>
-        </InsightCard>
-        <InsightCard title="Time Context Standardization">
-          Introduced rolling 7-day views and consistent time frameworks for reliable comparisons.
-        </InsightCard>
+        <InsightCard title={t("Time Context Standardization")}>{t("Introduced rolling 7-day views and consistent time frameworks for reliable comparisons.")}</InsightCard>
       </div>
     </CaseSection>
 
-    <CaseSection title="Analytical Readability">
+    <CaseSection title={t("Analytical Readability")}>
       <div className="grid sm:grid-cols-3 gap-4 mt-2">
-        <InsightCard title="Typographic Hierarchy">
-          Structured text scales to guide visual flow and enhance readability.
-        </InsightCard>
-        <InsightCard title="Chromatic Contrast">
-          Applied consistent color patterns to streamline data interpretation.
-        </InsightCard>
-        <InsightCard title="Information Architecture">
-          Balanced high-level summaries with detailed tables for multi-level analysis.
-        </InsightCard>
+        <InsightCard title={t("Typographic Hierarchy")}>{t("Structured text scales to guide visual flow and enhance readability.")}</InsightCard>
+        <InsightCard title={t("Chromatic Contrast")}>{t("Applied consistent color patterns to streamline data interpretation.")}</InsightCard>
+        <InsightCard title={t("Information Architecture")}>{t("Balanced high-level summaries with detailed tables for multi-level analysis.")}</InsightCard>
       </div>
     </CaseSection>
 
-    <CaseSection title="Technical Optimization & Data Modeling">
-      <p>To ensure optimal performance and fluid navigation, I re-engineered the model.</p>
+    <CaseSection title={t("Technical Optimization & Data Modeling")}>
+      <p>{t("To ensure optimal performance and fluid navigation, I re-engineered the model.")}</p>
       <div className="grid grid-cols-1 gap-3 mt-2">
-        <InsightCard title="Implemented Layered measure architecture (Measure Branching) using a logical inheritance principle in DAX">
+        <InsightCard title={t("Implemented Layered measure architecture (Measure Branching) using a logical inheritance principle in DAX")}>
           {""}
         </InsightCard>
-        <InsightCard title="Introduced a 4-5-4 calendar with Same Store Sales (SSS) logic for consistent retail comparison">
+        <InsightCard title={t("Introduced a 4-5-4 calendar with Same Store Sales (SSS) logic for consistent retail comparison")}>
           {""}
         </InsightCard>
-        <InsightCard title="Optimized model relationships for better performance">
+        <InsightCard title={t("Optimized model relationships for better performance")}>
           {""}
         </InsightCard>
-        <InsightCard title="Removed redundant calculated columns">
+        <InsightCard title={t("Removed redundant calculated columns")}>
           {""}
         </InsightCard>
       </div>
     </CaseSection>
 
-    <CaseSection title="Impact">
+    <CaseSection title={t("Impact")}>
       <div className="grid grid-cols-1 gap-3 mt-2">
-        <InsightCard title="Efficiency">
-          • Reduced dashboards from 5 → 1<br />
-          • Decreased time to identify insights by ~30 seconds
-        </InsightCard>
-        <InsightCard title="Analytical Scalability">
-          Enabled analyses from regional strategic view down to store-level operations, including day-by-day tracking.
-        </InsightCard>
-        <InsightCard title="Analytical Precision">
-          Implemented a 4-5-4 calendar with SSS logic, ensuring fair and consistent comparisons aligned with retail
-          industry standards.
-        </InsightCard>
-        <InsightCard title="Consistency">
-          Standardized naming conventions across dashboards.
-        </InsightCard>
-        <InsightCard title="Accessibility">
-          Delivered bilingual dashboards (Spanish / English).
-        </InsightCard>
+        <InsightCard title={t("Efficiency")}>{t("• Reduced dashboards from 5 → 1")}<br />{t("• Decreased time to identify insights by ~30 seconds")}</InsightCard>
+        <InsightCard title={t("Analytical Scalability")}>{t("Enabled analyses from regional strategic view down to store-level operations, including day-by-day tracking.")}</InsightCard>
+        <InsightCard title={t("Analytical Precision")}>{t("Implemented a 4-5-4 calendar with SSS logic, ensuring fair and consistent comparisons aligned with retail industry standards.")}</InsightCard>
+        <InsightCard title={t("Consistency")}>{t("Standardized naming conventions across dashboards.")}</InsightCard>
+        <InsightCard title={t("Accessibility")}>{t("Delivered bilingual dashboards (Spanish / English).")}</InsightCard>
       </div>
 
       <div className="mt-8">
-        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">Optimized version in English</p>
+        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">{t("Optimized version in English")}</p>
         <Placeholder ratio="16/8" label="Optimized dashboard — English version" />
       </div>
     </CaseSection>
 
-    <CaseSection title="Outcome">
-      <p>
-        The solution transformed a fragmented reporting environment into a centralized, structured analytical
-        product, improving clarity, operational visibility, and decision efficiency.
-      </p>
+    <CaseSection title={t("Outcome")}>
+      <p>{t("The solution transformed a fragmented reporting environment into a centralized, structured analytical product, improving clarity, operational visibility, and decision efficiency.")}</p>
     </CaseSection>
 
     {/* ===================== CASE 02: OPERATIONAL CONTROL TOWER ===================== */}
     <section className="py-16 md:py-24 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <SubCaseHeader
-        title="Case Study: Operational Control Tower (Omnichannel)"
+        title={t("Case Study: Operational Control Tower (Omnichannel)")}
         tags={["Power BI", "Advanced DAX", "Analytical Modeling", "Data-Driven UX", "Omnichannel Logistics"]}
         role="Product Designer (Data & Analytics)"
         responsibility="Redesigned operational metrics and monitoring system for order incidents"
@@ -562,187 +490,134 @@ const DashboardsContent = () => (
       />
     </section>
 
-    <CaseSection title="Business Context">
-      <p>
-        Customer Service and Logistics teams operated using a basic table-based dashboard to monitor orders with
-        incidents. The process required manual review and lacked structure, making it difficult to quickly
-        identify and act on operational issues.
-      </p>
+    <CaseSection title={t("Business Context")}>
+      <p>{t("Customer Service and Logistics teams operated using a basic table-based dashboard to monitor orders with incidents. The process required manual review and lacked structure, making it difficult to quickly identify and act on operational issues.")}</p>
     </CaseSection>
 
-    <CaseSection title="The Strategic Challenge">
+    <CaseSection title={t("The Strategic Challenge")}>
       <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
-        <li>Large volume of orders across multiple countries.</li>
+        <li>{t("Large volume of orders across multiple countries.")}</li>
         <li>Manual identification of incidents ("Novedades").</li>
-        <li>Limited visibility into operational status.</li>
-        <li>Slow reaction times for issue resolution.</li>
+        <li>{t("Limited visibility into operational status.")}</li>
+        <li>{t("Slow reaction times for issue resolution.")}</li>
       </ul>
     </CaseSection>
 
-    <CaseSection title="Strategic Direction">
-      <p>The goal was to transform a static tool into a real-time operational decision system:</p>
+    <CaseSection title={t("Strategic Direction")}>
+      <p>{t("The goal was to transform a static tool into a real-time operational decision system:")}</p>
       <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
-        <li>Enable fast identification of orders with incidents.</li>
-        <li>Structure information around operational workflows.</li>
-        <li>Reduce time spent scanning and filtering data.</li>
-        <li>Support action-oriented decision-making.</li>
+        <li>{t("Enable fast identification of orders with incidents.")}</li>
+        <li>{t("Structure information around operational workflows.")}</li>
+        <li>{t("Reduce time spent scanning and filtering data.")}</li>
+        <li>{t("Support action-oriented decision-making.")}</li>
       </ul>
     </CaseSection>
 
-    <CaseSection title="Key Product Decisions">
+    <CaseSection title={t("Key Product Decisions")}>
       <div className="grid grid-cols-1 gap-4 mt-2">
-        <InsightCard title="Actionability over passive reporting">
-          Designed the dashboard to prioritize decision-making, not just monitoring.
-        </InsightCard>
-        <InsightCard title="Process-based structuring">
-          Organized information according to operational flow (Por iniciar procesamiento → En Procesamiento → En Tránsito → Finalizadas).
-        </InsightCard>
-        <InsightCard title="Speed over completeness">
-          Prioritized fast detection of issues over displaying all available data.
-        </InsightCard>
-        <InsightCard title="Visibility of exceptions">
-          Highlighted anomalies instead of requiring manual discovery.
-        </InsightCard>
+        <InsightCard title={t("Actionability over passive reporting")}>{t("Designed the dashboard to prioritize decision-making, not just monitoring.")}</InsightCard>
+        <InsightCard title={t("Process-based structuring")}>{t("Organized information according to operational flow (Por iniciar procesamiento → En Procesamiento → En Tránsito → Finalizadas).")}</InsightCard>
+        <InsightCard title={t("Speed over completeness")}>{t("Prioritized fast detection of issues over displaying all available data.")}</InsightCard>
+        <InsightCard title={t("Visibility of exceptions")}>{t("Highlighted anomalies instead of requiring manual discovery.")}</InsightCard>
       </div>
     </CaseSection>
 
-    <CaseSection title="Product Strategy and Collaboration">
+    <CaseSection title={t("Product Strategy and Collaboration")}>
       <div className="grid sm:grid-cols-2 gap-4 mt-2">
-        <InsightCard title="Stakeholder Management">
-          Partnered with the Product Owner to redefine the information architecture, restructuring filters into
-          functional domains (Brand, Order, Alerts, End Customer) aligned with operational workflows.
-        </InsightCard>
-        <InsightCard title="Operational Focus">
-          Reframed the dashboard structure around operational workflows, reducing friction in navigation and
-          enabling faster interpretation of order status during daily execution.
-        </InsightCard>
+        <InsightCard title={t("Stakeholder Management")}>{t("Partnered with the Product Owner to redefine the information architecture, restructuring filters into functional domains (Brand, Order, Alerts, End Customer) aligned with operational workflows.")}</InsightCard>
+        <InsightCard title={t("Operational Focus")}>{t("Reframed the dashboard structure around operational workflows, reducing friction in navigation and enabling faster interpretation of order status during daily execution.")}</InsightCard>
       </div>
     </CaseSection>
 
-    <CaseSection title="Solution Overview — Control Tower Dashboard">
-      <p>The redesigned solution includes:</p>
+    <CaseSection title={t("Solution Overview — Control Tower Dashboard")}>
+      <p>{t("The redesigned solution includes:")}</p>
       <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
-        <li>Segmented process stages (Por iniciar procesamiento, En Procesamiento, En Tránsito, Finalizadas).</li>
-        <li>Real-time metrics on order status.</li>
-        <li>Filters to quickly isolate problematic orders.</li>
-        <li>Structured table for detailed operational tracking.</li>
-        <li>Optimized search functionality for direct order lookup.</li>
-        <li>Visual hierarchy system to highlight critical states and exceptions.</li>
+        <li>{t("Segmented process stages (Por iniciar procesamiento, En Procesamiento, En Tránsito, Finalizadas).")}</li>
+        <li>{t("Real-time metrics on order status.")}</li>
+        <li>{t("Filters to quickly isolate problematic orders.")}</li>
+        <li>{t("Structured table for detailed operational tracking.")}</li>
+        <li>{t("Optimized search functionality for direct order lookup.")}</li>
+        <li>{t("Visual hierarchy system to highlight critical states and exceptions.")}</li>
       </ul>
       <div className="mt-6">
-        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">Optimized Version</p>
+        <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground mb-3 text-center">{t("Optimized Version")}</p>
         <Placeholder ratio="16/8" label="Control Tower dashboard — Optimized version" />
       </div>
     </CaseSection>
 
-    <CaseSection title="UX Strategy">
+    <CaseSection title={t("UX Strategy")}>
       <div className="grid sm:grid-cols-3 gap-4 mt-2">
-        <InsightCard title="Operational Funnel">
-          Segmented the process into clear stages to reflect how teams manage orders.
-        </InsightCard>
-        <InsightCard title="Optimized Search">
-          Introduced direct search capabilities to locate specific orders instantly.
-        </InsightCard>
-        <InsightCard title="Visual Hierarchy">
-          Used color and layout to highlight critical states and exceptions.
-        </InsightCard>
+        <InsightCard title={t("Operational Funnel")}>{t("Segmented the process into clear stages to reflect how teams manage orders.")}</InsightCard>
+        <InsightCard title={t("Optimized Search")}>{t("Introduced direct search capabilities to locate specific orders instantly.")}</InsightCard>
+        <InsightCard title={t("Visual Hierarchy")}>{t("Used color and layout to highlight critical states and exceptions.")}</InsightCard>
       </div>
     </CaseSection>
 
-    <CaseSection title="Dynamic Metrics & DAX Logic">
+    <CaseSection title={t("Dynamic Metrics & DAX Logic")}>
       <div className="grid sm:grid-cols-2 gap-4 mt-2">
-        <InsightCard title="Developed dynamic DAX measures to calculate proportions of orders with incidents">
+        <InsightCard title={t("Developed dynamic DAX measures to calculate proportions of orders with incidents")}>
           {""}
         </InsightCard>
-        <InsightCard title="Enabled real-time metric updates based on applied filters">
+        <InsightCard title={t("Enabled real-time metric updates based on applied filters")}>
           {""}
         </InsightCard>
       </div>
     </CaseSection>
 
-    <CaseSection title="Impact">
+    <CaseSection title={t("Impact")}>
       <div className="grid grid-cols-1 gap-3 mt-2">
-        <InsightCard title="Operational Efficiency">
-          Reduced time to identify orders with incidents.
-        </InsightCard>
-        <InsightCard title="Adoption">
-          Increased usability for logistics and customer service teams.
-        </InsightCard>
-        <InsightCard title="Visibility">
-          Enabled real-time monitoring of operational status.
-        </InsightCard>
-        <InsightCard title="Analytical Reliability">
-          Ensured consistent metric interpretation through structured logic.
-        </InsightCard>
-        <InsightCard title="Process Clarity">
-          Structured operational flow into clearly defined stages.
-        </InsightCard>
-        <InsightCard title="Decision Support">
-          Enabled faster identification of issues and action prioritization.
-        </InsightCard>
+        <InsightCard title={t("Operational Efficiency")}>{t("Reduced time to identify orders with incidents.")}</InsightCard>
+        <InsightCard title={t("Adoption")}>{t("Increased usability for logistics and customer service teams.")}</InsightCard>
+        <InsightCard title={t("Visibility")}>{t("Enabled real-time monitoring of operational status.")}</InsightCard>
+        <InsightCard title={t("Analytical Reliability")}>{t("Ensured consistent metric interpretation through structured logic.")}</InsightCard>
+        <InsightCard title={t("Process Clarity")}>{t("Structured operational flow into clearly defined stages.")}</InsightCard>
+        <InsightCard title={t("Decision Support")}>{t("Enabled faster identification of issues and action prioritization.")}</InsightCard>
       </div>
     </CaseSection>
 
-    <CaseSection title="Outcome">
-      <p>
-        The Control Tower evolved from a static reporting tool into an action-oriented operational product,
-        enabling faster issue detection and improving response efficiency across teams.
-      </p>
+    <CaseSection title={t("Outcome")}>
+      <p>{t("The Control Tower evolved from a static reporting tool into an action-oriented operational product, enabling faster issue detection and improving response efficiency across teams.")}</p>
     </CaseSection>
   </>
 );
 
 const DonnaContent = () => (
   <>
-    <CaseSection title="Context">
-      <p>
-        Donna Moda is an online store offering imported accessories from various countries, targeting a
-        high-income audience. Its women's line is branded as <strong>DONNA MODA</strong>, and its men's line
-        as <strong>L'UOMO MODA</strong>.
+    <CaseSection title={t("Context")}>
+      <p>{t("Donna Moda is an online store offering imported accessories from various countries, targeting a high-income audience. Its women's line is branded as")}<strong>{t("DONNA MODA")}</strong>{t(", and its men's line as")}<strong>{t("L'UOMO MODA")}</strong>.
       </p>
-      <p>
-        With 9 years of experience in the retail market and a physical presence in Pharmax, Donna Moda has
-        built a loyal customer base of women aged 55+.
-      </p>
-      <p>
-        After 6 years operating through the web channel, the brand identified the need to expand into a
-        younger, more digitally native segment that uses mobile as its primary shopping channel.
-      </p>
+      <p>{t("With 9 years of experience in the retail market and a physical presence in Pharmax, Donna Moda has built a loyal customer base of women aged 55+.")}</p>
+      <p>{t("After 6 years operating through the web channel, the brand identified the need to expand into a younger, more digitally native segment that uses mobile as its primary shopping channel.")}</p>
     </CaseSection>
 
-    <CaseSection title="The Strategic Challenge">
-      <p>
-        Behavioral analysis revealed that younger users — while interested in both the women's and men's
-        lines for gifting — encountered friction when using the traditional web experience on mobile devices.
-      </p>
+    <CaseSection title={t("The Strategic Challenge")}>
+      <p>{t("Behavioral analysis revealed that younger users — while interested in both the women's and men's lines for gifting — encountered friction when using the traditional web experience on mobile devices.")}</p>
       <p>
         To capture this segment, a responsive website was not enough; a native solution was required to
         optimize navigation speed and streamline the checkout experience.
       </p>
     </CaseSection>
 
-    <CaseSection title="The Strategic Hypothesis">
-      <p className="italic text-foreground">
-        How might we reduce the entry barrier for this new segment without alienating our current customer base?
-      </p>
+    <CaseSection title={t("The Strategic Hypothesis")}>
+      <p className="italic text-foreground">{t("How might we reduce the entry barrier for this new segment without alienating our current customer base?")}</p>
       <div className="grid sm:grid-cols-3 gap-6 mt-4">
         <div>
-          <h4 className="font-medium mb-2">Native-first approach</h4>
-          <p className="text-sm">I proposed developing a native app focused on mobile accessibility.</p>
+          <h4 className="font-medium mb-2">{t("Native-first approach")}</h4>
+          <p className="text-sm">{t("I proposed developing a native app focused on mobile accessibility.")}</p>
         </div>
         <div>
-          <h4 className="font-medium mb-2">Low-friction shopping</h4>
-          <p className="text-sm">Transform the shopping experience into a fast, low-friction, few-click process — eliminating visual distractions and enabling seamless touch navigation.</p>
+          <h4 className="font-medium mb-2">{t("Low-friction shopping")}</h4>
+          <p className="text-sm">{t("Transform the shopping experience into a fast, low-friction, few-click process — eliminating visual distractions and enabling seamless touch navigation.")}</p>
         </div>
         <div>
-          <h4 className="font-medium mb-2">A dedicated channel</h4>
+          <h4 className="font-medium mb-2">{t("A dedicated channel")}</h4>
           <p className="text-sm">Allow Donna Moda to establish its own dedicated channel, with information architecture designed around the "on-the-go" purchasing behavior of younger users.</p>
         </div>
       </div>
     </CaseSection>
 
-    <CaseSection title="Market Research Supporting the Strategy">
-      <p><strong>75%</strong> of purchases are made using credit cards, while <strong>25%</strong> are made in cash.</p>
+    <CaseSection title={t("Market Research Supporting the Strategy")}>
+      <p><strong>75%</strong>{t("of purchases are made using credit cards, while")}<strong>25%</strong>{t("are made in cash.")}</p>
       <div className="grid sm:grid-cols-2 gap-6 mt-4">
         <div className="rounded-xl p-5" style={{ background: "hsl(var(--surface-2))" }}>
           <p className="text-sm italic">
@@ -750,40 +625,32 @@ const DonnaContent = () => (
             catching up and is on the right track," highlighted Gonzalo Peralta, Country Manager of
             TiendaMia.com in Peru.
           </p>
-          <p className="text-xs text-muted-foreground mt-3">Source: Perú-Retail · July 10, 2017</p>
+          <p className="text-xs text-muted-foreground mt-3">{t("Source: Perú-Retail · July 10, 2017")}</p>
         </div>
         <div className="rounded-xl p-5" style={{ background: "hsl(var(--surface-2))" }}>
-          <p className="text-sm">
-            The predominant lifestyle in the country is that of Modern women, who seek self-fulfillment by
-            balancing their professional lives with their roles as mothers. They stay up to date with fashion
-            and emerging trends, advocate for female empowerment, and seek recognition from society.
-          </p>
-          <p className="text-xs text-muted-foreground mt-3">(Kotler & Armstrong, 2013)</p>
+          <p className="text-sm">{t("The predominant lifestyle in the country is that of Modern women, who seek self-fulfillment by balancing their professional lives with their roles as mothers. They stay up to date with fashion and emerging trends, advocate for female empowerment, and seek recognition from society.")}</p>
+          <p className="text-xs text-muted-foreground mt-3">{t("(Kotler & Armstrong, 2013)")}</p>
         </div>
       </div>
 
       <div className="mt-6 grid sm:grid-cols-2 gap-6">
         <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-          <p className="text-sm">A higher proportion of millennials own a smartphone and make online purchases at least once a month.</p>
+          <p className="text-sm">{t("A higher proportion of millennials own a smartphone and make online purchases at least once a month.")}</p>
         </div>
         <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-          <p className="text-sm">Closely followed by Generation X and Generation Z. The trend for the latter is expected to continue growing, as this group's purchasing power is still relatively limited due to their age.</p>
+          <p className="text-sm">{t("Closely followed by Generation X and Generation Z. The trend for the latter is expected to continue growing, as this group's purchasing power is still relatively limited due to their age.")}</p>
         </div>
       </div>
     </CaseSection>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
-      <p className="text-base md:text-lg leading-relaxed text-foreground/80 mb-6">
-        Likewise, the proportion of people (segmented by generation) who own a smartphone and those who use it to make online purchases is shown in the image.
-      </p>
+      <p className="text-base md:text-lg leading-relaxed text-foreground/80 mb-6">{t("Likewise, the proportion of people (segmented by generation) who own a smartphone and those who use it to make online purchases is shown in the image.")}</p>
       <Placeholder ratio="16/9" label="Smartphone ownership & mobile purchases by generation — chart" />
     </div>
 
-    <CaseSection title="Benchmarking">
-      <p>
-        Since Donna Moda offers imported products from various countries to a high-income target audience,
-        I ultimately worked with three benchmark brands: <strong>Louis Vuitton</strong>,{" "}
-        <strong>Massimo Dutti</strong>, and <strong>Stradivarius</strong>.
+    <CaseSection title={t("Benchmarking")}>
+      <p>{t("Since Donna Moda offers imported products from various countries to a high-income target audience, I ultimately worked with three benchmark brands:")}<strong>{t("Louis Vuitton")}</strong>,{" "}
+        <strong>{t("Massimo Dutti")}</strong>{t(", and")}<strong>{t("Stradivarius")}</strong>.
       </p>
     </CaseSection>
 
@@ -791,40 +658,37 @@ const DonnaContent = () => (
       <Placeholder ratio="21/9" label="Benchmarking — Louis Vuitton · Massimo Dutti · Stradivarius" />
     </div>
 
-    <CaseSection title="SWOT Analysis">
+    <CaseSection title={t("SWOT Analysis")}>
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-          <h4 className="font-medium mb-2">Threats</h4>
-          <p className="text-sm">Economic shifts caused by the pandemic. Prioritization of essential goods.</p>
+          <h4 className="font-medium mb-2">{t("Threats")}</h4>
+          <p className="text-sm">{t("Economic shifts caused by the pandemic. Prioritization of essential goods.")}</p>
         </div>
         <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-          <h4 className="font-medium mb-2">Strengths</h4>
-          <p className="text-sm">A well-established customer base that trusts the quality of its products.</p>
+          <h4 className="font-medium mb-2">{t("Strengths")}</h4>
+          <p className="text-sm">{t("A well-established customer base that trusts the quality of its products.")}</p>
         </div>
         <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-          <h4 className="font-medium mb-2">Weaknesses</h4>
-          <p className="text-sm">A WordPress template-based website that limits customization and flexibility.</p>
+          <h4 className="font-medium mb-2">{t("Weaknesses")}</h4>
+          <p className="text-sm">{t("A WordPress template-based website that limits customization and flexibility.")}</p>
         </div>
         <div className="rounded-xl border p-5" style={{ borderColor: "hsl(var(--hairline))" }}>
-          <h4 className="font-medium mb-2">Opportunities</h4>
-          <p className="text-sm">A new, younger audience with purchasing power and high consumption demand, such as the Millennial generation.</p>
+          <h4 className="font-medium mb-2">{t("Opportunities")}</h4>
+          <p className="text-sm">{t("A new, younger audience with purchasing power and high consumption demand, such as the Millennial generation.")}</p>
         </div>
       </div>
     </CaseSection>
 
-    <CaseSection title="User Flow">
-      <p>
-        Two parallel flows were defined for women's and men's brands, covering entry, category browsing,
-        product details, cart, sign-up/log-in, payment, and final purchase confirmation.
-      </p>
+    <CaseSection title={t("User Flow")}>
+      <p>{t("Two parallel flows were defined for women's and men's brands, covering entry, category browsing, product details, cart, sign-up/log-in, payment, and final purchase confirmation.")}</p>
     </CaseSection>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <Placeholder height={1500} label="User flow diagram — Donna Moda & L'UOMO MODA" />
     </div>
 
-    <CaseSection title="Wireframes">
-      <p>Two flows were prototyped: the first when the user signs up, and the second when the user logs in.</p>
+    <CaseSection title={t("Wireframes")}>
+      <p>{t("Two flows were prototyped: the first when the user signs up, and the second when the user logs in.")}</p>
     </CaseSection>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
@@ -833,10 +697,8 @@ const DonnaContent = () => (
 
     <section className="py-12 md:py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <div className="max-w-3xl">
-        <h2 className="font-serif text-3xl md:text-4xl leading-tight">DONNA MODA Experience — Design Decisions</h2>
-        <p className="mt-5 text-base md:text-lg text-foreground/75 leading-relaxed">
-          Each screen was designed around a specific behavioral insight to reduce friction on mobile. For
-          every decision: <em>what we did</em>, <em>why it matters</em>, and <em>the expected impact</em>.
+        <h2 className="font-serif text-3xl md:text-4xl leading-tight">{t("DONNA MODA Experience — Design Decisions")}</h2>
+        <p className="mt-5 text-base md:text-lg text-foreground/75 leading-relaxed">{t("Each screen was designed around a specific behavioral insight to reduce friction on mobile. For every decision:")}<em>{t("what we did")}</em>, <em>{t("why it matters")}</em>{t(", and")}<em>{t("the expected impact")}</em>.
         </p>
       </div>
 
@@ -879,8 +741,8 @@ const DonnaContent = () => (
       </div>
     </section>
 
-    <CaseSection title="Returning User Flow">
-      <p>The flow if the user is already registered — optimized for speed, with minimal steps from entry to confirmation.</p>
+    <CaseSection title={t("Returning User Flow")}>
+      <p>{t("The flow if the user is already registered — optimized for speed, with minimal steps from entry to confirmation.")}</p>
     </CaseSection>
 
     <div className="py-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
@@ -913,8 +775,7 @@ const CaseStudyPage = () => {
 
       <article className="container-editorial pt-16 md:pt-24 pb-10">
         <Link to="/#work" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-          <ArrowLeft className="h-4 w-4" /> Back to work
-        </Link>
+          <ArrowLeft className="h-4 w-4" />{t("Back to work")}</Link>
 
         <div className="mt-10 reveal">
           <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] tracking-[-0.02em] max-w-[18ch]">
@@ -927,18 +788,18 @@ const CaseStudyPage = () => {
           {study.slug !== "dashboards" && (
             <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
               <div>
-                <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Role</div>
+                <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Role")}</div>
                 <div className="text-sm mt-2">{study.role}</div>
               </div>
               <div>
-                <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Responsibility</div>
+                <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Responsibility")}</div>
                 <div className="text-sm mt-2">
-                  {study.slug === "pim-system" && (<>Research - Visual System<br />Onboarding Design - Handoff</>)}
-                  {study.slug === "donna-moda" && (<>Market Research - Product Strategy - Mobile UI System</>)}
+                  {study.slug === "pim-system" && (<>{t("Research - Visual System")}<br />{t("Onboarding Design - Handoff")}</>)}
+                  {study.slug === "donna-moda" && (<>{t("Market Research - Product Strategy - Mobile UI System")}</>)}
                 </div>
               </div>
               <div>
-                <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Scope</div>
+                <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Scope")}</div>
                 <div className="text-sm mt-2">{study.scope}</div>
               </div>
             </div>
@@ -966,7 +827,7 @@ const CaseStudyPage = () => {
 
       <section className="container-editorial py-16 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
         <Link to={`/case/${next.slug}`} className="group block">
-          <p className="eyebrow">Next Case</p>
+          <p className="eyebrow">{t("Next Case")}</p>
           <div className="flex items-end justify-between mt-3">
             <h3 className="font-serif text-4xl md:text-6xl group-hover:opacity-70 transition-opacity">
               {next.title}
