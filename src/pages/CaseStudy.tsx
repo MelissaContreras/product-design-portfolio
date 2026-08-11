@@ -165,7 +165,7 @@ const PimContent = () => {
             className="rounded-xl border bg-card p-5 shadow-sm"
             style={{ borderColor: "hsl(var(--hairline))" }}
           >
-            <span className="eyebrow block mb-2">Insight {String(i + 1).padStart(2, "0")}</span>
+            <span className="eyebrow block mb-2">{t("Insight")} {String(i + 1).padStart(2, "0")}</span>
             <p className="text-sm leading-relaxed text-foreground/80">{t(insight)}</p>
           </div>
         ))}
