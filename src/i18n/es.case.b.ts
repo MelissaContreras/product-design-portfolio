@@ -85,7 +85,7 @@ export const esCaseB: Record<string, string> = {
   "why it matters": "por qué importa",
   "the expected impact": "el impacto esperado",
   "The flow if the user is already registered — optimized for speed, with minimal steps from entry to confirmation.": "El flujo si el usuario ya está registrado, optimizado para la velocidad, con pasos mínimos desde el ingreso hasta la confirmación.",
-  "Back to work": "Volver al trabajo",
+  "Back to work": "Volver a los proyectos",
   "Research - Visual System": "Investigación - Sistema visual",
   "Onboarding Design - Handoff": "Diseño de onboarding - Handoff",
   "Market Research - Product Strategy - Mobile UI System": "Investigación de mercado - Estrategia de producto - Sistema UI móvil",
