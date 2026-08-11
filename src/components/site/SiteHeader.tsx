@@ -1,4 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useT } from "@/i18n/LanguageProvider";
+import { LanguageToggle } from "@/components/site/LanguageToggle";
 
 const nav = [
   { label: "Work", href: "/#work" },
@@ -11,6 +13,7 @@ export const SiteHeader = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const onHome = pathname === "/";
+  const t = useT();
 
   const handleNameClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -52,7 +55,7 @@ export const SiteHeader = () => {
                 onClick={handleClick}
                 className="link-underline text-sm text-foreground/80 hover:text-foreground hidden md:inline-flex"
               >
-                {n.label}
+                {t(n.label)}
               </a>
             );
           })}
@@ -62,8 +65,9 @@ export const SiteHeader = () => {
             rel="noreferrer"
             className="link-underline text-sm font-medium"
           >
-            Resume ↗
+            {t("Resume ↗")}
           </a>
+          <LanguageToggle />
         </nav>
       </div>
     </header>

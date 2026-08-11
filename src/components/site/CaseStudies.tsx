@@ -1,3 +1,4 @@
+import { useT } from "@/i18n/LanguageProvider";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
@@ -81,12 +82,13 @@ const PreviewVisual = ({ slug, coverImage }: { slug: string; coverImage: string 
 };
 
 export const CaseStudies = () => {
+  const t = useT();
   return (
     <section id="work" className="container-editorial py-20 md:py-28">
       <div className="flex items-end justify-between mb-12 md:mb-16">
         <div>
-          <p className="eyebrow">Case Studies</p>
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mt-3">Case Studies</h2>
+          <p className="eyebrow">{t("Case Studies")}</p>
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mt-3">{t("Case Studies")}</h2>
         </div>
       </div>
 
@@ -103,26 +105,26 @@ export const CaseStudies = () => {
             <div className="p-6 md:p-8">
               <div className="flex items-center justify-end text-xs text-muted-foreground mb-4">
                 <span className="inline-flex items-center gap-1 group-hover:text-foreground transition-colors">
-                  View Case Study <ArrowUpRight className="h-3.5 w-3.5" />
+                  {t("View Case Study")} <ArrowUpRight className="h-3.5 w-3.5" />
                 </span>
               </div>
-              <h3 className="font-serif text-2xl md:text-3xl leading-tight">{c.title}</h3>
-              <p className="mt-3 text-sm md:text-base text-foreground/70 max-w-xl leading-relaxed">{c.summary}</p>
+              <h3 className="font-serif text-2xl md:text-3xl leading-tight">{t(c.title)}</h3>
+              <p className="mt-3 text-sm md:text-base text-foreground/70 max-w-xl leading-relaxed">{t(c.summary)}</p>
 
               <div className="mt-5 flex flex-wrap gap-2">
-                {c.tags.map((t) => (
-                  <span key={t} className="pill">{t}</span>
+                {c.tags.map((tag) => (
+                  <span key={tag} className="pill">{t(tag)}</span>
                 ))}
               </div>
 
               <div className="mt-6 grid grid-cols-2 gap-4 pt-5 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
                 <div>
-                  <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Role</div>
-                  <div className="text-sm mt-1">{c.role}</div>
+                  <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Role")}</div>
+                  <div className="text-sm mt-1">{t(c.role)}</div>
                 </div>
                 <div>
-                  <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">Scope</div>
-                  <div className="text-sm mt-1">{c.scope}</div>
+                  <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Scope")}</div>
+                  <div className="text-sm mt-1">{t(c.scope)}</div>
                 </div>
               </div>
             </div>

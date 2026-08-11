@@ -1,4 +1,7 @@
+import { useT } from "@/i18n/LanguageProvider";
+
 export const About = () => {
+  const t = useT();
   const paragraphs = [
     "Hi, I'm Melissa. I design with empathy, but I validate with data.",
     "I'm a Product Designer who combines UX and Data to build intuitive, high-impact digital products. I specialize in complex B2B and B2C ecommerce ecosystems, designing seamless omnichannel experiences that connect physical retail and digital platforms.",
@@ -13,9 +16,9 @@ export const About = () => {
     <section id="about" className="py-20 md:py-28" style={{ background: "hsl(var(--surface-2))" }}>
       <div className="container-editorial grid md:grid-cols-12 gap-10 md:gap-16">
         <div className="md:col-span-4">
-          <p className="eyebrow">About</p>
+          <p className="eyebrow">{t("About")}</p>
           <h2 className="font-serif text-4xl md:text-5xl mt-3 leading-tight">
-            Designing with empathy, validating with data.
+            {t("Designing with empathy, validating with data.")}
           </h2>
 
           <div className="mt-10 space-y-5">
@@ -26,8 +29,8 @@ export const About = () => {
               { label: "Languages", value: "English · Español" },
             ].map((m) => (
               <div key={m.label} className="flex justify-between text-sm border-b pb-3" style={{ borderColor: "hsl(var(--hairline))" }}>
-                <span className="text-muted-foreground">{m.label}</span>
-                <span className="text-right">{m.value}</span>
+                <span className="text-muted-foreground">{t(m.label)}</span>
+                <span className="text-right">{t(m.value)}</span>
               </div>
             ))}
           </div>
@@ -36,7 +39,7 @@ export const About = () => {
         <div className="md:col-span-7 md:col-start-6 space-y-5 text-base md:text-lg leading-relaxed text-foreground/80">
           {paragraphs.map((p, i) => (
             <p key={i} className={i === 0 ? "font-serif text-2xl md:text-3xl text-foreground italic leading-snug" : ""}>
-              {p}
+              {t(p)}
             </p>
           ))}
         </div>

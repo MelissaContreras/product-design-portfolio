@@ -1,19 +1,21 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { useT } from "@/i18n/LanguageProvider";
 
 export const Hero = () => {
+  const t = useT();
   return (
     <section className="container-editorial pt-20 md:pt-28 pb-20 md:pb-28">
       <div className="reveal">
-        <p className="eyebrow">Product Designer · UX/UI · Data-Driven Design</p>
+        <p className="eyebrow">{t("Product Designer · UX/UI · Data-Driven Design")}</p>
       </div>
 
       <h1 className="reveal reveal-delay-1 mt-8 font-serif text-[2.6rem] sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.02] tracking-[-0.02em] max-w-[18ch]">
-        Designing clarity<br />in complex<br />systems
+        {t("Designing clarity")}<br />{t("in complex")}<br />{t("systems")}
       </h1>
 
       <div className="mt-10 grid md:grid-cols-12 gap-8 items-end">
         <p className="reveal reveal-delay-2 md:col-span-7 text-base md:text-lg leading-relaxed text-foreground/75 max-w-2xl">
-          Product Designer bridging UX and Data Analytics to simplify high volume systems and enable better product decisions across omnichannel ecosystems.
+          {t("Product Designer bridging UX and Data Analytics to simplify high volume systems and enable better product decisions across omnichannel ecosystems.")}
         </p>
 
         <div className="reveal reveal-delay-3 md:col-span-5 flex flex-wrap gap-3 md:justify-end">
@@ -21,7 +23,7 @@ export const Hero = () => {
             href="#work"
             className="inline-flex items-center gap-2 rounded-lg bg-primary text-primary-foreground px-5 py-3 text-sm font-semibold hover:bg-[hsl(var(--primary-hover))] active:bg-[hsl(var(--primary-active))] transition-colors"
           >
-            View Case Studies
+            {t("View Case Studies")}
             <ArrowDown className="h-4 w-4" />
           </a>
           <a
@@ -31,7 +33,7 @@ export const Hero = () => {
             className="inline-flex items-center gap-2 rounded-lg border bg-background px-5 py-3 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
             style={{ borderColor: "hsl(var(--hairline))" }}
           >
-            Download Resume
+            {t("Download Resume")}
             <ArrowUpRight className="h-4 w-4" />
           </a>
         </div>
@@ -43,8 +45,8 @@ export const Hero = () => {
           { k: "Omnichannel", v: "Retail + Digital" },
         ].map((s) => (
           <div key={s.v} className="px-2 md:px-6 first:pl-0">
-            <div className="font-serif text-3xl md:text-4xl">{s.k}</div>
-            <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground mt-2">{s.v}</div>
+            <div className="font-serif text-3xl md:text-4xl">{t(s.k)}</div>
+            <div className="text-xs uppercase tracking-[0.14em] text-muted-foreground mt-2">{t(s.v)}</div>
           </div>
         ))}
       </div>
