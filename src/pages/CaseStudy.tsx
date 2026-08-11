@@ -166,7 +166,7 @@ const PimContent = () => {
             style={{ borderColor: "hsl(var(--hairline))" }}
           >
             <span className="eyebrow block mb-2">Insight {String(i + 1).padStart(2, "0")}</span>
-            <p className="text-sm leading-relaxed text-foreground/80">{insight}</p>
+            <p className="text-sm leading-relaxed text-foreground/80">{t(insight)}</p>
           </div>
         ))}
       </div>
@@ -327,15 +327,15 @@ const SubCaseHeader = ({
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
       <div>
         <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Role")}</div>
-        <div className="text-sm mt-2">{role}</div>
+        <div className="text-sm mt-2">{t(role)}</div>
       </div>
       <div>
         <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Responsibility")}</div>
-        <div className="text-sm mt-2">{responsibility}</div>
+        <div className="text-sm mt-2">{t(responsibility)}</div>
       </div>
       <div>
         <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Scope")}</div>
-        <div className="text-sm mt-2">{scope}</div>
+        <div className="text-sm mt-2">{t(scope)}</div>
       </div>
     </div>
   </div>
@@ -771,6 +771,7 @@ const DonnaContent = () => {
 };
 
 const CaseStudyPage = () => {
+  const t = useT();
   const { slug } = useParams();
   const study = caseStudies.find((c) => c.slug === slug);
 
@@ -792,17 +793,17 @@ const CaseStudyPage = () => {
 
         <div className="mt-10 reveal">
           <h1 className="font-serif text-5xl md:text-7xl leading-[1.02] tracking-[-0.02em] max-w-[18ch]">
-            {study.title}
+            {t(study.title)}
           </h1>
           <p className="mt-8 max-w-2xl text-base md:text-lg text-foreground/75 leading-relaxed">
-            {study.summary}
+            {t(study.summary)}
           </p>
 
           {study.slug !== "dashboards" && (
             <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 border-t" style={{ borderColor: "hsl(var(--hairline))" }}>
               <div>
                 <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Role")}</div>
-                <div className="text-sm mt-2">{study.role}</div>
+                <div className="text-sm mt-2">{t(study.role)}</div>
               </div>
               <div>
                 <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Responsibility")}</div>
@@ -813,7 +814,7 @@ const CaseStudyPage = () => {
               </div>
               <div>
                 <div className="text-[10px] uppercase tracking-[0.16em] text-muted-foreground">{t("Scope")}</div>
-                <div className="text-sm mt-2">{study.scope}</div>
+                <div className="text-sm mt-2">{t(study.scope)}</div>
               </div>
             </div>
           )}
@@ -843,7 +844,7 @@ const CaseStudyPage = () => {
           <p className="eyebrow">{t("Next Case")}</p>
           <div className="flex items-end justify-between mt-3">
             <h3 className="font-serif text-4xl md:text-6xl group-hover:opacity-70 transition-opacity">
-              {next.title}
+              {t(next.title)}
             </h3>
             <ArrowUpRight className="h-6 w-6 md:h-10 md:w-10 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </div>
