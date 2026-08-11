@@ -1,3 +1,5 @@
+import { useT } from "@/i18n/LanguageProvider";
+
 type Testimonial = {
   initials: string;
   name: string;
@@ -62,14 +64,15 @@ const testimonials: Testimonial[] = [
 ];
 
 export const Testimonials = () => {
+  const t = useT();
   return (
     <section id="testimonials" className="container-editorial py-20 md:py-28">
       <div className="flex items-end justify-between mb-12 md:mb-16">
         <div className="max-w-2xl">
-          <p className="eyebrow">Testimonials</p>
-          <h2 className="font-serif text-4xl md:text-5xl mt-3">Feedback from collaborators</h2>
+          <p className="eyebrow">{t("Testimonials")}</p>
+          <h2 className="font-serif text-4xl md:text-5xl mt-3">{t("Feedback from collaborators")}</h2>
           <p className="mt-4 text-foreground/70 text-base md:text-lg">
-            Perspectives from supervisors and cross-functional team members on impact, collaboration, and execution.
+            {t("Perspectives from supervisors and cross-functional team members on impact, collaboration, and execution.")}
           </p>
         </div>
       </div>
@@ -78,7 +81,7 @@ export const Testimonials = () => {
         className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[hsl(var(--hairline))] border"
         style={{ borderColor: "hsl(var(--hairline))" }}
       >
-        {testimonials.map((t, i) => (
+        {testimonials.map((item, i) => (
           <article
             key={i}
             className={`bg-background p-8 md:p-10 flex flex-col ${
@@ -87,17 +90,17 @@ export const Testimonials = () => {
           >
             <div className="flex items-start gap-4 mb-6">
               <div className="h-12 w-12 shrink-0 rounded-full bg-foreground/10 flex items-center justify-center text-sm font-medium tracking-wide">
-                {t.initials}
+                {item.initials}
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-sm font-medium">{t.name}</div>
-                <div className="text-xs text-muted-foreground mt-0.5">{t.title}</div>
+                <div className="text-sm font-medium">{item.name}</div>
+                <div className="text-xs text-muted-foreground mt-0.5">{t(item.title)}</div>
                 <div className="text-xs text-muted-foreground mt-1">
-                  {t.relationship} · {t.date}
+                  {t(item.relationship)} · {t(item.date)}
                 </div>
               </div>
               <span className="text-[10px] uppercase tracking-[0.14em] border px-2 py-1 text-foreground/70" style={{ borderColor: "hsl(var(--hairline))" }}>
-                {t.badge}
+                {t(item.badge)}
               </span>
             </div>
 
@@ -105,7 +108,7 @@ export const Testimonials = () => {
               <path d="M0 20V12C0 5.4 4.4 0 11 0v4c-3.3 0-5.5 2.7-5.5 6H11v10H0zm17 0V12c0-6.6 4.4-12 11-12v4c-3.3 0-5.5 2.7-5.5 6H28v10H17z" />
             </svg>
             <p className="font-serif text-lg md:text-xl leading-snug text-foreground/90 flex-1">
-              "{t.quote}"
+              "{t(item.quote)}"
             </p>
           </article>
         ))}
