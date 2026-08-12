@@ -738,10 +738,10 @@ const DonnaContent = () => {
               <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
                 {String(idx + 1).padStart(2, "0")}
               </p>
-              <h3 className="font-serif text-2xl md:text-3xl leading-tight">{it.t}</h3>
-              <p className="text-base leading-relaxed text-foreground/85">{it.d}</p>
-              <p className="text-base leading-relaxed text-foreground/70">{it.r}</p>
-              <p className="text-base leading-relaxed font-medium">{it.i}</p>
+              <h3 className="font-serif text-2xl md:text-3xl leading-tight">{t(it.t)}</h3>
+              <p className="text-base leading-relaxed text-foreground/85">{t(it.d)}</p>
+              <p className="text-base leading-relaxed text-foreground/70">{t(it.r)}</p>
+              <p className="text-base leading-relaxed font-medium">{t(it.i)}</p>
             </div>
             <div className={`md:col-span-5 ${idx % 2 === 1 ? "md:order-1" : ""}`}>
               <Placeholder ratio="3/4" label={`${it.t} — mockup`} />
