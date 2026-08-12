@@ -506,7 +506,7 @@ const DashboardsContent = () => {
     <CaseSection title={t("The Strategic Challenge")}>
       <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
         <li>{t("Large volume of orders across multiple countries.")}</li>
-        <li>Manual identification of incidents ("Novedades").</li>
+        <li>{t('Manual identification of incidents ("Novedades").')}</li>
         <li>{t("Limited visibility into operational status.")}</li>
         <li>{t("Slow reaction times for issue resolution.")}</li>
       </ul>
@@ -633,9 +633,7 @@ const DonnaContent = () => {
       <div className="grid sm:grid-cols-2 gap-6 mt-4">
         <div className="rounded-xl p-5" style={{ background: "hsl(var(--surface-2))" }}>
           <p className="text-sm italic">
-            "Countries like Chile and Uruguay are leading e-commerce in the region, but Peru is very close to
-            catching up and is on the right track," highlighted Gonzalo Peralta, Country Manager of
-            TiendaMia.com in Peru.
+            {t('"Countries like Chile and Uruguay are leading e-commerce in the region, but Peru is very close to catching up and is on the right track," highlighted Gonzalo Peralta, Country Manager of TiendaMia.com in Peru.')}
           </p>
           <p className="text-xs text-muted-foreground mt-3">{t("Source: Perú-Retail · July 10, 2017")}</p>
         </div>
@@ -740,10 +738,10 @@ const DonnaContent = () => {
               <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
                 {String(idx + 1).padStart(2, "0")}
               </p>
-              <h3 className="font-serif text-2xl md:text-3xl leading-tight">{it.t}</h3>
-              <p className="text-base leading-relaxed text-foreground/85">{it.d}</p>
-              <p className="text-base leading-relaxed text-foreground/70">{it.r}</p>
-              <p className="text-base leading-relaxed font-medium">{it.i}</p>
+              <h3 className="font-serif text-2xl md:text-3xl leading-tight">{t(it.t)}</h3>
+              <p className="text-base leading-relaxed text-foreground/85">{t(it.d)}</p>
+              <p className="text-base leading-relaxed text-foreground/70">{t(it.r)}</p>
+              <p className="text-base leading-relaxed font-medium">{t(it.i)}</p>
             </div>
             <div className={`md:col-span-5 ${idx % 2 === 1 ? "md:order-1" : ""}`}>
               <Placeholder ratio="3/4" label={`${it.t} — mockup`} />
