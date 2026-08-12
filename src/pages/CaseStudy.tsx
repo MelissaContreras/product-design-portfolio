@@ -506,7 +506,7 @@ const DashboardsContent = () => {
     <CaseSection title={t("The Strategic Challenge")}>
       <ul className="list-disc pl-5 space-y-1 text-sm md:text-base">
         <li>{t("Large volume of orders across multiple countries.")}</li>
-        <li>Manual identification of incidents ("Novedades").</li>
+        <li>{t('Manual identification of incidents ("Novedades").')}</li>
         <li>{t("Limited visibility into operational status.")}</li>
         <li>{t("Slow reaction times for issue resolution.")}</li>
       </ul>
