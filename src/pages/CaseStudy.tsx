@@ -633,9 +633,7 @@ const DonnaContent = () => {
       <div className="grid sm:grid-cols-2 gap-6 mt-4">
         <div className="rounded-xl p-5" style={{ background: "hsl(var(--surface-2))" }}>
           <p className="text-sm italic">
-            "Countries like Chile and Uruguay are leading e-commerce in the region, but Peru is very close to
-            catching up and is on the right track," highlighted Gonzalo Peralta, Country Manager of
-            TiendaMia.com in Peru.
+            {t('"Countries like Chile and Uruguay are leading e-commerce in the region, but Peru is very close to catching up and is on the right track," highlighted Gonzalo Peralta, Country Manager of TiendaMia.com in Peru.')}
           </p>
           <p className="text-xs text-muted-foreground mt-3">{t("Source: Perú-Retail · July 10, 2017")}</p>
         </div>
