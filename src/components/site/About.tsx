@@ -9,7 +9,7 @@ export const About = () => {
     "My background in Data Analytics (SQL, Python, BI tools) allows me to go beyond intuition. I use data to understand behavior, validate decisions, and support product strategies with real insights.",
     "In my recent roles, this has also led me to mentor designers and advocate for more data-informed thinking across teams.",
     "Whether I'm structuring information architecture or working with data pipelines, my goal is always the same: build products that improve decision-making and deliver real business value.",
-    "Currently, I'm exploring the intersection of AI and design systems, and how emerging technologies are shaping the future of product experiences.",
+    "I actively use AI tools (Figma Make, Lovable, Claude) to accelerate discovery, prototyping, and validation, while staying close to how emerging technologies are shaping the future of product experiences.",
   ];
 
   return (
