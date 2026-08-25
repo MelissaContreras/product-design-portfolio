@@ -44,7 +44,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["E-commerce", "Mobile UX", "Product Strategy", "Market Research"],
     role: "Lead Product Designer (UX/UI & Strategy)",
     scope: "Comprehensive design of native applications to expand the brand's reach toward a younger audience.",
-    year: "2023",
+    year: "2021",
     coverImage: "caratula_card_Donna_View",
   },
 ];
