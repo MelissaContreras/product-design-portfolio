@@ -94,8 +94,8 @@ export const es: Record<string, string> = {
     "En mis roles recientes, esto también me ha llevado a mentorear diseñadores y promover una mentalidad más informada por datos en los equipos.",
   "Whether I'm structuring information architecture or working with data pipelines, my goal is always the same: build products that improve decision-making and deliver real business value.":
     "Ya sea estructurando arquitectura de información o trabajando con pipelines de datos, mi objetivo siempre es el mismo: construir productos que mejoren la toma de decisiones y generen valor real de negocio.",
-  "Currently, I'm exploring the intersection of AI and design systems, and how emerging technologies are shaping the future of product experiences.":
-    "Actualmente exploro la intersección entre IA y design systems, y cómo las tecnologías emergentes están dando forma al futuro de las experiencias de producto.",
+  "I actively use AI tools (Figma Make, Lovable, Claude) to accelerate discovery, prototyping, and validation.":
+    "Utilizo de forma activa herramientas de IA (Figma Make, Lovable, Claude) para agilizar la fase de exploración, la creación de prototipos y la validación.",
 
   // Testimonials
   "Feedback from collaborators": "Opiniones de colaboradores",
