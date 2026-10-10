@@ -41,7 +41,7 @@ export const es: Record<string, string> = {
     "IXComercio — Rediseño del PIM y estrategia de onboarding",
   "Redesigned IXComercio's internal PIM tool to match Akeneo's design system, turning a visual request into a full system optimization with an interactive onboarding flow that eliminated manual QA training.":
     "Rediseño de la herramienta PIM interna de IXComercio para alinearla con el design system de Akeneo, convirtiendo una solicitud visual en una optimización integral del sistema con un flujo de onboarding interactivo que eliminó la capacitación manual de QA.",
-  "Product Designer — UX End-to-End": "Product Designer — UX de principio a fin",
+  "UX Design Lead — UX End-to-End": "UX Design Lead — UX de principio a fin",
   "Redesigned the internal PIM tool to match Akeneo's design system":
     "Rediseño de la herramienta PIM interna para alinearla con el design system de Akeneo",
   "Analytics Dashboards": "Dashboards de analítica",
@@ -54,8 +54,8 @@ export const es: Record<string, string> = {
     "Donna Moda — App nativa para una nueva generación",
   "Comprehensive native app design for Donna Moda & L'UOMO MODA, expanding the brand's reach toward a younger, mobile-first audience through market research, product strategy, and a tailored mobile UI system.":
     "Diseño integral de apps nativas para Donna Moda y L'UOMO MODA, ampliando el alcance de la marca hacia una audiencia joven y mobile-first mediante investigación de mercado, estrategia de producto y un sistema de UI móvil a medida.",
-  "Lead Product Designer (UX/UI & Strategy)":
-    "Lead Product Designer (UX/UI y estrategia)",
+  "Product Designer (UX/UI & Strategy)":
+    "Product Designer (UX/UI y estrategia)",
   "Comprehensive design of native applications to expand the brand's reach toward a younger audience.":
     "Diseño integral de aplicaciones nativas para ampliar el alcance de la marca hacia una audiencia más joven.",
 

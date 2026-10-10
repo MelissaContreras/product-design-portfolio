@@ -18,7 +18,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Redesigned IXComercio's internal PIM tool to match Akeneo's design system, turning a visual request into a full system optimization with an interactive onboarding flow that eliminated manual QA training.",
     tags: ["Design Systems", "Onboarding", "UX Strategy"],
-    role: "Product Designer — UX End-to-End",
+    role: "UX Design Lead — UX End-to-End",
     scope: "Redesigned the internal PIM tool to match Akeneo's design system",
     year: "2024",
     coverImage: "Caratula_card_pim",
@@ -42,7 +42,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Comprehensive native app design for Donna Moda & L'UOMO MODA, expanding the brand's reach toward a younger, mobile-first audience through market research, product strategy, and a tailored mobile UI system.",
     tags: ["E-commerce", "Mobile UX", "Product Strategy", "Market Research"],
-    role: "Lead Product Designer (UX/UI & Strategy)",
+    role: "Product Designer (UX/UI & Strategy)",
     scope: "Comprehensive design of native applications to expand the brand's reach toward a younger audience.",
     year: "2021",
     coverImage: "caratula_card_Donna_View",
