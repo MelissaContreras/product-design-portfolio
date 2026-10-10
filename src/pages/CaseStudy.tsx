@@ -366,7 +366,7 @@ const DashboardsContent = () => {
       <SubCaseHeader
         title={t("Case Study: Omnichannel Dashboard Ecosystem Redesign")}
         tags={["Power BI", "Advanced DAX", "Analytical Modeling", "Retail B2B · B2C", "Omnichannel"]}
-        role="Product Designer (Data & Analytics)"
+        role="UX Design Lead (Data & Analytics)"
         responsibility="Owned KPI standardization and analytical modeling in Power BI"
         scope="Business dashboard redesign for B2B and B2C ecosystems"
       />
@@ -493,7 +493,7 @@ const DashboardsContent = () => {
       <SubCaseHeader
         title={t("Case Study: Operational Control Tower (Omnichannel)")}
         tags={["Power BI", "Advanced DAX", "Analytical Modeling", "Data-Driven UX", "Omnichannel Logistics"]}
-        role="Product Designer (Data & Analytics)"
+        role="UX Design Lead (Data & Analytics)"
         responsibility="Redesigned operational metrics and monitoring system for order incidents"
         scope="Operational dashboard design for logistics and customer service teams"
       />

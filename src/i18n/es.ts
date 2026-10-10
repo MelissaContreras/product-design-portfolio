@@ -47,7 +47,7 @@ export const es: Record<string, string> = {
   "Analytics Dashboards": "Dashboards de analítica",
   "Design of analytics dashboards to support strategic and operational decision-making across a Total Commerce ecosystem deployed across 54 brands in 11 countries.":
     "Diseño de dashboards de analítica para apoyar la toma de decisiones estratégicas y operativas en un ecosistema Total Commerce desplegado en 54 marcas y 11 países.",
-  "UX Design Lead": "UX Design Lead",
+  "UX Design Lead (Data & Analytics)": "UX Design Lead (Data & Analytics)",
   "UX Architecture, KPI Design, Data Logic":
     "Arquitectura UX, diseño de KPIs, lógica de datos",
   "Donna Moda — Native App for a New Generation":
