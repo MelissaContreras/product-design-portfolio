@@ -30,7 +30,7 @@ export const LanguageToggle = () => {
             className={cn(
               "px-2.5 py-1 text-xs font-medium tracking-[0.08em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
               active
-                ? "bg-primary text-primary-foreground"
+                ? "bg-primary !text-primary-foreground"
                 : "text-foreground/60 hover:text-foreground",
             )}
           >
