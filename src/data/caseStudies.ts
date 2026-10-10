@@ -30,7 +30,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Design of analytics dashboards to support strategic and operational decision-making across a Total Commerce ecosystem deployed across 54 brands in 11 countries.",
     tags: ["Data Visualization", "BI", "Analytics", "Decision Systems"],
-    role: "Product Designer",
+    role: "UX Design Lead",
     scope: "UX Architecture, KPI Design, Data Logic",
     year: "2024",
     coverImage: "caratula_card_dashboards",
