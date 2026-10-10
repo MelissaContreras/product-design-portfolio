@@ -122,6 +122,10 @@ const PimContent = () => {
           <p className="text-sm">{t("I used an Affinity map and User persona to categorize the most common errors when uploading images, titles, and attributes.")}</p>
         </div>
       </div>
+            <div className="mt-6">
+        <h4 className="font-medium mb-2">{t("AI in my research workflow")}</h4>
+        <p className="text-sm">{t("I ran the interviews on Microsoft Teams and used its automatic transcription, which let me stay present in the conversation instead of taking notes. I corrected the transcription errors by hand and grouped the users' opinions into themes myself. Then I gave the transcripts to ChatGPT to re-check my conclusions. AI acted as a second check on my deductions; the synthesis and the decisions stayed mine.")}</p>
+      </div>
     </CaseSection>
 
     <CaseSection title={t("Interview findings")}>
