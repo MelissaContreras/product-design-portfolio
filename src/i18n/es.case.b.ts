@@ -167,7 +167,7 @@ export const esCaseB: Record<string, string> = {
   "Wireframes": "Wireframes",
   "Returning User Flow": "Flujo de usuario recurrente",
   "Insight": "Insight",
-  "Product Designer (Data & Analytics)": "Product Designer (Datos y Analítica)",
+  "UX Design Lead (Data & Analytics)": "UX Design Lead (Datos y Analítica)",
   "Owned KPI standardization and analytical modeling in Power BI": "A cargo de la estandarización de KPI y el modelado analítico en Power BI",
   "Business dashboard redesign for B2B and B2C ecosystems": "Rediseño de dashboards de negocio para ecosistemas B2B y B2C",
   "Redesigned operational metrics and monitoring system for order incidents": "Rediseño de métricas operativas y del sistema de monitoreo de incidencias de pedidos",
