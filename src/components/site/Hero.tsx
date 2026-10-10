@@ -1,8 +1,9 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
-import { useT } from "@/i18n/LanguageProvider";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { CV_LINKS } from "@/lib/cv";
 
 export const Hero = () => {
-  const t = useT();
+  const { lang, t } = useLanguage();
   return (
     <section className="container-editorial pt-20 md:pt-28 pb-20 md:pb-28">
       <div className="reveal">
@@ -27,7 +28,7 @@ export const Hero = () => {
             <ArrowDown className="h-4 w-4" />
           </a>
           <a
-            href="https://drive.google.com/file/d/1uyXP_Bn9u7hisFCItcEzBWKIisHK3McS/view?usp=drive_link"
+            href={CV_LINKS[lang]}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-lg border bg-background px-5 py-3 text-sm font-medium text-foreground hover:bg-secondary transition-colors"

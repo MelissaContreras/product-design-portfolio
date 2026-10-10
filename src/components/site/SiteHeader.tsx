@@ -1,5 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useT } from "@/i18n/LanguageProvider";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { CV_LINKS } from "@/lib/cv";
 import { LanguageToggle } from "@/components/site/LanguageToggle";
 
 const nav = [
@@ -13,7 +14,7 @@ export const SiteHeader = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const onHome = pathname === "/";
-  const t = useT();
+  const { lang, t } = useLanguage();
 
   const handleNameClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -60,7 +61,7 @@ export const SiteHeader = () => {
             );
           })}
           <a
-            href="https://drive.google.com/file/d/1uyXP_Bn9u7hisFCItcEzBWKIisHK3McS/view?usp=drive_link"
+            href={CV_LINKS[lang]}
             target="_blank"
             rel="noreferrer"
             className="link-underline text-sm font-medium"

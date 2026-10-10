@@ -1,8 +1,9 @@
 import { ArrowUpRight, Mail, Linkedin, Download } from "lucide-react";
-import { useT } from "@/i18n/LanguageProvider";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { CV_LINKS } from "@/lib/cv";
 
 export const Contact = () => {
-  const t = useT();
+  const { lang, t } = useLanguage();
   return (
     <section id="contact" className="py-24 md:py-36" style={{ background: "hsl(var(--foreground))", color: "hsl(var(--background))" }}>
       <div className="container-editorial">
@@ -30,7 +31,7 @@ export const Contact = () => {
             <Mail className="h-4 w-4" /> {t("Email")}
           </a>
           <a
-            href="https://drive.google.com/file/d/1uyXP_Bn9u7hisFCItcEzBWKIisHK3McS/view?usp=drive_link"
+            href={CV_LINKS[lang]}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-transparent px-5 py-3 text-sm font-medium text-white hover:bg-white hover:text-[hsl(220_39%_11%)] hover:border-white transition-colors"
