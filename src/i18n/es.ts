@@ -42,8 +42,8 @@ export const es: Record<string, string> = {
   "Redesigned IXComercio's internal PIM tool to match Akeneo's design system, turning a visual request into a full system optimization with an interactive onboarding flow that eliminated manual QA training.":
     "Rediseño de la herramienta PIM interna de IXComercio para alinearla con el design system de Akeneo, convirtiendo una solicitud visual en una optimización integral del sistema con un flujo de onboarding interactivo que eliminó la capacitación manual de QA.",
   "UX Design Lead — UX End-to-End": "UX Design Lead — UX de principio a fin",
-  "Redesigned the internal PIM tool to match Akeneo's design system":
-    "Rediseño de la herramienta PIM interna para alinearla con el design system de Akeneo",
+  "PIM interface, onboarding flow, and design system alignment":
+    "Interfaz del PIM, flujo de onboarding y alineación con el sistema de diseño",
   "Analytics Dashboards": "Dashboards de analítica",
   "Design of analytics dashboards to support strategic and operational decision-making across a Total Commerce ecosystem deployed across 54 brands in 11 countries.":
     "Diseño de dashboards de analítica para apoyar la toma de decisiones estratégicas y operativas en un ecosistema Total Commerce desplegado en 54 marcas y 11 países.",

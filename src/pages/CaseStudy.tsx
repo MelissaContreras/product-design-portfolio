@@ -13,7 +13,7 @@ const PimContent = () => {
   <>
     <CaseSection title={t("Context")}>
       <p>{t("IXComercio is a SaaS platform used by international brands to manage product catalogs, attributes, prices, and logistics configurations within the Total Commerce digital commerce ecosystem.")}</p>
-      <p>{t("I was asked to redesign IXComercio's internal PIM tool to match Akeneo's design system. During the process, I identified an unscoped adoption problem and proposed an interactive onboarding flow that eliminated manual QA training entirely.")}</p>
+      <p>{t("I was asked to redesign IXComercio's internal PIM tool to match Akeneo's design system.")}</p>
     </CaseSection>
 
     <CaseSection title={t("The Problem")}>
@@ -34,7 +34,7 @@ const PimContent = () => {
 
     <CaseSection title={t("The Challenge: Beyond Visual Consistency")}>
       <p className="italic text-foreground">{t("Turned a visual request into a full system optimization.")}</p>
-      <p>{t("I was asked to redesign IXComercio's internal PIM tool to match Akeneo's design system. During the process, I identified an unscoped adoption problem and proposed an interactive onboarding flow that eliminated manual QA training entirely.")}</p>
+      <p>{t("While analyzing how people actually used the tool, I found an adoption problem outside the original scope: users depended on the QA team to learn it. I interviewed users and mapped their workflows to find the root causes, then proposed an interactive onboarding flow that eliminated manual QA training entirely.")}</p>
     </CaseSection>
 
     <CaseSection title={t("Strategic Impact")}>

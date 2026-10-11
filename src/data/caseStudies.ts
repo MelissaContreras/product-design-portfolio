@@ -19,7 +19,7 @@ export const caseStudies: CaseStudy[] = [
       "Redesigned IXComercio's internal PIM tool to match Akeneo's design system, turning a visual request into a full system optimization with an interactive onboarding flow that eliminated manual QA training.",
     tags: ["Design Systems", "Onboarding", "UX Strategy"],
     role: "UX Design Lead — UX End-to-End",
-    scope: "Redesigned the internal PIM tool to match Akeneo's design system",
+    scope:"PIM interface, onboarding flow, and design system alignment",
     year: "2024",
     coverImage: "Caratula_card_pim",
   },
