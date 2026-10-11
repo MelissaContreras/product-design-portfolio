@@ -1,4 +1,3 @@
-# Welcome to your Lovable project
 
 # Melissa Contreras — Product Design Portfolio
 
