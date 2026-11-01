@@ -40,12 +40,12 @@ const PimContent = () => {
     <CaseSection title={t("Strategic Impact")}>
       <div className="grid sm:grid-cols-2 gap-4">
         <div className="rounded-xl border p-6" style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-2))" }}>
-          <div className="font-serif text-4xl">75%</div>
-          <p className="mt-2 text-sm">{t("of users had critical navigation blockers")} <strong>{t("before the redesign")}</strong>.</p>
+          <div className="font-serif text-4xl">4/5</div>
+          <p className="mt-2 text-sm">{t("users had critical navigation blockers")} <strong>{t("before the redesign")}</strong>.</p>
         </div>
         <div className="rounded-xl border p-6" style={{ borderColor: "hsl(var(--hairline))", background: "hsl(var(--surface-2))" }}>
-          <div className="font-serif text-4xl">100%</div>
-          <p className="mt-2 text-sm">{t("completed tasks autonomously")} <strong>{t("after the onboarding flow")}</strong>.</p>
+          <div className="font-serif text-4xl">5/5</div>
+          <p className="mt-2 text-sm">{t("users completed tasks autonomously")} <strong>{t("after the onboarding flow")}</strong>.</p>
         </div>
       </div>
 
